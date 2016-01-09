@@ -1,0 +1,1272 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A	lit_tests/initialization-nobug.cc	/^int A = (1 << 1) + (1 << 3) + (1 << 5), B;$/;"	v
+ACCESS_ADDRESS	asan_interceptors.cc	32;"	d	file:
+ACCESS_MEMORY_RANGE	asan_interceptors.cc	47;"	d	file:
+ASAN_ALLOCATOR_H	asan_allocator.h	16;"	d
+ASAN_ANDROID	asan_internal.h	48;"	d
+ASAN_ANDROID	asan_internal.h	50;"	d
+ASAN_DEFAULT_FAILURE_EXITCODE	asan_internal.h	27;"	d
+ASAN_FLAGS_H	asan_flags.h	16;"	d
+ASAN_FLEXIBLE_MAPPING_AND_OFFSET	asan_internal.h	80;"	d
+ASAN_HAS_EXCEPTIONS	asan_internal.h	74;"	d
+ASAN_INTERCEPTED_FUNCTIONS_H	asan_intercepted_functions.h	15;"	d
+ASAN_INTERCEPTORS_H	asan_interceptors.h	15;"	d
+ASAN_INTERCEPT_ATOLL_AND_STRTOLL	asan_intercepted_functions.h	25;"	d
+ASAN_INTERCEPT_FUNC	asan_interceptors.cc	588;"	d	file:
+ASAN_INTERCEPT_INDEX	asan_intercepted_functions.h	29;"	d
+ASAN_INTERCEPT_MLOCKX	asan_intercepted_functions.h	31;"	d
+ASAN_INTERCEPT_PTHREAD_CREATE	asan_intercepted_functions.h	30;"	d
+ASAN_INTERCEPT_SIGLONGJMP	asan_intercepted_functions.h	63;"	d
+ASAN_INTERCEPT_SIGNAL_AND_SIGACTION	asan_intercepted_functions.h	55;"	d
+ASAN_INTERCEPT_STRCASECMP_AND_STRNCASECMP	asan_intercepted_functions.h	28;"	d
+ASAN_INTERCEPT_STRDUP	asan_intercepted_functions.h	27;"	d
+ASAN_INTERCEPT_STRNLEN	asan_intercepted_functions.h	49;"	d
+ASAN_INTERCEPT__LONGJMP	asan_intercepted_functions.h	26;"	d
+ASAN_INTERCEPT___CXA_THROW	asan_intercepted_functions.h	69;"	d
+ASAN_INTERNAL_H	asan_internal.h	15;"	d
+ASAN_LINUX	asan_internal.h	30;"	d
+ASAN_LINUX	asan_internal.h	32;"	d
+ASAN_LOCK_H	asan_lock.h	15;"	d
+ASAN_LOW_MEMORY	asan_internal.h	87;"	d
+ASAN_LOW_MEMORY	asan_internal.h	89;"	d
+ASAN_LOW_MEMORY	tests/asan_test_config.h	47;"	d
+ASAN_MAC	asan_internal.h	36;"	d
+ASAN_MAC	asan_internal.h	38;"	d
+ASAN_MAC_H	asan_mac.h	15;"	d
+ASAN_MAPPING_H	asan_mapping.h	15;"	d
+ASAN_NEEDS_SEGV	asan_internal.h	66;"	d
+ASAN_NEEDS_SEGV	asan_internal.h	68;"	d
+ASAN_OnSIGSEGV	asan_posix.cc	/^static void     ASAN_OnSIGSEGV(int, siginfo_t *siginfo, void *context) {$/;"	f	namespace:__asan
+ASAN_PCRE_DOTALL	tests/asan_test_config.h	50;"	d
+ASAN_POSIX	asan_internal.h	54;"	d
+ASAN_READ_RANGE	asan_interceptors.cc	55;"	d	file:
+ASAN_REPORT_ERROR	asan_rtl.cc	186;"	d	file:
+ASAN_STACK_H	asan_stack.h	15;"	d
+ASAN_STATS_H	asan_stats.h	15;"	d
+ASAN_TEST_CONFIG_H	tests/asan_test_config.h	18;"	d
+ASAN_TEST_UTILS_H	tests/asan_test_utils.h	15;"	d
+ASAN_THREAD_H	asan_thread.h	15;"	d
+ASAN_THREAD_REGISTRY_H	asan_thread_registry.h	16;"	d
+ASAN_THROW	tests/asan_test.cc	38;"	d	file:
+ASAN_THROW	tests/asan_test.cc	40;"	d	file:
+ASAN_USE_ALIAS_ATTRIBUTE_FOR_INDEX	asan_intercepted_functions.h	43;"	d
+ASAN_WINDOWS	asan_internal.h	42;"	d
+ASAN_WINDOWS	asan_internal.h	44;"	d
+ASAN_WRITE_RANGE	asan_interceptors.cc	59;"	d	file:
+ATTRIBUTE_NO_ADDRESS_SAFETY_ANALYSIS	tests/asan_test_utils.h	44;"	d
+ATTRIBUTE_NO_ADDRESS_SAFETY_ANALYSIS	tests/asan_test_utils.h	47;"	d
+AccessThread	lit_tests/deep_thread_stack.cc	/^void *AccessThread(void *arg) {$/;"	f
+Action	tests/asan_exceptions_test.cc	/^  Action() {}$/;"	f	class:Action
+Action	tests/asan_exceptions_test.cc	/^class Action {$/;"	c	file:
+Addr2LineSymbolizer	scripts/asan_symbolize.py	/^class Addr2LineSymbolizer(Symbolizer):$/;"	c
+AddrIsAlignedByGranularity	asan_mapping.h	/^static inline bool AddrIsAlignedByGranularity(uptr a) {$/;"	f	namespace:__asan
+AddrIsAtLeft	asan_allocator.cc	/^bool AsanChunkView::AddrIsAtLeft(uptr addr, uptr access_size, uptr *offset) {$/;"	f	class:__asan::AsanChunkView
+AddrIsAtRight	asan_allocator.cc	/^bool AsanChunkView::AddrIsAtRight(uptr addr, uptr access_size, uptr *offset) {$/;"	f	class:__asan::AsanChunkView
+AddrIsInFakeStack	asan_allocator.cc	/^uptr FakeStack::AddrIsInFakeStack(uptr addr) {$/;"	f	class:__asan::FakeStack
+AddrIsInHighMem	asan_mapping.h	/^static inline bool AddrIsInHighMem(uptr a) {$/;"	f	namespace:__asan
+AddrIsInHighShadow	asan_mapping.h	/^static inline bool AddrIsInHighShadow(uptr a) {$/;"	f	namespace:__asan
+AddrIsInLowMem	asan_mapping.h	/^static inline bool AddrIsInLowMem(uptr a) {$/;"	f	namespace:__asan
+AddrIsInLowShadow	asan_mapping.h	/^static inline bool AddrIsInLowShadow(uptr a) {$/;"	f	namespace:__asan
+AddrIsInMem	asan_mapping.h	/^static inline bool AddrIsInMem(uptr a) {$/;"	f	namespace:__asan
+AddrIsInShadow	asan_mapping.h	/^static inline bool AddrIsInShadow(uptr a) {$/;"	f	namespace:__asan
+AddrIsInShadowGap	asan_mapping.h	/^static inline bool AddrIsInShadowGap(uptr a) {$/;"	f	namespace:__asan
+AddrIsInSizeClass	asan_allocator.cc	/^bool FakeStack::AddrIsInSizeClass(uptr addr, uptr size_class) {$/;"	f	class:__asan::FakeStack
+AddrIsInStack	asan_thread.h	/^  bool AddrIsInStack(uptr addr) {$/;"	f	class:__asan::AsanThread
+AddrIsInside	asan_allocator.cc	/^bool AsanChunkView::AddrIsInside(uptr addr, uptr access_size, uptr *offset) {$/;"	f	class:__asan::AsanChunkView
+AddressIsPoisoned	asan_mapping.h	/^static inline bool AddressIsPoisoned(uptr a) {$/;"	f	namespace:__asan
+AllocThread	lit_tests/deep_thread_stack.cc	/^void *AllocThread(void *arg) {$/;"	f
+AllocTid	asan_allocator.cc	/^uptr AsanChunkView::AllocTid() { return chunk_->alloc_tid; }$/;"	f	class:__asan::AsanChunkView
+Allocate	asan_allocator.cc	/^static u8 *Allocate(uptr alignment, uptr size, StackTrace *stack) {$/;"	f	namespace:__asan
+AllocateChunks	asan_allocator.cc	/^  AsanChunk *AllocateChunks(u8 size_class, uptr n_chunks) {$/;"	f	class:__asan::MallocInfo
+AllocateOneSizeClass	asan_allocator.cc	/^void FakeStack::AllocateOneSizeClass(uptr size_class) {$/;"	f	class:__asan::FakeStack
+AllocateStack	asan_allocator.cc	/^uptr FakeStack::AllocateStack(uptr size, uptr real_stack) {$/;"	f	class:__asan::FakeStack
+AllocationSize	asan_allocator.cc	/^  uptr AllocationSize(uptr ptr) {$/;"	f	class:__asan::MallocInfo
+AppendToErrorMessageBuffer	asan_report.cc	/^void AppendToErrorMessageBuffer(const char *buffer) {$/;"	f	namespace:__asan
+AsanCheckFailed	asan_rtl.cc	/^static void AsanCheckFailed(const char *file, int line, const char *cond,$/;"	f	namespace:__asan
+AsanChunk	asan_allocator.cc	/^struct AsanChunk: public ChunkBase {$/;"	s	namespace:__asan	file:
+AsanChunkFifoList	asan_allocator.h	/^  AsanChunkFifoList() { clear(); }$/;"	f	class:__asan::AsanChunkFifoList
+AsanChunkFifoList	asan_allocator.h	/^  explicit AsanChunkFifoList(LinkerInitialized) { }$/;"	f	class:__asan::AsanChunkFifoList
+AsanChunkFifoList	asan_allocator.h	/^class AsanChunkFifoList {$/;"	c	namespace:__asan
+AsanChunkView	asan_allocator.h	/^  explicit AsanChunkView(AsanChunk *chunk) : chunk_(chunk) {}$/;"	f	class:__asan::AsanChunkView
+AsanChunkView	asan_allocator.h	/^class AsanChunkView {$/;"	c	namespace:__asan
+AsanDie	asan_rtl.cc	/^static void AsanDie() {$/;"	f	namespace:__asan
+AsanDoesNotSupportStaticLinkage	asan_linux.cc	/^void *AsanDoesNotSupportStaticLinkage() {$/;"	f	namespace:__asan
+AsanDoesNotSupportStaticLinkage	asan_mac.cc	/^void *AsanDoesNotSupportStaticLinkage() {$/;"	f	namespace:__asan
+AsanDoesNotSupportStaticLinkage	asan_win.cc	/^void *AsanDoesNotSupportStaticLinkage() {$/;"	f	namespace:__asan
+AsanDynamicFunctions	dynamic/Makefile.mk	/^AsanDynamicFunctions := $(Sources:%.cc=%)$/;"	m
+AsanFunctions	Makefile.mk	/^AsanFunctions := $(Sources:%.cc=%)$/;"	m
+AsanInterceptsSignal	asan_linux.cc	/^bool AsanInterceptsSignal(int signum) {$/;"	f	namespace:__asan
+AsanInterceptsSignal	asan_mac.cc	/^bool AsanInterceptsSignal(int signum) {$/;"	f	namespace:__asan
+AsanLock	asan_linux.cc	/^AsanLock::AsanLock(LinkerInitialized) {$/;"	f	class:__asan::AsanLock
+AsanLock	asan_lock.h	/^class AsanLock {$/;"	c	namespace:__asan
+AsanLock	asan_mac.cc	/^AsanLock::AsanLock(LinkerInitialized) {$/;"	f	class:__asan::AsanLock
+AsanLock	asan_win.cc	/^AsanLock::AsanLock(LinkerInitialized li) {$/;"	f	class:__asan::AsanLock
+AsanMallocStats	asan_stats.h	/^struct AsanMallocStats {$/;"	s	namespace:__asan
+AsanPlatformThreadInit	asan_linux.cc	/^void AsanPlatformThreadInit() {$/;"	f	namespace:__asan
+AsanPlatformThreadInit	asan_mac.cc	/^void AsanPlatformThreadInit() {$/;"	f	namespace:__asan
+AsanPlatformThreadInit	asan_win.cc	/^void AsanPlatformThreadInit() {$/;"	f	namespace:__asan
+AsanStats	asan_stats.cc	/^AsanStats::AsanStats() {$/;"	f	class:__asan::AsanStats
+AsanStats	asan_stats.h	/^  explicit AsanStats(LinkerInitialized) { }$/;"	f	struct:__asan::AsanStats
+AsanStats	asan_stats.h	/^struct AsanStats {$/;"	s	namespace:__asan
+AsanTSDGet	asan_posix.cc	/^void *AsanTSDGet() {$/;"	f	namespace:__asan
+AsanTSDGet	asan_win.cc	/^void *AsanTSDGet() {$/;"	f	namespace:__asan
+AsanTSDInit	asan_posix.cc	/^void AsanTSDInit(void (*destructor)(void *tsd)) {$/;"	f	namespace:__asan
+AsanTSDInit	asan_win.cc	/^void AsanTSDInit(void (*destructor)(void *tsd)) {$/;"	f	namespace:__asan
+AsanTSDSet	asan_posix.cc	/^void AsanTSDSet(void *tsd) {$/;"	f	namespace:__asan
+AsanTSDSet	asan_win.cc	/^void AsanTSDSet(void *tsd) {$/;"	f	namespace:__asan
+AsanThread	asan_thread.cc	/^AsanThread::AsanThread(LinkerInitialized x)$/;"	f	class:__asan::AsanThread
+AsanThread	asan_thread.h	/^class AsanThread {$/;"	c	namespace:__asan
+AsanThreadLocalMallocStorage	asan_allocator.h	/^  AsanThreadLocalMallocStorage() {$/;"	f	struct:__asan::AsanThreadLocalMallocStorage
+AsanThreadLocalMallocStorage	asan_allocator.h	/^  explicit AsanThreadLocalMallocStorage(LinkerInitialized x)$/;"	f	struct:__asan::AsanThreadLocalMallocStorage
+AsanThreadLocalMallocStorage	asan_allocator.h	/^struct AsanThreadLocalMallocStorage {$/;"	s	namespace:__asan
+AsanThreadRegistry	asan_thread_registry.cc	/^AsanThreadRegistry::AsanThreadRegistry(LinkerInitialized x)$/;"	f	class:__asan::AsanThreadRegistry
+AsanThreadRegistry	asan_thread_registry.h	/^class AsanThreadRegistry {$/;"	c	namespace:__asan
+AsanThreadSummary	asan_thread.h	/^  explicit AsanThreadSummary(LinkerInitialized) { }  \/\/ for T0.$/;"	f	class:__asan::AsanThreadSummary
+AsanThreadSummary	asan_thread.h	/^class AsanThreadSummary {$/;"	c	namespace:__asan
+B	lit_tests/initialization-nobug.cc	/^int A = (1 << 1) + (1 << 3) + (1 << 5), B;$/;"	v
+BAD_ACCESS	tests/asan_noinst_test.cc	540;"	d	file:
+Beg	asan_allocator.cc	/^  uptr Beg() { return RoundUpTo((uptr)this + 1, 1 << alignment_log); }$/;"	f	struct:__asan::ChunkBase
+Beg	asan_allocator.cc	/^uptr AsanChunkView::Beg() { return chunk_->Beg(); }$/;"	f	class:__asan::AsanChunkView
+BorderAccessFunc	tests/asan_benchmarks_test.cc	/^static void BorderAccessFunc(char *x, size_t n_iter) {$/;"	f	file:
+BreakpadSymbolizer	scripts/asan_symbolize.py	/^class BreakpadSymbolizer(Symbolizer):$/;"	c
+BreakpadSymbolizerFactory	scripts/asan_symbolize.py	/^def BreakpadSymbolizerFactory(binary):$/;"	f
+BypassThreadLocalQuarantine	asan_allocator.cc	/^  void BypassThreadLocalQuarantine(AsanChunk *chunk) {$/;"	f	class:__asan::MallocInfo
+CFAllocatorAllocateToGlob	tests/asan_test.cc	/^void *CFAllocatorAllocateToGlob(void *unused) {$/;"	f	namespace:__anon6
+CFAllocatorDeallocateFromGlob	tests/asan_test.cc	/^void *CFAllocatorDeallocateFromGlob(void *unused) {$/;"	f	namespace:__anon6
+CFAllocatorRef	asan_intercepted_functions.h	/^typedef void* CFAllocatorRef;$/;"	t
+CFAllocator_DoubleFreeOnPthread	tests/asan_test.cc	/^void CFAllocator_DoubleFreeOnPthread() {$/;"	f
+CFAllocator_PassMemoryToAnotherThread	tests/asan_test.cc	/^void CFAllocator_PassMemoryToAnotherThread() {$/;"	f	namespace:__anon6
+CFRuntimeBase	asan_mac.h	/^} CFRuntimeBase;$/;"	t	typeref:struct:__CFRuntimeBase
+CFStringRef	asan_intercepted_functions.h	/^typedef void* CFStringRef;$/;"	t
+CF_RC_BITS	asan_mac.h	23;"	d
+CF_RC_BITS	asan_mac.h	27;"	d
+CHECK_RANGES_OVERLAP	asan_interceptors.cc	70;"	d	file:
+CHUNK_ALLOCATED	asan_allocator.cc	/^  CHUNK_ALLOCATED  = 0x32,$/;"	e	enum:__asan::__anon1	file:
+CHUNK_AVAILABLE	asan_allocator.cc	/^  CHUNK_AVAILABLE  = 0x57,$/;"	e	enum:__asan::__anon1	file:
+CHUNK_MEMALIGN	asan_allocator.cc	/^  CHUNK_MEMALIGN   = 0xDC$/;"	e	enum:__asan::__anon1	file:
+CHUNK_QUARANTINE	asan_allocator.cc	/^  CHUNK_QUARANTINE = 0x19,$/;"	e	enum:__asan::__anon1	file:
+CallAtoi	tests/asan_test.cc	/^void CallAtoi(const char *nptr) {$/;"	f
+CallAtol	tests/asan_test.cc	/^void CallAtol(const char *nptr) {$/;"	f
+CallAtoll	tests/asan_test.cc	/^void CallAtoll(const char *nptr) {$/;"	f
+CallMemSetByPointer	tests/asan_test.cc	/^void CallMemSetByPointer(PointerToMemSet MemSet) {$/;"	f
+CallMemTransferByPointer	tests/asan_test.cc	/^void CallMemTransferByPointer(PointerToMemTransfer MemTransfer) {$/;"	f
+CallStrtol	tests/asan_test.cc	/^void CallStrtol(const char *nptr, char **endptr, int base) {$/;"	f
+CallStrtoll	tests/asan_test.cc	/^void CallStrtoll(const char *nptr, char **endptr, int base) {$/;"	f
+ChainSymbolizer	scripts/asan_symbolize.py	/^class ChainSymbolizer(Symbolizer):$/;"	c
+CharCaseCmp	asan_interceptors.cc	/^static inline int CharCaseCmp(unsigned char c1, unsigned char c2) {$/;"	f	file:
+CharCmp	asan_interceptors.cc	/^static inline int CharCmp(unsigned char c1, unsigned char c2) {$/;"	f	file:
+Child	lit_tests/Linux/clone_test.cc	/^int Child(void *arg) {$/;"	f
+ChooseChunk	asan_allocator.cc	/^  AsanChunk *ChooseChunk(uptr addr,$/;"	f	class:__asan::MallocInfo	file:
+ChunkBase	asan_allocator.cc	/^struct ChunkBase {$/;"	s	namespace:__asan	file:
+ClassMmapSize	asan_allocator.cc	/^uptr FakeStack::ClassMmapSize(uptr size_class) {$/;"	f	class:__asan::FakeStack
+ClassSize	asan_allocator.h	/^  uptr ClassSize(uptr size_class) {$/;"	f	class:__asan::FakeStack
+Cleanup	asan_allocator.cc	/^void FakeStack::Cleanup() {$/;"	f	class:__asan::FakeStack
+ClearShadowForThreadStack	asan_thread.cc	/^void AsanThread::ClearShadowForThreadStack() {$/;"	f	class:__asan::AsanThread
+CommitBack	asan_allocator.cc	/^void AsanThreadLocalMallocStorage::CommitBack() {$/;"	f	class:__asan::AsanThreadLocalMallocStorage
+CompressStackTraceBenchmark	tests/asan_noinst_test.cc	/^void CompressStackTraceBenchmark(size_t n_iter) {$/;"	f
+CompressStackTraceTest	tests/asan_noinst_test.cc	/^void CompressStackTraceTest(size_t n_iter) {$/;"	f
+ComputeSizeClass	asan_allocator.cc	/^inline uptr FakeStack::ComputeSizeClass(uptr alloc_size) {$/;"	f	class:__asan::FakeStack
+ConstGlob	tests/asan_test.cc	/^const char ConstGlob[7] = {1, 2, 3, 4, 5, 6, 7};$/;"	v
+Create	asan_thread.cc	/^AsanThread *AsanThread::Create(u32 parent_tid, thread_callback_t start_routine,$/;"	f	class:__asan::AsanThread
+DEBUG	scripts/asan_symbolize.py	/^DEBUG = False$/;"	v
+DECLARE_FUNCTION_AND_WRAPPER	asan_intercepted_functions.h	74;"	d
+DarwinSymbolizer	scripts/asan_symbolize.py	/^class DarwinSymbolizer(Symbolizer):$/;"	c
+Deallocate	asan_allocator.cc	/^static void Deallocate(u8 *ptr, StackTrace *stack) {$/;"	f	namespace:__asan
+DeallocateFrame	asan_allocator.cc	/^void FakeStack::DeallocateFrame(FakeFrame *fake_frame) {$/;"	f	class:__asan::FakeStack
+DeepFree	lit_tests/deep_stack_uaf.cc	/^struct DeepFree {$/;"	s	file:
+DeepFree	lit_tests/deep_stack_uaf.cc	/^struct DeepFree<0> {$/;"	s	file:
+Dependencies	Makefile.mk	/^Dependencies := $(wildcard $(Dir)\/*.h)$/;"	m
+Dependencies	dynamic/Makefile.mk	/^Dependencies := $(wildcard $(Dir)\/*.h)$/;"	m
+DescribeAccessToHeapChunk	asan_report.cc	/^static void DescribeAccessToHeapChunk(AsanChunkView chunk, uptr addr,$/;"	f	namespace:__asan
+DescribeAddress	asan_report.cc	/^void DescribeAddress(uptr addr, uptr access_size) {$/;"	f	namespace:__asan
+DescribeAddressIfGlobal	asan_globals.cc	/^bool DescribeAddressIfGlobal(uptr addr) {$/;"	f	namespace:__asan
+DescribeAddressIfShadow	asan_report.cc	/^bool DescribeAddressIfShadow(uptr addr) {$/;"	f	namespace:__asan
+DescribeAddressIfStack	asan_report.cc	/^bool DescribeAddressIfStack(uptr addr, uptr access_size) {$/;"	f	namespace:__asan
+DescribeAddressRelativeToGlobal	asan_report.cc	/^bool DescribeAddressRelativeToGlobal(uptr addr, const __asan_global &g) {$/;"	f	namespace:__asan
+DescribeHeapAddress	asan_report.cc	/^void DescribeHeapAddress(uptr addr, uptr access_size) {$/;"	f	namespace:__asan
+DescribeThread	asan_report.cc	/^void DescribeThread(AsanThreadSummary *summary) {$/;"	f	namespace:__asan
+Destroy	asan_thread.cc	/^void AsanThread::Destroy() {$/;"	f	class:__asan::AsanThread
+DoDoubleFree	tests/asan_noinst_test.cc	/^static void DoDoubleFree() {$/;"	f	file:
+DoLargeMallocForGetFreeBytesTestAndDie	tests/asan_noinst_test.cc	/^static void DoLargeMallocForGetFreeBytesTestAndDie() {$/;"	f	file:
+DoubleFree	tests/asan_test.cc	/^void DoubleFree() {$/;"	f
+ENSURE_ASAN_INITED	asan_interceptors.cc	80;"	d	file:
+End	asan_allocator.cc	/^uptr AsanChunkView::End() { return Beg() + UsedSize(); }$/;"	f	class:__asan::AsanChunkView
+ErrorReportCallbackOneToZ	tests/asan_noinst_test.cc	/^static void ErrorReportCallbackOneToZ(const char *report) {$/;"	f	file:
+FakeFrame	asan_allocator.h	/^struct FakeFrame {$/;"	s	namespace:__asan
+FakeFrameFifo	asan_allocator.h	/^struct FakeFrameFifo {$/;"	s	namespace:__asan
+FakeFrameLifo	asan_allocator.h	/^class FakeFrameLifo {$/;"	c	namespace:__asan
+FakeStack	asan_allocator.cc	/^FakeStack::FakeStack() {$/;"	f	class:__asan::FakeStack
+FakeStack	asan_allocator.h	/^  explicit FakeStack(LinkerInitialized) {}$/;"	f	class:__asan::FakeStack
+FakeStack	asan_allocator.h	/^class FakeStack {$/;"	c	namespace:__asan
+FifoPop	asan_allocator.cc	/^FakeFrame *FakeFrameFifo::FifoPop() {$/;"	f	class:__asan::FakeFrameFifo
+FifoPush	asan_allocator.cc	/^void FakeFrameFifo::FifoPush(FakeFrame *node) {$/;"	f	class:__asan::FakeFrameFifo
+FillMallocStatistics	asan_thread_registry.cc	/^void AsanThreadRegistry::FillMallocStatistics(AsanMallocStats *malloc_stats) {$/;"	f	class:__asan::AsanThreadRegistry
+FindByTid	asan_thread_registry.cc	/^AsanThreadSummary *AsanThreadRegistry::FindByTid(u32 tid) {$/;"	f	class:__asan::AsanThreadRegistry
+FindChunkByAddr	asan_allocator.cc	/^  AsanChunk *FindChunkByAddr(uptr addr) {$/;"	f	class:__asan::MallocInfo
+FindChunkByAddrUnlocked	asan_allocator.cc	/^  AsanChunk *FindChunkByAddrUnlocked(uptr addr) {$/;"	f	class:__asan::MallocInfo	file:
+FindHeapChunkByAddress	asan_allocator.cc	/^AsanChunkView FindHeapChunkByAddress(uptr address) {$/;"	f	namespace:__asan
+FindPageGroup	asan_allocator.cc	/^  PageGroup *FindPageGroup(uptr addr) {$/;"	f	class:__asan::MallocInfo
+FindPageGroupUnlocked	asan_allocator.cc	/^  PageGroup *FindPageGroupUnlocked(uptr addr) {$/;"	f	class:__asan::MallocInfo	file:
+FindThreadByStackAddress	asan_thread_registry.cc	/^AsanThread *AsanThreadRegistry::FindThreadByStackAddress(uptr addr) {$/;"	f	class:__asan::AsanThreadRegistry
+FixRealStrtolEndptr	asan_interceptors.cc	/^static inline void FixRealStrtolEndptr(const char *nptr, char **endptr) {$/;"	f	file:
+Flags	asan_flags.h	/^struct Flags {$/;"	s	namespace:__asan
+FlushToAccumulatedStatsUnlocked	asan_thread_registry.cc	/^void AsanThreadRegistry::FlushToAccumulatedStatsUnlocked(AsanStats *stats) {$/;"	f	class:__asan::AsanThreadRegistry
+ForceLock	asan_allocator.cc	/^  void ForceLock() {$/;"	f	class:__asan::MallocInfo
+ForceUnlock	asan_allocator.cc	/^  void ForceUnlock() {$/;"	f	class:__asan::MallocInfo
+Frame0	tests/asan_test.cc	/^NOINLINE static void Frame0(int frame, char *a, char *b, char *c) {$/;"	f	file:
+Frame1	tests/asan_test.cc	/^NOINLINE static void Frame1(int frame, char *a, char *b) {$/;"	f	file:
+Frame2	tests/asan_test.cc	/^NOINLINE static void Frame2(int frame, char *a) {$/;"	f	file:
+Frame3	tests/asan_test.cc	/^NOINLINE static void Frame3(int frame) {$/;"	f	file:
+FreeThread	lit_tests/deep_thread_stack.cc	/^void *FreeThread(void *arg) {$/;"	f
+FreeTid	asan_allocator.cc	/^uptr AsanChunkView::FreeTid() { return chunk_->free_tid; }$/;"	f	class:__asan::AsanChunkView
+Func1	lit_tests/stack-use-after-return.cc	/^char *Func1() {$/;"	f
+Func2	lit_tests/stack-use-after-return.cc	/^void Func2(char *x) {$/;"	f
+FuncWithStack	tests/asan_test.cc	/^NOINLINE static void FuncWithStack() {$/;"	f	file:
+FunctionWithLargeStack	tests/asan_benchmarks_test.cc	/^static void FunctionWithLargeStack() {$/;"	f	file:
+GET_ASAN_BLOCK	asan_mac.cc	404;"	d	file:
+GET_STACK_TRACE_HERE	asan_stack.h	38;"	d
+GET_STACK_TRACE_HERE_FOR_FREE	asan_stack.h	45;"	d
+GET_STACK_TRACE_HERE_FOR_MALLOC	asan_stack.h	42;"	d
+GET_STACK_TRACE_WITH_PC_AND_BP	asan_stack.h	30;"	d
+GET_ZONE_FOR_PTR	asan_malloc_mac.cc	175;"	d	file:
+GLOB	lit_tests/SharedLibs/shared-lib-test-so.cc	/^int GLOB[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};$/;"	v
+GLOB	tests/asan_test.cc	/^void *GLOB;$/;"	m	namespace:__anon6	file:
+GOOD_ACCESS	tests/asan_noinst_test.cc	537;"	d	file:
+GetAccumulatedStats	asan_thread_registry.cc	/^AsanStats AsanThreadRegistry::GetAccumulatedStats() {$/;"	f	class:__asan::AsanThreadRegistry
+GetAlignedSize	asan_globals.cc	/^static uptr GetAlignedSize(uptr size) {$/;"	f	namespace:__asan
+GetAllocStack	asan_allocator.cc	/^void AsanChunkView::GetAllocStack(StackTrace *stack) {$/;"	f	class:__asan::AsanChunkView
+GetCurrent	asan_thread_registry.cc	/^AsanThread *AsanThreadRegistry::GetCurrent() {$/;"	f	class:__asan::AsanThreadRegistry
+GetCurrentAllocatedBytes	asan_thread_registry.cc	/^uptr AsanThreadRegistry::GetCurrentAllocatedBytes() {$/;"	f	class:__asan::AsanThreadRegistry
+GetCurrentThreadStats	asan_thread_registry.cc	/^AsanStats &AsanThreadRegistry::GetCurrentThreadStats() {$/;"	f	class:__asan::AsanThreadRegistry
+GetCurrentTidOrInvalid	asan_thread_registry.h	/^  u32 GetCurrentTidOrInvalid() {$/;"	f	class:__asan::AsanThreadRegistry
+GetFrameNameByAddr	asan_thread.cc	/^const char *AsanThread::GetFrameNameByAddr(uptr addr, uptr *offset) {$/;"	f	class:__asan::AsanThread
+GetFreeBytes	asan_thread_registry.cc	/^uptr AsanThreadRegistry::GetFreeBytes() {$/;"	f	class:__asan::AsanThreadRegistry
+GetFreeStack	asan_allocator.cc	/^void AsanChunkView::GetFreeStack(StackTrace *stack) {$/;"	f	class:__asan::AsanChunkView
+GetHeapSize	asan_thread_registry.cc	/^uptr AsanThreadRegistry::GetHeapSize() {$/;"	f	class:__asan::AsanThreadRegistry
+GetMacosVersion	asan_mac.cc	/^int GetMacosVersion() {$/;"	f	namespace:__asan
+GetMain	asan_thread_registry.cc	/^AsanThread *AsanThreadRegistry::GetMain() {$/;"	f	class:__asan::AsanThreadRegistry
+GetNewChunks	asan_allocator.cc	/^  AsanChunk *GetNewChunks(u8 size_class) {$/;"	f	class:__asan::MallocInfo	file:
+GetPcSpBp	asan_linux.cc	/^void GetPcSpBp(void *context, uptr *pc, uptr *sp, uptr *bp) {$/;"	f	namespace:__asan
+GetPcSpBp	asan_mac.cc	/^void GetPcSpBp(void *context, uptr *pc, uptr *sp, uptr *bp) {$/;"	f	namespace:__asan
+GetStackTrace	asan_linux.cc	/^void GetStackTrace(StackTrace *stack, uptr max_s, uptr pc, uptr bp) {$/;"	f	namespace:__asan
+GetStackTrace	asan_mac.cc	/^void GetStackTrace(StackTrace *stack, uptr max_s, uptr pc, uptr bp) {$/;"	f	namespace:__asan
+GetStackTrace	asan_win.cc	/^void GetStackTrace(StackTrace *stack, uptr max_s, uptr pc, uptr bp) {$/;"	f	namespace:__asan
+Global	asan_globals.cc	/^typedef __asan_global Global;$/;"	t	namespace:__asan	file:
+GlobalsTest	tests/asan_globals_test.cc	/^int GlobalsTest(int zero) {$/;"	f
+INCLUDED_FROM_ASAN_TEST_UTILS_H	tests/asan_test_utils.h	18;"	d
+INCLUDED_FROM_ASAN_TEST_UTILS_H	tests/asan_test_utils.h	20;"	d
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(char*, strcat, char *to, const char *from) {  \/\/ NOLINT$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(char*, strchr, const char *str, int c) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(char*, strcpy, char *to, const char *from) {  \/\/ NOLINT$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(char*, strdup, const char *s) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(char*, strncat, char *to, const char *from, uptr size) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(char*, strncpy, char *to, const char *from, uptr size) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(int, atoi, const char *nptr) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(int, memcmp, const void *a1, const void *a2, uptr size) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(int, mlock, const void *addr, uptr len) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(int, mlockall, int flags) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(int, munlock, const void *addr, uptr len) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(int, munlockall, void) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(int, pthread_create, void *thread,$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(int, sigaction, int signum, const struct sigaction *act,$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(int, strcasecmp, const char *s1, const char *s2) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(int, strcmp, const char *s1, const char *s2) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(int, strncasecmp, const char *s1, const char *s2, uptr n) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(int, strncmp, const char *s1, const char *s2, uptr size) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(long long, atoll, const char *nptr) {  \/\/ NOLINT$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(long long, strtoll, const char *nptr,  \/\/ NOLINT$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(long, atol, const char *nptr) {  \/\/ NOLINT$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(long, strtol, const char *nptr,  \/\/ NOLINT$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(uptr, strlen, const char *s) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(uptr, strnlen, const char *s, uptr maxlen) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(void*, memcpy, void *to, const void *from, uptr size) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(void*, memmove, void *to, const void *from, uptr size) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(void*, memset, void *block, int c, uptr size) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(void*, signal, int signum, void *handler) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(void, __cxa_throw, void *a, void *b, void *c) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(void, _longjmp, void *env, int val) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(void, longjmp, void *env, int val) {$/;"	f
+INTERCEPTOR	asan_interceptors.cc	/^INTERCEPTOR(void, siglongjmp, void *env, int val) {$/;"	f
+INTERCEPTOR	asan_mac.cc	/^INTERCEPTOR(CFStringRef, CFStringCreateCopy, CFAllocatorRef alloc,$/;"	f
+INTERCEPTOR	asan_mac.cc	/^INTERCEPTOR(int, pthread_workqueue_additem_np, pthread_workqueue_t workq,$/;"	f
+INTERCEPTOR	asan_mac.cc	/^INTERCEPTOR(void, dispatch_after,$/;"	f
+INTERCEPTOR	asan_mac.cc	/^INTERCEPTOR(void, dispatch_after_f, dispatch_time_t when,$/;"	f
+INTERCEPTOR	asan_mac.cc	/^INTERCEPTOR(void, dispatch_async,$/;"	f
+INTERCEPTOR	asan_mac.cc	/^INTERCEPTOR(void, dispatch_group_async,$/;"	f
+INTERCEPTOR	asan_mac.cc	/^INTERCEPTOR(void, dispatch_group_async_f, dispatch_group_t group,$/;"	f
+INTERCEPTOR	asan_mac.cc	/^INTERCEPTOR(void, dispatch_source_set_cancel_handler,$/;"	f
+INTERCEPTOR	asan_mac.cc	/^INTERCEPTOR(void, dispatch_source_set_event_handler,$/;"	f
+INTERCEPTOR	asan_malloc_linux.cc	/^INTERCEPTOR(int, mallopt, int cmd, int value) {$/;"	f
+INTERCEPTOR	asan_malloc_linux.cc	/^INTERCEPTOR(int, posix_memalign, void **memptr, uptr alignment, uptr size) {$/;"	f
+INTERCEPTOR	asan_malloc_linux.cc	/^INTERCEPTOR(struct fake_mallinfo, mallinfo, void) {$/;"	f
+INTERCEPTOR	asan_malloc_linux.cc	/^INTERCEPTOR(uptr, malloc_usable_size, void *ptr) {$/;"	f
+INTERCEPTOR	asan_malloc_linux.cc	/^INTERCEPTOR(void*, calloc, uptr nmemb, uptr size) {$/;"	f
+INTERCEPTOR	asan_malloc_linux.cc	/^INTERCEPTOR(void*, malloc, uptr size) {$/;"	f
+INTERCEPTOR	asan_malloc_linux.cc	/^INTERCEPTOR(void*, memalign, uptr boundary, uptr size) {$/;"	f
+INTERCEPTOR	asan_malloc_linux.cc	/^INTERCEPTOR(void*, pvalloc, uptr size) {$/;"	f
+INTERCEPTOR	asan_malloc_linux.cc	/^INTERCEPTOR(void*, realloc, void *ptr, uptr size) {$/;"	f
+INTERCEPTOR	asan_malloc_linux.cc	/^INTERCEPTOR(void*, valloc, uptr size) {$/;"	f
+INTERCEPTOR	asan_malloc_linux.cc	/^INTERCEPTOR(void, cfree, void *ptr) {$/;"	f
+INTERCEPTOR	asan_malloc_linux.cc	/^INTERCEPTOR(void, free, void *ptr) {$/;"	f
+INTERCEPTOR	asan_malloc_mac.cc	/^INTERCEPTOR(void, __CFInitialize, void) {$/;"	f
+INTERCEPTOR	asan_malloc_mac.cc	/^INTERCEPTOR(void, free, void *ptr) {$/;"	f
+INTERCEPTOR_WINAPI	asan_interceptors.cc	/^INTERCEPTOR_WINAPI(DWORD, CreateThread,$/;"	f
+INTERCEPT_DISPATCH_X_F_3	asan_mac.cc	339;"	d	file:
+INTERPOSE_FUNCTION	dynamic/asan_interceptors_dynamic.cc	27;"	d	file:
+INTERPOSE_FUNCTION_2	dynamic/asan_interceptors_dynamic.cc	31;"	d	file:
+Ident	lit_tests/stack-use-after-return.cc	/^char *Ident(char *x) {$/;"	f
+Ident	tests/asan_test_utils.h	/^static T Ident(T t) {$/;"	f
+Implementation	Makefile.mk	/^Implementation := Generic$/;"	m
+Implementation	dynamic/Makefile.mk	/^Implementation := Generic$/;"	m
+InRange	asan_allocator.cc	/^  bool InRange(uptr addr) {$/;"	f	struct:__asan::PageGroup
+Init	asan_allocator.cc	/^void FakeStack::Init(uptr stack_size) {$/;"	f	class:__asan::FakeStack
+Init	asan_thread.cc	/^void AsanThread::Init() {$/;"	f	class:__asan::AsanThread
+Init	asan_thread.h	/^  void Init(u32 parent_tid, StackTrace *stack) {$/;"	f	class:__asan::AsanThreadSummary
+Init	asan_thread_registry.cc	/^void AsanThreadRegistry::Init() {$/;"	f	class:__asan::AsanThreadRegistry
+InitializeAsanInterceptors	asan_interceptors.cc	/^void InitializeAsanInterceptors() {$/;"	f	namespace:__asan
+InitializeFlags	asan_rtl.cc	/^void InitializeFlags(Flags *f, const char *env) {$/;"	f	namespace:__asan
+InitializeMacInterceptors	asan_mac.cc	/^void InitializeMacInterceptors() {$/;"	f	namespace:__asan
+InitializeWindowsInterceptors	asan_interceptors.cc	/^void InitializeWindowsInterceptors() {$/;"	f	namespace:__asan
+InstallSignalHandlers	asan_posix.cc	/^void InstallSignalHandlers() {$/;"	f	namespace:__asan
+InstallSignalHandlers	asan_win.cc	/^void InstallSignalHandlers() {$/;"	f	namespace:__asan
+Integer	lit_tests/initialization-nobug.cc	/^  constexpr Integer(int x = 0) : value(x) {}$/;"	f	class:Integer
+Integer	lit_tests/initialization-nobug.cc	/^class Integer {$/;"	c	file:
+IsASCII	asan_report.cc	/^static bool IsASCII(unsigned char c) {$/;"	f	namespace:__asan
+IsAligned	asan_allocator.cc	/^static inline bool IsAligned(uptr a, uptr alignment) {$/;"	f	namespace:__asan
+IsLocked	asan_lock.h	/^  bool IsLocked() { return owner_ != 0; }$/;"	f	class:__asan::AsanLock
+IsValid	asan_allocator.h	/^  bool IsValid() { return chunk_ != 0; }$/;"	f	class:__asan::AsanChunkView
+IsValidStrtolBase	asan_interceptors.cc	/^static inline bool IsValidStrtolBase(int base) {$/;"	f	file:
+LLVMSymbolizer	scripts/asan_symbolize.py	/^class LLVMSymbolizer(Symbolizer):$/;"	c
+LLVMSymbolizerFactory	scripts/asan_symbolize.py	/^def LLVMSymbolizerFactory(system):$/;"	f
+LOCK_READY	asan_win.cc	/^  LOCK_READY = -1,$/;"	e	enum:__asan::LockState	file:
+LOCK_UNINITIALIZED	asan_win.cc	/^  LOCK_UNINITIALIZED = 0,$/;"	e	enum:__asan::LockState	file:
+LargeFunction	lit_tests/large_func_test.cc	/^static void LargeFunction(int *x, int zero) {$/;"	f	file:
+LargeFunction	tests/asan_test.cc	/^NOINLINE static int LargeFunction(bool do_bad_access) {$/;"	f	file:
+LargeStruct	tests/asan_test.cc	/^struct LargeStruct {$/;"	s	file:
+LeftOOBErrorMessage	tests/asan_test.cc	/^static string LeftOOBErrorMessage(int oob_distance) {$/;"	f	file:
+LifoPop	asan_allocator.h	/^  void LifoPop() {$/;"	f	class:__asan::FakeFrameLifo
+LifoPush	asan_allocator.h	/^  void LifoPush(FakeFrame *node) {$/;"	f	class:__asan::FakeFrameLifo
+ListOfGlobals	asan_globals.cc	/^struct ListOfGlobals {$/;"	s	namespace:__asan	file:
+Lock	asan_linux.cc	/^void AsanLock::Lock() {$/;"	f	class:__asan::AsanLock
+Lock	asan_mac.cc	/^void AsanLock::Lock() {$/;"	f	class:__asan::AsanLock
+Lock	asan_win.cc	/^void AsanLock::Lock() {$/;"	f	class:__asan::AsanLock
+LockState	asan_win.cc	/^enum LockState {$/;"	g	namespace:__asan	file:
+Log2	asan_allocator.cc	/^static inline uptr Log2(uptr x) {$/;"	f	namespace:__asan
+LongJmpFunc1	tests/asan_test.cc	/^NOINLINE void LongJmpFunc1(jmp_buf buf) {$/;"	f
+LotsOfStackReuse	tests/asan_test.cc	/^static void LotsOfStackReuse() {$/;"	f	file:
+MACOS_VERSION_LEOPARD	asan_mac.h	/^  MACOS_VERSION_LEOPARD,$/;"	e	enum:__anon3
+MACOS_VERSION_LION	asan_mac.h	/^  MACOS_VERSION_LION,$/;"	e	enum:__anon3
+MACOS_VERSION_MOUNTAIN_LION	asan_mac.h	/^  MACOS_VERSION_MOUNTAIN_LION$/;"	e	enum:__anon3
+MACOS_VERSION_SNOW_LEOPARD	asan_mac.h	/^  MACOS_VERSION_SNOW_LEOPARD,$/;"	e	enum:__anon3
+MACOS_VERSION_UNKNOWN	asan_mac.h	/^  MACOS_VERSION_UNKNOWN = 0,$/;"	e	enum:__anon3
+MEM_TO_SHADOW	asan_mapping.h	42;"	d
+MakeShadowValid	tests/asan_noinst_test.cc	/^static void MakeShadowValid(bool *shadow, int length, int granularity) {$/;"	f	file:
+MallocAndMemsetString	tests/asan_test.cc	/^static inline char* MallocAndMemsetString(size_t size) {$/;"	f	file:
+MallocAndMemsetString	tests/asan_test.cc	/^static inline char* MallocAndMemsetString(size_t size, char ch) {$/;"	f	file:
+MallocDebug	asan_malloc_linux.cc	/^struct MallocDebug {$/;"	s	file:
+MallocInfo	asan_allocator.cc	/^  explicit MallocInfo(LinkerInitialized x) : mu_(x) { }$/;"	f	class:__asan::MallocInfo
+MallocInfo	asan_allocator.cc	/^class MallocInfo {$/;"	c	namespace:__asan	file:
+MallocIntrospectionLockForker	tests/asan_test.cc	/^void *MallocIntrospectionLockForker(void *_) {$/;"	f
+MallocIntrospectionLockWorker	tests/asan_test.cc	/^void *MallocIntrospectionLockWorker(void *_) {$/;"	f
+MallocStress	tests/asan_noinst_test.cc	/^static void MallocStress(size_t n) {$/;"	f	file:
+MallocStress	tests/asan_test.cc	/^static void MallocStress(size_t n) {$/;"	f	file:
+ManyAccessFunc	tests/asan_benchmarks_test.cc	/^static void ManyAccessFunc(T *x, size_t n_elements, size_t n_iter) {$/;"	f	file:
+ManyThreadsWithStatsWorker	tests/asan_noinst_test.cc	/^void *ManyThreadsWithStatsWorker(void *arg) {$/;"	f
+ManyThreadsWorker	tests/asan_test.cc	/^void *ManyThreadsWorker(void *a) {$/;"	f
+MaybeInstallSigaction	asan_posix.cc	/^static void MaybeInstallSigaction(int signum,$/;"	f	namespace:__asan
+MaybeRealStrnlen	asan_interceptors.cc	/^static inline uptr MaybeRealStrnlen(const char *s, uptr maxlen) {$/;"	f	namespace:__asan
+MaybeReexec	asan_linux.cc	/^void MaybeReexec() {$/;"	f	namespace:__asan
+MaybeReexec	asan_mac.cc	/^void MaybeReexec() {$/;"	f	namespace:__asan
+MaybeReexec	asan_win.cc	/^void MaybeReexec() {$/;"	f	namespace:__asan
+MemCpyWrapper	tests/asan_test.cc	/^class MemCpyWrapper {$/;"	c	file:
+MemMoveWrapper	tests/asan_test.cc	/^class MemMoveWrapper {$/;"	c	file:
+MemSetOOBTestTemplate	tests/asan_test.cc	/^void MemSetOOBTestTemplate(size_t length) {$/;"	f
+MemToShadow	asan_mapping.h	/^static inline uptr MemToShadow(uptr p) {$/;"	f	namespace:__asan
+MemTransferOOBTestTemplate	tests/asan_test.cc	/^void MemTransferOOBTestTemplate(size_t length) {$/;"	f
+MlockIsUnsupported	asan_interceptors.cc	/^static void MlockIsUnsupported() {$/;"	f	file:
+MmapNewPagesAndPoisonShadow	asan_allocator.cc	/^static u8 *MmapNewPagesAndPoisonShadow(uptr size) {$/;"	f	namespace:__asan
+ModuleName	Makefile.mk	/^ModuleName := asan$/;"	m
+ModuleName	dynamic/Makefile.mk	/^ModuleName := asan_dynamic$/;"	m
+MyDeathCallback	tests/asan_noinst_test.cc	/^static void MyDeathCallback() {$/;"	f	file:
+N	tests/asan_racy_double_free_test.cc	/^const int N = 1000;$/;"	v
+NOINLINE	tests/asan_test_utils.h	32;"	d
+NOINLINE	tests/asan_test_utils.h	35;"	d
+NoAddressSafety	tests/asan_test.cc	/^static void NoAddressSafety() {$/;"	f	file:
+NullDeref	lit_tests/null_deref.cc	/^static void NullDeref(int *ptr) {$/;"	f	file:
+OOBTest	tests/asan_test.cc	/^void OOBTest() {$/;"	f
+OPERATOR_DELETE_BODY	asan_new_delete.cc	49;"	d	file:
+OPERATOR_NEW_BODY	asan_new_delete.cc	34;"	d	file:
+ObjNames	Makefile.mk	/^ObjNames := $(Sources:%.cc=%.o)$/;"	m
+ObjNames	dynamic/Makefile.mk	/^ObjNames := $(Sources:%.cc=%.o)$/;"	m
+OnFree	asan_allocator.cc	/^void FakeStack::OnFree(uptr ptr, uptr size, uptr real_stack) {$/;"	f	class:__asan::FakeStack
+OnLowLevelAllocate	asan_rtl.cc	/^static void OnLowLevelAllocate(uptr ptr, uptr size) {$/;"	f	namespace:__asan
+OverlapErrorMessage	tests/asan_test.cc	/^static string OverlapErrorMessage(const string &func) {$/;"	f	file:
+PAGE_EXECUTE_READWRITE	asan_malloc_win.cc	/^const int PAGE_EXECUTE_READWRITE = 0x40;$/;"	v
+PLATFORM_HAS_DIFFERENT_MEMCPY_AND_MEMMOVE	asan_internal.h	141;"	d
+PLATFORM_HAS_DIFFERENT_MEMCPY_AND_MEMMOVE	asan_internal.h	144;"	d
+PRINT_CURRENT_STACK	asan_stack.h	48;"	d
+PageGroup	asan_allocator.cc	/^struct PageGroup {$/;"	s	namespace:__asan	file:
+ParseFlagsFromString	asan_rtl.cc	/^static void ParseFlagsFromString(Flags *f, const char *str) {$/;"	f	namespace:__asan
+PlatformHasDifferentMemcpyAndMemmove	asan_mac.cc	/^bool PlatformHasDifferentMemcpyAndMemmove() {$/;"	f	namespace:__asan
+PointerToCallAtoi	tests/asan_test.cc	/^typedef void(*PointerToCallAtoi)(const char*);$/;"	t	file:
+PointerToCallStrtol	tests/asan_test.cc	/^typedef void(*PointerToCallStrtol)(const char*, char**, int);$/;"	t	file:
+PointerToMemSet	tests/asan_test.cc	/^typedef void*(*PointerToMemSet)(void*, int, size_t);$/;"	t	file:
+PointerToMemTransfer	tests/asan_test.cc	/^typedef void*(*PointerToMemTransfer)(void*, const void*, size_t);$/;"	t	file:
+PointerToStrChr1	tests/asan_test.cc	/^typedef char*(*PointerToStrChr1)(const char*, int);$/;"	t	file:
+PointerToStrChr2	tests/asan_test.cc	/^typedef char*(*PointerToStrChr2)(char*, int);$/;"	t	file:
+PointerToStrCmp	tests/asan_test.cc	/^typedef int(*PointerToStrCmp)(const char*, const char*);$/;"	t	file:
+PointerToStrNCmp	tests/asan_test.cc	/^typedef int(*PointerToStrNCmp)(const char*, const char*, size_t);$/;"	t	file:
+PoisonGlobalAndRedzones	asan_globals.cc	/^static void PoisonGlobalAndRedzones(const Global *g) {$/;"	f	namespace:__asan
+PoisonHeapPartialRightRedzone	asan_allocator.cc	/^static void PoisonHeapPartialRightRedzone(uptr mem, uptr size) {$/;"	f	namespace:__asan
+PoisonRedZones	asan_globals.cc	/^void PoisonRedZones(const Global &g)  {$/;"	f	namespace:__asan
+PoisonShadow	asan_poisoning.cc	/^void PoisonShadow(uptr addr, uptr size, u8 value) {$/;"	f	namespace:__asan
+PoisonShadowPartialRightRedzone	asan_poisoning.cc	/^void PoisonShadowPartialRightRedzone(uptr addr,$/;"	f	namespace:__asan
+Pop	asan_allocator.cc	/^AsanChunk *AsanChunkFifoList::Pop() {$/;"	f	class:__asan::AsanChunkFifoList
+Print	asan_stats.cc	/^void AsanStats::Print() {$/;"	f	class:__asan::AsanStats
+PrintAccumulatedStats	asan_stats.cc	/^static void PrintAccumulatedStats() {$/;"	f	namespace:__asan
+PrintBytes	asan_report.cc	/^static void PrintBytes(const char *before, uptr *a) {$/;"	f	namespace:__asan
+PrintGlobalNameIfASCII	asan_report.cc	/^static void PrintGlobalNameIfASCII(const __asan_global &g) {$/;"	f	namespace:__asan
+PrintMallocStatsArray	asan_stats.cc	/^static void PrintMallocStatsArray(const char *prefix,$/;"	f	namespace:__asan
+PrintShadow	tests/asan_noinst_test.cc	/^static void PrintShadow(const char *tag, uptr ptr, size_t size) {$/;"	f	file:
+PrintShadowMemoryForAddress	asan_report.cc	/^static void PrintShadowMemoryForAddress(uptr addr) {$/;"	f	namespace:__asan
+PrintStack	asan_stack.cc	/^void PrintStack(StackTrace *stack) {$/;"	f	namespace:__asan
+PrintStatus	asan_allocator.cc	/^  void PrintStatus() {$/;"	f	class:__asan::MallocInfo
+PrintString	tests/asan_exceptions_test.cc	/^  void PrintString(const std::string& msg) const {$/;"	f	class:Action
+PrintZoneForPointer	asan_report.cc	/^static void PrintZoneForPointer(uptr ptr, uptr zone_ptr,$/;"	f	namespace:__asan
+PthreadExit	tests/asan_test.cc	/^static void *PthreadExit(void *a) {$/;"	f	file:
+PtrToChunk	asan_allocator.cc	/^static AsanChunk *PtrToChunk(uptr ptr) {$/;"	f	namespace:__asan
+Push	asan_allocator.cc	/^void AsanChunkFifoList::Push(AsanChunk *n) {$/;"	f	class:__asan::AsanChunkFifoList
+PushList	asan_allocator.cc	/^void AsanChunkFifoList::PushList(AsanChunkFifoList *q) {$/;"	f	class:__asan::AsanChunkFifoList
+QuarantinePop	asan_allocator.cc	/^  void QuarantinePop() {$/;"	f	class:__asan::MallocInfo	file:
+REDZONE	asan_allocator.cc	46;"	d	file:
+RangesOverlap	asan_interceptors.cc	/^static inline bool RangesOverlap(const char *offset1, uptr length1,$/;"	f	namespace:__asan
+Reallocate	asan_allocator.cc	/^static u8 *Reallocate(u8 *old_ptr, uptr new_size,$/;"	f	namespace:__asan
+RegisterGlobal	asan_globals.cc	/^static void RegisterGlobal(const Global *g) {$/;"	f	namespace:__asan
+RegisterThread	asan_thread_registry.cc	/^void AsanThreadRegistry::RegisterThread(AsanThread *thread) {$/;"	f	class:__asan::AsanThreadRegistry
+ReplaceCFAllocator	asan_malloc_mac.cc	/^void ReplaceCFAllocator() {$/;"	f	namespace:__asan
+ReplaceOperatorsNewAndDelete	asan_new_delete.cc	/^void ReplaceOperatorsNewAndDelete() { }$/;"	f	namespace:__asan
+ReplaceSystemMalloc	asan_malloc_linux.cc	/^void ReplaceSystemMalloc() {$/;"	f	namespace:__asan
+ReplaceSystemMalloc	asan_malloc_mac.cc	/^void ReplaceSystemMalloc() {$/;"	f	namespace:__asan
+ReplaceSystemMalloc	asan_malloc_win.cc	/^void ReplaceSystemMalloc() {$/;"	f	namespace:__asan
+ReportAsanGetAllocatedSizeNotOwned	asan_report.cc	/^void ReportAsanGetAllocatedSizeNotOwned(uptr addr, StackTrace *stack) {$/;"	f	namespace:__asan
+ReportDoubleFree	asan_report.cc	/^void ReportDoubleFree(uptr addr, StackTrace *stack) {$/;"	f	namespace:__asan
+ReportFreeNotMalloced	asan_report.cc	/^void ReportFreeNotMalloced(uptr addr, StackTrace *stack) {$/;"	f	namespace:__asan
+ReportMacCfReallocUnknown	asan_report.cc	/^void ReportMacCfReallocUnknown($/;"	f	namespace:__asan
+ReportMacMzReallocUnknown	asan_report.cc	/^void ReportMacMzReallocUnknown($/;"	f	namespace:__asan
+ReportMallocUsableSizeNotOwned	asan_report.cc	/^void ReportMallocUsableSizeNotOwned(uptr addr, StackTrace *stack) {$/;"	f	namespace:__asan
+ReportSIGSEGV	asan_report.cc	/^void ReportSIGSEGV(uptr pc, uptr sp, uptr bp, uptr addr) {$/;"	f	namespace:__asan
+ReportStringFunctionMemoryRangesOverlap	asan_report.cc	/^void ReportStringFunctionMemoryRangesOverlap($/;"	f	namespace:__asan
+ReserveShadowMemoryRange	asan_rtl.cc	/^static void ReserveShadowMemoryRange(uptr beg, uptr end) {$/;"	f	namespace:__asan
+ReturnsPointerToALocalObject	tests/asan_test.cc	/^int *ReturnsPointerToALocalObject() {$/;"	f
+RightOOBErrorMessage	tests/asan_test.cc	/^static string RightOOBErrorMessage(int oob_distance) {$/;"	f	file:
+RoundUpToPowerOfTwo	asan_allocator.cc	/^static inline uptr RoundUpToPowerOfTwo(uptr size) {$/;"	f	namespace:__asan
+RunAtoiOOBTest	tests/asan_test.cc	/^void RunAtoiOOBTest(PointerToCallAtoi Atoi) {$/;"	f
+RunGetHeapSizeTestAndDie	tests/asan_noinst_test.cc	/^static void RunGetHeapSizeTestAndDie() {$/;"	f	file:
+RunStrChrTest	tests/asan_test.cc	/^USED static void RunStrChrTest(PointerToStrChr1 StrChr) {$/;"	f	file:
+RunStrChrTest	tests/asan_test.cc	/^USED static void RunStrChrTest(PointerToStrChr2 StrChr) {$/;"	f	file:
+RunStrCmpTest	tests/asan_test.cc	/^void RunStrCmpTest(PointerToStrCmp StrCmp) {$/;"	f
+RunStrNCmpTest	tests/asan_test.cc	/^void RunStrNCmpTest(PointerToStrNCmp StrNCmp) {$/;"	f
+RunStrtolOOBTest	tests/asan_test.cc	/^void RunStrtolOOBTest(PointerToCallStrtol Strtol) {$/;"	f
+RunThread	lit_tests/deep_thread_stack.cc	/^void RunThread(callback_type function) {$/;"	f
+RunnerThread	lit_tests/deep_thread_stack.cc	/^void *RunnerThread(void *function) {$/;"	f
+SHADOW_GRANULARITY	asan_mapping.h	41;"	d
+SHADOW_OFFSET	asan_mapping.h	26;"	d
+SHADOW_OFFSET	asan_mapping.h	30;"	d
+SHADOW_OFFSET	asan_mapping.h	34;"	d
+SHADOW_OFFSET	asan_mapping.h	36;"	d
+SHADOW_SCALE	asan_mapping.h	25;"	d
+SHADOW_SCALE	asan_mapping.h	29;"	d
+SHADOW_SCALE	asan_mapping.h	32;"	d
+SHADOW_TO_MEM	asan_mapping.h	43;"	d
+ScopedInErrorReport	asan_report.cc	/^  ScopedInErrorReport() {$/;"	f	class:__asan::ScopedInErrorReport
+ScopedInErrorReport	asan_report.cc	/^class ScopedInErrorReport {$/;"	c	namespace:__asan	file:
+ScopedLock	asan_lock.h	/^typedef GenericScopedLock<AsanLock> ScopedLock;$/;"	t	namespace:__asan
+SetAlternateSignalStack	asan_posix.cc	/^void SetAlternateSignalStack() {$/;"	f	namespace:__asan
+SetAlternateSignalStack	asan_win.cc	/^void SetAlternateSignalStack() {$/;"	f	namespace:__asan
+SetCurrent	asan_thread_registry.cc	/^void AsanThreadRegistry::SetCurrent(AsanThread *t) {$/;"	f	class:__asan::AsanThreadRegistry
+SetThreadStackTopAndBottom	asan_thread.cc	/^void AsanThread::SetThreadStackTopAndBottom() {$/;"	f	class:__asan::AsanThread
+ShadowSegmentEndpoint	asan_poisoning.cc	/^  explicit ShadowSegmentEndpoint(uptr address) {$/;"	f	struct:__asan::ShadowSegmentEndpoint
+ShadowSegmentEndpoint	asan_poisoning.cc	/^struct ShadowSegmentEndpoint {$/;"	s	namespace:__asan	file:
+ShowStatsAndAbort	asan_rtl.cc	/^void ShowStatsAndAbort() {$/;"	f	namespace:__asan
+SigLongJmpFunc1	tests/asan_test.cc	/^NOINLINE void SigLongJmpFunc1(sigjmp_buf buf) {$/;"	f
+SimpleBugOnSTack	tests/asan_test.cc	/^void *SimpleBugOnSTack(void *x = 0) {$/;"	f
+Size	asan_allocator.cc	/^  uptr Size() { return SizeClassToSize(size_class); }$/;"	f	struct:__asan::ChunkBase
+SizeClass	asan_allocator.cc	/^  u8 SizeClass() { return size_class; }$/;"	f	struct:__asan::ChunkBase
+SizeClassToSize	asan_allocator.cc	/^static inline uptr SizeClassToSize(u8 size_class) {$/;"	f	namespace:__asan
+SizeToSizeClass	asan_allocator.cc	/^static inline u8 SizeToSizeClass(uptr size) {$/;"	f	namespace:__asan
+SizedStackTest	tests/asan_test.cc	/^NOINLINE void SizedStackTest() {$/;"	f
+Sources	Makefile.mk	/^Sources := $(foreach file,$(wildcard $(Dir)\/*.cc),$(notdir $(file)))$/;"	m
+Sources	dynamic/Makefile.mk	/^Sources := $(foreach file,$(wildcard $(Dir)\/*.cc),$(notdir $(file)))$/;"	m
+StackReuseAndException	tests/asan_test.cc	/^NOINLINE static void StackReuseAndException() {$/;"	f	file:
+StackSize	asan_allocator.h	/^  bool StackSize() { return stack_size_; }$/;"	f	class:__asan::FakeStack
+StaticConstGlob	tests/asan_test.cc	/^static const char StaticConstGlob[3] = {9, 8, 7};$/;"	v	file:
+StopUsingFakeStack	asan_allocator.h	/^  void StopUsingFakeStack() { alive_ = false; }$/;"	f	class:__asan::FakeStack
+StrLenOOBTestTemplate	tests/asan_test.cc	/^void StrLenOOBTestTemplate(char *str, size_t length, bool is_global) {$/;"	f
+StructWithBitField	tests/asan_test.cc	/^struct StructWithBitField {$/;"	s	file:
+StructWithBitFields_8_24	tests/asan_test.cc	/^struct StructWithBitFields_8_24 {$/;"	s	file:
+SubDirs	Makefile.mk	/^SubDirs := dynamic$/;"	m
+SubDirs	dynamic/Makefile.mk	/^SubDirs :=$/;"	m
+SwallowThreadLocalMallocStorage	asan_allocator.cc	/^  void SwallowThreadLocalMallocStorage(AsanThreadLocalMallocStorage *x,$/;"	f	class:__asan::MallocInfo
+SymbolizationLoop	scripts/asan_symbolize.py	/^class SymbolizationLoop(object):$/;"	c
+Symbolizer	scripts/asan_symbolize.py	/^class Symbolizer(object):$/;"	c
+SystemSymbolizerFactory	scripts/asan_symbolize.py	/^def SystemSymbolizerFactory(system, addr, binary):$/;"	f
+TEST	tests/asan_benchmarks_test.cc	/^TEST(AddressSanitizer, BorderAccessBenchmark) {$/;"	f
+TEST	tests/asan_benchmarks_test.cc	/^TEST(AddressSanitizer, FakeStackBenchmark) {$/;"	f
+TEST	tests/asan_benchmarks_test.cc	/^TEST(AddressSanitizer, ManyAccessBenchmark) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizer, CompressStackTraceBenchmark) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizer, CompressStackTraceTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizer, DISABLED_InternalPrintShadow) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizer, InternalSimpleDeathTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizer, MemsetWildAddressTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizer, NoInstMallocTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizer, QuarantineTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizer, ThreadedOneSizeMallocStressTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizer, ThreadedQuarantineTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizerInterface, DISABLED_InvalidPoisonAndUnpoisonCallsTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizerInterface, DeathCallbackTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizerInterface, ExitCode) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizerInterface, GetAllocatedSizeAndOwnershipTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizerInterface, GetCurrentAllocatedBytesTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizerInterface, GetEstimatedAllocatedSize) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizerInterface, GetFreeBytesTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizerInterface, GetHeapSizeTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizerInterface, GetOwnershipStressTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizerInterface, ManyThreadsWithStatsStressTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizerInterface, OverlappingPoisonMemoryRegionTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizerInterface, PoisoningStressTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizerInterface, PushAndPopWithPoisoningTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizerInterface, SetErrorReportCallbackTest) {$/;"	f
+TEST	tests/asan_noinst_test.cc	/^TEST(AddressSanitizerInterface, SimplePoisonMemoryRegionTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, AtoiAndFriendsOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, AttributeNoAddressSafetyTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, BitFieldNegativeTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, BitFieldPositiveTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, BufferOverflowAfterManyFrees) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, CallocTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, CxxExceptionTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_DemoDoubleFreeTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_DemoFunctionStaticTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_DemoNullDerefTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_DemoOOBLeftHigh) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_DemoOOBLeftLow) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_DemoOOBRightHigh) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_DemoOOBRightLow) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_DemoOOM) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_DemoStackTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_DemoThreadStackTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_DemoThreadedTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_DemoTooMuchMemoryTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_DemoUAFHigh) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_DemoUAFLowIn) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_DemoUAFLowLeft) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_DemoUAFLowRight) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_LargeFunctionSymbolizeTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_MallocFreeUnwindAndSymbolizeTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_MemIntrinsicCallByPointerTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_MemIntrinsicUnalignedAccessTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_StressStackReuseAndExceptionsTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DISABLED_TSDTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, DoubleFreeTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, FileNameInGlobalReportTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, GlobalStringConstTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, GlobalTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, GuiltyStackFrame0Test) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, GuiltyStackFrame1Test) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, GuiltyStackFrame2Test) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, GuiltyStackFrame3Test) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, HasFeatureAddressSanitizerTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, HugeMallocTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, IgnoreTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, LargeMallocTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, LargeStructCopyTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, LocalReferenceReturnTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, LongDoubleNegativeTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, LongJmpTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, MallocStressTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, MallocUsableSizeTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, ManyStackObjectsTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, ManyThreadsTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, MemCmpOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, MemCpyOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, MemMoveOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, MemSetOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, MlockTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, OOBRightTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, OOB_char) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, OOB_int) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, OutOfMemoryTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, PthreadExitTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, PvallocTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, ReallocTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, ShadowGapTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, SigLongJmpTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, SignalTest) {$/;"	f	namespace:__anon5
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, SimpleDeathTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, SimpleStackTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, Store128Test) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, StrArgsOverlapTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, StrCaseCmpOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, StrCatOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, StrChrAndIndexOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, StrCmpAndFriendsLogicTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, StrCmpOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, StrCpyOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, StrDupOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, StrDupTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, StrLenOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, StrNCaseCmpOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, StrNCatOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, StrNCmpOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, StrNCpyOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, StrNLenOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, StressStackReuseTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, StrtolOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, StrtollOOBTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, ThreadStackReuseTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, ThreadedMallocStressTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, ThreadedStressStackReuseTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, ThreadedTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, UAF_char) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, UnderscopeLongJmpTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, UseThenFreeThenUseTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, VallocTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, VariousMallocsTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, WildAddressTest) {$/;"	f	namespace:__anon5
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizer, WrongFreeTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, CFAllocatorDefaultDoubleFree) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, CFAllocatorDefaultDoubleFree_ChildPhread) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, CFAllocatorMallocDoubleFree) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, CFAllocator_PassMemoryToAnotherThread) {$/;"	f	namespace:__anon6
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, CFStringCreateCopy) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, DISABLED_CFAllocatorMallocZoneDoubleFree) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, DISABLED_CFAllocatorSystemDefaultDoubleFree) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, DISABLED_TSDWorkqueueTest) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, GCDDispatchAfter) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, GCDDispatchAsync) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, GCDDispatchSync) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, GCDGroupAsync) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, GCDReuseWqthreadsAsync) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, GCDReuseWqthreadsSync) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, GCDSourceCancel) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, GCDSourceEvent) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, MallocIntrospectionLock) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, Mstats) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, NSObjectOOB) {$/;"	f
+TEST	tests/asan_test.cc	/^TEST(AddressSanitizerMac, NSURLDeallocation) {$/;"	f
+TSDAllocWorker	tests/asan_test.cc	/^void *TSDAllocWorker(void *test_key) {$/;"	f
+TSDDestructor	tests/asan_test.cc	/^void TSDDestructor(void *tsd) {$/;"	f
+TSDDtor	asan_thread.cc	/^void AsanThreadSummary::TSDDtor(void *tsd) {$/;"	f	class:__asan::AsanThreadSummary
+TSDWorker	tests/asan_test.cc	/^void *TSDWorker(void *test_key) {$/;"	f
+TestLargeMalloc	tests/asan_test.cc	/^static void TestLargeMalloc(size_t size) {$/;"	f	file:
+Thread1	tests/asan_racy_double_free_test.cc	/^void *Thread1(void *unused) {$/;"	f
+Thread2	tests/asan_racy_double_free_test.cc	/^void *Thread2(void *unused) {$/;"	f
+ThreadStackReuseFunc1	tests/asan_test.cc	/^void *ThreadStackReuseFunc1(void *unused) {$/;"	f
+ThreadStackReuseFunc2	tests/asan_test.cc	/^void *ThreadStackReuseFunc2(void *unused) {$/;"	f
+ThreadStart	asan_thread.cc	/^thread_return_t AsanThread::ThreadStart() {$/;"	f	class:__asan::AsanThread
+ThreadedOneSizeMallocStress	tests/asan_noinst_test.cc	/^void *ThreadedOneSizeMallocStress(void *unused) {$/;"	f
+ThreadedQuarantineTestWorker	tests/asan_noinst_test.cc	/^void *ThreadedQuarantineTestWorker(void *unused) {$/;"	f
+ThreadedTestAlloc	tests/asan_test.cc	/^void *ThreadedTestAlloc(void *a) {$/;"	f
+ThreadedTestFree	tests/asan_test.cc	/^void *ThreadedTestFree(void *a) {$/;"	f
+ThreadedTestSpawn	tests/asan_test.cc	/^void ThreadedTestSpawn() {$/;"	f
+ThreadedTestUse	tests/asan_test.cc	/^void *ThreadedTestUse(void *a) {$/;"	f
+Throw	tests/asan_exceptions_test.cc	/^  void Throw(const char& arg) const {$/;"	f	class:Action
+ThrowFunc	tests/asan_test.cc	/^NOINLINE void ThrowFunc() {$/;"	f
+TouchStackFunc	tests/asan_test.cc	/^NOINLINE void TouchStackFunc() {$/;"	f
+U1	tests/asan_test.cc	/^typedef uint8_t   U1;$/;"	t	file:
+U2	tests/asan_test.cc	/^typedef uint16_t  U2;$/;"	t	file:
+U4	tests/asan_test.cc	/^typedef uint32_t  U4;$/;"	t	file:
+U8	tests/asan_test.cc	/^typedef uint64_t  U8;$/;"	t	file:
+UNWIND_CONTINUE	asan_linux.cc	106;"	d	file:
+UNWIND_CONTINUE	asan_linux.cc	109;"	d	file:
+UNWIND_STOP	asan_linux.cc	105;"	d	file:
+UNWIND_STOP	asan_linux.cc	108;"	d	file:
+USED	tests/asan_test_utils.h	33;"	d
+USED	tests/asan_test_utils.h	36;"	d
+UnderscopeLongJmpFunc1	tests/asan_test.cc	/^NOINLINE void UnderscopeLongJmpFunc1(jmp_buf buf) {$/;"	f
+Unlock	asan_linux.cc	/^void AsanLock::Unlock() {$/;"	f	class:__asan::AsanLock
+Unlock	asan_mac.cc	/^void AsanLock::Unlock() {$/;"	f	class:__asan::AsanLock
+Unlock	asan_win.cc	/^void AsanLock::Unlock() {$/;"	f	class:__asan::AsanLock
+UnpoisonGlobal	asan_globals.cc	/^static void UnpoisonGlobal(const Global *g) {$/;"	f	namespace:__asan
+UnregisterGlobal	asan_globals.cc	/^static void UnregisterGlobal(const Global *g) {$/;"	f	namespace:__asan
+UnregisterThread	asan_thread_registry.cc	/^void AsanThreadRegistry::UnregisterThread(AsanThread *thread) {$/;"	f	class:__asan::AsanThreadRegistry
+UnsetAlternateSignalStack	asan_posix.cc	/^void UnsetAlternateSignalStack() {$/;"	f	namespace:__asan
+UnsetAlternateSignalStack	asan_win.cc	/^void UnsetAlternateSignalStack() {$/;"	f	namespace:__asan
+Unwind_GetIP	asan_linux.cc	/^uptr Unwind_GetIP(struct _Unwind_Context *ctx) {$/;"	f	namespace:__asan
+Unwind_Trace	asan_linux.cc	/^_Unwind_Reason_Code Unwind_Trace(struct _Unwind_Context *ctx,$/;"	f	namespace:__asan
+UpdateAccumulatedStatsUnlocked	asan_thread_registry.cc	/^void AsanThreadRegistry::UpdateAccumulatedStatsUnlocked() {$/;"	f	class:__asan::AsanThreadRegistry
+UseThenFreeThenUse	tests/asan_test.cc	/^NOINLINE static void UseThenFreeThenUse() {$/;"	f	file:
+UsedSize	asan_allocator.cc	/^uptr AsanChunkView::UsedSize() { return chunk_->used_size; }$/;"	f	class:__asan::AsanChunkView
+WarnMacFreeUnallocated	asan_report.cc	/^void WarnMacFreeUnallocated($/;"	f	namespace:__asan
+WrongFree	tests/asan_test.cc	/^void WrongFree() {$/;"	f
+_CrtDbgReport	asan_malloc_win.cc	/^int _CrtDbgReport(int, const char*, int,$/;"	f
+_CrtDbgReportW	asan_malloc_win.cc	/^int _CrtDbgReportW(int reportType, const wchar_t*, int,$/;"	f
+_CrtSetReportMode	asan_malloc_win.cc	/^int _CrtSetReportMode(int, int) {$/;"	f
+_DYNAMIC	asan_linux.cc	/^extern "C" void* _DYNAMIC;$/;"	v
+__CFRuntimeBase	asan_mac.h	/^typedef struct __CFRuntimeBase {$/;"	s
+__CFStrIsConstant	asan_mac.cc	/^int __CFStrIsConstant(CFStringRef str) {$/;"	f
+__WORDSIZE	tests/asan_test_utils.h	52;"	d
+__WORDSIZE	tests/asan_test_utils.h	54;"	d
+__asan	asan_allocator.cc	/^namespace __asan {$/;"	n	file:
+__asan	asan_allocator.h	/^namespace __asan {$/;"	n
+__asan	asan_flags.h	/^namespace __asan {$/;"	n
+__asan	asan_globals.cc	/^namespace __asan {$/;"	n	file:
+__asan	asan_interceptors.cc	/^namespace __asan {$/;"	n	file:
+__asan	asan_interceptors.h	/^namespace __asan {$/;"	n
+__asan	asan_internal.h	/^namespace __asan {$/;"	n
+__asan	asan_linux.cc	/^namespace __asan {$/;"	n	file:
+__asan	asan_lock.h	/^namespace __asan {$/;"	n
+__asan	asan_mac.cc	/^namespace __asan {$/;"	n	file:
+__asan	asan_mac.h	/^namespace __asan {$/;"	n
+__asan	asan_malloc_linux.cc	/^namespace __asan {$/;"	n	file:
+__asan	asan_malloc_mac.cc	/^namespace __asan {$/;"	n	file:
+__asan	asan_malloc_win.cc	/^namespace __asan {$/;"	n	file:
+__asan	asan_mapping.h	/^namespace __asan {$/;"	n
+__asan	asan_new_delete.cc	/^namespace __asan {$/;"	n	file:
+__asan	asan_poisoning.cc	/^namespace __asan {$/;"	n	file:
+__asan	asan_posix.cc	/^namespace __asan {$/;"	n	file:
+__asan	asan_report.cc	/^namespace __asan {$/;"	n	file:
+__asan	asan_report.h	/^namespace __asan {$/;"	n
+__asan	asan_rtl.cc	/^namespace __asan {$/;"	n	file:
+__asan	asan_stack.cc	/^namespace __asan {$/;"	n	file:
+__asan	asan_stack.h	/^namespace __asan {$/;"	n
+__asan	asan_stats.cc	/^namespace __asan {$/;"	n	file:
+__asan	asan_stats.h	/^namespace __asan {$/;"	n
+__asan	asan_thread.cc	/^namespace __asan {$/;"	n	file:
+__asan	asan_thread.h	/^namespace __asan {$/;"	n
+__asan	asan_thread_registry.cc	/^namespace __asan {$/;"	n	file:
+__asan	asan_thread_registry.h	/^namespace __asan {$/;"	n
+__asan	asan_win.cc	/^namespace __asan {$/;"	n	file:
+__asan	dynamic/asan_interceptors_dynamic.cc	/^namespace __asan {$/;"	n	file:
+__asan_address_is_poisoned	asan_poisoning.cc	/^bool __asan_address_is_poisoned(void const volatile *addr) {$/;"	f
+__asan_after_dynamic_init	asan_globals.cc	/^void __asan_after_dynamic_init() {$/;"	f
+__asan_before_dynamic_init	asan_globals.cc	/^void __asan_before_dynamic_init(uptr first_addr, uptr last_addr) {$/;"	f
+__asan_default_options	asan_rtl.cc	/^const char* __asan_default_options() { return ""; }$/;"	f
+__asan_default_options	lit_tests/default_options.cc	/^const char *__asan_default_options() {$/;"	f
+__asan_free_hook	asan_allocator.cc	/^void __asan_free_hook(void *ptr) {$/;"	f
+__asan_free_hook	lit_tests/malloc_hook.cc	/^void __asan_free_hook(void *ptr) {$/;"	f
+__asan_get_allocated_size	asan_allocator.cc	/^uptr __asan_get_allocated_size(const void *p) {$/;"	f
+__asan_get_current_allocated_bytes	asan_stats.cc	/^uptr __asan_get_current_allocated_bytes() {$/;"	f
+__asan_get_estimated_allocated_size	asan_allocator.cc	/^uptr __asan_get_estimated_allocated_size(uptr size) {$/;"	f
+__asan_get_free_bytes	asan_stats.cc	/^uptr __asan_get_free_bytes() {$/;"	f
+__asan_get_heap_size	asan_stats.cc	/^uptr __asan_get_heap_size() {$/;"	f
+__asan_get_ownership	asan_allocator.cc	/^bool __asan_get_ownership(const void *p) {$/;"	f
+__asan_get_unmapped_bytes	asan_stats.cc	/^uptr __asan_get_unmapped_bytes() {$/;"	f
+__asan_handle_no_return	asan_rtl.cc	/^void NOINLINE __asan_handle_no_return() {$/;"	f
+__asan_init	asan_rtl.cc	/^void __asan_init() {$/;"	f
+__asan_malloc_hook	asan_allocator.cc	/^void __asan_malloc_hook(void *ptr, uptr size) {$/;"	f
+__asan_malloc_hook	lit_tests/malloc_hook.cc	/^void __asan_malloc_hook(void *ptr, size_t sz) {$/;"	f
+__asan_on_error	asan_report.cc	/^void __asan_on_error() {}$/;"	f
+__asan_on_error	lit_tests/on_error_callback.cc	/^void __asan_on_error() {$/;"	f
+__asan_poison_memory_region	asan_poisoning.cc	/^void __asan_poison_memory_region(void const volatile *addr, uptr size) {$/;"	f
+__asan_preinit	asan_rtl.cc	/^  __declspec(allocate(".CRT$XIB")) void (*__asan_preinit)() = __asan_init;$/;"	v
+__asan_print_accumulated_stats	asan_stats.cc	/^void __asan_print_accumulated_stats() {$/;"	f
+__asan_register_global	asan_globals.cc	/^void __asan_register_global(uptr addr, uptr size,$/;"	f
+__asan_register_globals	asan_globals.cc	/^void __asan_register_globals(__asan_global *globals, uptr n) {$/;"	f
+__asan_report_error	asan_report.cc	/^void __asan_report_error(uptr pc, uptr bp, uptr sp,$/;"	f
+__asan_set_death_callback	asan_rtl.cc	/^void NOINLINE __asan_set_death_callback(void (*callback)(void)) {$/;"	f
+__asan_set_error_exit_code	asan_rtl.cc	/^int NOINLINE __asan_set_error_exit_code(int exit_code) {$/;"	f
+__asan_set_error_report_callback	asan_report.cc	/^void NOINLINE __asan_set_error_report_callback(void (*callback)(const char*)) {$/;"	f
+__asan_stack_free	asan_allocator.cc	/^void __asan_stack_free(uptr ptr, uptr size, uptr real_stack) {$/;"	f
+__asan_stack_malloc	asan_allocator.cc	/^uptr __asan_stack_malloc(uptr size, uptr real_stack) {$/;"	f
+__asan_symbolize	asan_stack.cc	/^bool __asan_symbolize(const void *pc, char *out_buffer, int out_size) {$/;"	f
+__asan_symbolize	asan_win.cc	/^bool __asan_symbolize(const void *addr, char *out_buffer, int buffer_size) {$/;"	f
+__asan_symbolize	lit_tests/symbolize_callback.cc	/^bool __asan_symbolize(const void *pc, char *out_buffer, int out_size) {$/;"	f
+__asan_unpoison_memory_region	asan_poisoning.cc	/^void __asan_unpoison_memory_region(void const volatile *addr, uptr size) {$/;"	f
+__asan_unregister_globals	asan_globals.cc	/^void __asan_unregister_globals(__asan_global *globals, uptr n) {$/;"	f
+__has_feature	tests/asan_test_utils.h	40;"	d
+__init__	scripts/asan_symbolize.py	/^  def __init__(self):$/;"	m	class:Symbolizer
+__init__	scripts/asan_symbolize.py	/^  def __init__(self, addr, binary):$/;"	m	class:DarwinSymbolizer
+__init__	scripts/asan_symbolize.py	/^  def __init__(self, binary):$/;"	m	class:Addr2LineSymbolizer
+__init__	scripts/asan_symbolize.py	/^  def __init__(self, binary_name_filter=None):$/;"	m	class:SymbolizationLoop
+__init__	scripts/asan_symbolize.py	/^  def __init__(self, filename):$/;"	m	class:BreakpadSymbolizer
+__init__	scripts/asan_symbolize.py	/^  def __init__(self, symbolizer_list):$/;"	m	class:ChainSymbolizer
+__init__	scripts/asan_symbolize.py	/^  def __init__(self, symbolizer_path):$/;"	m	class:LLVMSymbolizer
+__interception_allocate_island	asan_mac.cc	/^mach_error_t __interception_allocate_island(void **ptr,$/;"	f	namespace:__asan
+__interception_deallocate_island	asan_mac.cc	/^mach_error_t __interception_deallocate_island(void *ptr) {$/;"	f	namespace:__asan
+__libc_malloc_dispatch	asan_malloc_linux.cc	/^extern "C" const MallocDebug* __libc_malloc_dispatch;$/;"	v
+_calloc_dbg	asan_malloc_win.cc	/^void* _calloc_dbg(size_t n, size_t size, int, const char*, int) {$/;"	f
+_calloc_impl	asan_malloc_win.cc	/^void *_calloc_impl(size_t nmemb, size_t size, int *errno_tmp) {$/;"	f
+_cfinfo	asan_mac.h	/^  u8 _cfinfo[4];$/;"	m	struct:__CFRuntimeBase
+_cfisa	asan_mac.h	/^  uptr _cfisa;$/;"	m	struct:__CFRuntimeBase
+_free_dbg	asan_malloc_win.cc	/^void _free_dbg(void* ptr, int) {$/;"	f
+_malloc_dbg	asan_malloc_win.cc	/^void* _malloc_dbg(size_t size, int , const char*, int) {$/;"	f
+_msize	asan_malloc_win.cc	/^size_t _msize(void *ptr) {$/;"	f
+_rc	asan_mac.h	/^  u32 _rc;$/;"	m	struct:__CFRuntimeBase
+_realloc_dbg	asan_malloc_win.cc	/^void *_realloc_dbg(void *ptr, size_t size, int) {$/;"	f
+_recalloc	asan_malloc_win.cc	/^void* _recalloc(void* p, size_t n, size_t elem_size) {$/;"	f
+a	tests/asan_test.cc	/^  int a:8;$/;"	m	struct:StructWithBitFields_8_24	file:
+ab	lit_tests/Helpers/initialization-nobug-extra.cc	/^static int ab = getAB();$/;"	v	file:
+abort_on_error	asan_flags.h	/^  bool abort_on_error;$/;"	m	struct:__asan::Flags
+accumulated_stats_	asan_thread_registry.h	/^  AsanStats accumulated_stats_;$/;"	m	class:__asan::AsanThreadRegistry
+alignment_log	asan_allocator.cc	/^  uptr alignment_log : 8;$/;"	m	struct:__asan::ChunkBase	file:
+alive_	asan_allocator.h	/^  bool   alive_;$/;"	m	class:__asan::FakeStack
+alloc_asan_context	asan_mac.cc	/^asan_block_context_t *alloc_asan_context(void *ctxt, dispatch_function_t func,$/;"	f
+alloc_tid	asan_allocator.cc	/^  uptr  alloc_tid   : 24;$/;"	m	struct:__asan::ChunkBase	file:
+allocated_size_classes_	asan_allocator.h	/^  uptr allocated_size_classes_[kNumberOfSizeClasses];$/;"	m	class:__asan::FakeStack
+allocator_for_globals	asan_globals.cc	/^static LowLevelAllocator allocator_for_globals;$/;"	m	namespace:__asan	file:
+allow_reexec	asan_flags.h	/^  bool allow_reexec;$/;"	m	struct:__asan::Flags
+allow_user_poisoning	asan_flags.h	/^  bool allow_user_poisoning;$/;"	m	struct:__asan::Flags
+announced	asan_thread.h	/^  bool announced() { return announced_; }$/;"	f	class:__asan::AsanThreadSummary
+announced_	asan_thread.h	/^  bool announced_;$/;"	m	class:__asan::AsanThreadSummary
+append_symbolizer	scripts/asan_symbolize.py	/^  def append_symbolizer(self, symbolizer):$/;"	m	class:ChainSymbolizer
+arg_	asan_thread.h	/^  void *arg_;$/;"	m	class:__asan::AsanThread
+asanThreadRegistry	asan_thread_registry.cc	/^AsanThreadRegistry &asanThreadRegistry() {$/;"	f	namespace:__asan
+asan_atexit	asan_rtl.cc	/^static void asan_atexit() {$/;"	f	namespace:__asan
+asan_block_context_t	asan_mac.cc	/^} asan_block_context_t;$/;"	t	namespace:__asan	typeref:struct:__asan::__anon2	file:
+asan_calloc	asan_allocator.cc	/^void *asan_calloc(uptr nmemb, uptr size, StackTrace *stack) {$/;"	f	namespace:__asan
+asan_dispatch_call_block_and_release	asan_mac.cc	/^void asan_dispatch_call_block_and_release(void *block) {$/;"	f	namespace:__asan
+asan_flags	asan_rtl.cc	/^static Flags asan_flags;$/;"	m	namespace:__asan	file:
+asan_free	asan_allocator.cc	/^void asan_free(void *ptr, StackTrace *stack) {$/;"	f	namespace:__asan
+asan_init_is_running	asan_rtl.cc	/^bool asan_init_is_running;$/;"	m	namespace:__asan	file:
+asan_inited	asan_rtl.cc	/^int asan_inited;$/;"	m	namespace:__asan	file:
+asan_malloc	asan_allocator.cc	/^void *asan_malloc(uptr size, StackTrace *stack) {$/;"	f	namespace:__asan
+asan_malloc_usable_size	asan_allocator.cc	/^uptr asan_malloc_usable_size(void *ptr, StackTrace *stack) {$/;"	f	namespace:__asan
+asan_memalign	asan_allocator.cc	/^void *asan_memalign(uptr alignment, uptr size, StackTrace *stack) {$/;"	f	namespace:__asan
+asan_mz_force_lock	asan_allocator.cc	/^void asan_mz_force_lock() {$/;"	f	namespace:__asan
+asan_mz_force_unlock	asan_allocator.cc	/^void asan_mz_force_unlock() {$/;"	f	namespace:__asan
+asan_mz_size	asan_allocator.cc	/^uptr asan_mz_size(const void *ptr) {$/;"	f	namespace:__asan
+asan_posix_memalign	asan_allocator.cc	/^int asan_posix_memalign(void **memptr, uptr alignment, uptr size,$/;"	f	namespace:__asan
+asan_pvalloc	asan_allocator.cc	/^void *asan_pvalloc(uptr size, StackTrace *stack) {$/;"	f	namespace:__asan
+asan_realloc	asan_allocator.cc	/^void *asan_realloc(void *p, uptr size, StackTrace *stack) {$/;"	f	namespace:__asan
+asan_register_worker_thread	asan_mac.cc	/^void asan_register_worker_thread(int parent_tid, StackTrace *stack) {$/;"	f	namespace:__asan
+asan_thread_start	asan_interceptors.cc	/^static thread_return_t THREAD_CALLING_CONV asan_thread_start(void *arg) {$/;"	f	file:
+asan_valloc	asan_allocator.cc	/^void *asan_valloc(uptr size, StackTrace *stack) {$/;"	f	namespace:__asan
+asan_write	tests/asan_test.cc	/^NOINLINE void asan_write(T *a) {$/;"	f
+asan_write_sized_aligned	tests/asan_test.cc	/^NOINLINE void asan_write_sized_aligned(uint8_t *p, size_t size) {$/;"	f
+asan_zone	asan_malloc_mac.cc	/^static malloc_zone_t asan_zone;$/;"	v	file:
+at_dlclose	lit_tests/SharedLibs/dlclose-test-so.cc	/^void at_dlclose() {$/;"	f
+at_dlopen	lit_tests/SharedLibs/dlclose-test-so.cc	/^void at_dlopen() {$/;"	f
+atexit	asan_flags.h	/^  bool atexit;$/;"	m	struct:__asan::Flags
+b	tests/asan_test.cc	/^  int b:24;$/;"	m	struct:StructWithBitFields_8_24	file:
+badGlobal	lit_tests/blacklist.cc	/^int badGlobal;$/;"	v
+beg	asan_allocator.cc	/^  uptr beg;$/;"	m	struct:__asan::PageGroup	file:
+bf1	tests/asan_test.cc	/^  int bf1:1;$/;"	m	struct:StructWithBitField	file:
+bf2	tests/asan_test.cc	/^  int bf2:1;$/;"	m	struct:StructWithBitField	file:
+bf3	tests/asan_test.cc	/^  int bf3:1;$/;"	m	struct:StructWithBitField	file:
+bf4	tests/asan_test.cc	/^  int bf4:29;$/;"	m	struct:StructWithBitField	file:
+bisect	scripts/asan_symbolize.py	/^import bisect$/;"	i
+block	asan_mac.cc	/^  void *block;$/;"	m	struct:__asan::__anon2	file:
+blocks_in_use	asan_stats.h	/^  uptr blocks_in_use;$/;"	m	struct:__asan::AsanMallocStats
+break_optimization	tests/asan_break_optimization.cc	/^extern "C" void break_optimization(void *x) {$/;"	f
+brokenFunction	lit_tests/blacklist.cc	/^int brokenFunction(int argc) {$/;"	f
+call1	lit_tests/deep_tail_call.cc	/^void __attribute__((noinline)) call1(int i) { call2(i); }$/;"	f
+call2	lit_tests/deep_tail_call.cc	/^void __attribute__((noinline)) call2(int i) { call3(i); }$/;"	f
+call3	lit_tests/deep_tail_call.cc	/^void __attribute__((noinline)) call3(int i) { call4(i); }$/;"	f
+call4	lit_tests/deep_tail_call.cc	/^void __attribute__((noinline)) call4(int i) { global[i+10]++; }$/;"	f
+call_stack_	asan_allocator.h	/^  FakeFrameLifo call_stack_;$/;"	m	class:__asan::FakeStack
+callback_type	lit_tests/deep_thread_stack.cc	/^typedef void* (*callback_type)(void* arg);$/;"	t	file:
+calloc	asan_malloc_linux.cc	/^  void* (*calloc)(uptr n_elements, uptr elem_size);$/;"	m	struct:MallocDebug	file:
+calloc	asan_malloc_win.cc	/^void *calloc(size_t nmemb, size_t size) {$/;"	f
+cf_asan	asan_malloc_mac.cc	/^CFAllocatorRef cf_asan = 0;$/;"	v
+cf_free	asan_malloc_mac.cc	/^void cf_free(void *ptr, void *info) {$/;"	f	namespace:__anon4
+cf_malloc	asan_malloc_mac.cc	/^void *cf_malloc(CFIndex size, CFOptionFlags hint, void *info) {$/;"	f	namespace:__anon4
+cf_realloc	asan_malloc_mac.cc	/^void *cf_realloc(void *ptr, CFIndex size, CFOptionFlags hint, void *info) {$/;"	f	namespace:__anon4
+cfree	asan_malloc_win.cc	/^void cfree(void *ptr) {$/;"	f
+check_initialization_order	asan_flags.h	/^  bool check_initialization_order;$/;"	m	struct:__asan::Flags
+check_malloc_usable_size	asan_flags.h	/^  bool check_malloc_usable_size;$/;"	m	struct:__asan::Flags
+chunk	asan_poisoning.cc	/^  u8 *chunk;$/;"	m	struct:__asan::ShadowSegmentEndpoint	file:
+chunk_	asan_allocator.h	/^  AsanChunk *const chunk_;$/;"	m	class:__asan::AsanChunkView
+chunk_state	asan_allocator.cc	/^  uptr  chunk_state : 8;$/;"	m	struct:__asan::ChunkBase	file:
+clear	asan_allocator.h	/^  void clear() {$/;"	f	class:__asan::AsanChunkFifoList
+compressed_alloc_stack	asan_allocator.cc	/^  u32 *compressed_alloc_stack() {$/;"	f	struct:__asan::AsanChunk
+compressed_alloc_stack_size	asan_allocator.cc	/^  uptr compressed_alloc_stack_size() {$/;"	f	struct:__asan::AsanChunk
+compressed_free_stack	asan_allocator.cc	/^  u32 *compressed_free_stack() {$/;"	f	struct:__asan::AsanChunk
+compressed_free_stack_size	asan_allocator.cc	/^  uptr compressed_free_stack_size() {$/;"	f	struct:__asan::AsanChunk
+condition	lit_tests/initialization-nobug.cc	/^bool condition = true;$/;"	v
+coolest_integer	lit_tests/Helpers/initialization-nobug-extra.cc	/^static int coolest_integer = getCoolestInteger();$/;"	v	file:
+countCalls	lit_tests/initialization-nobug.cc	/^int countCalls() {$/;"	f
+dbghelp_initialized	asan_win.cc	/^static bool dbghelp_initialized = false;$/;"	m	namespace:__asan	file:
+death_callback	asan_rtl.cc	/^void (*death_callback)(void);$/;"	m	namespace:__asan	file:
+debug	asan_flags.h	/^  bool debug;$/;"	m	struct:__asan::Flags
+descr	asan_allocator.h	/^  uptr descr;  \/\/ Modified by the instrumented code.$/;"	m	struct:__asan::FakeFrame
+disable_core	asan_flags.h	/^  bool disable_core;$/;"	m	struct:__asan::Flags
+dispatch_function_t	asan_intercepted_functions.h	/^typedef void (*dispatch_function_t)(void *block);$/;"	t
+dispatch_function_t	asan_mac.cc	/^typedef void (*dispatch_function_t)(void *block);$/;"	t	namespace:__asan	file:
+dispatch_group_t	asan_intercepted_functions.h	/^typedef void* dispatch_group_t;$/;"	t
+dispatch_group_t	asan_mac.cc	/^typedef void* dispatch_group_t;$/;"	t	namespace:__asan	file:
+dispatch_queue_t	asan_intercepted_functions.h	/^typedef void* dispatch_queue_t;$/;"	t
+dispatch_queue_t	asan_mac.cc	/^typedef void* dispatch_queue_t;$/;"	t	namespace:__asan	file:
+dispatch_source_t	asan_intercepted_functions.h	/^typedef void* dispatch_source_t;$/;"	t
+dispatch_source_t	asan_mac.cc	/^typedef void* dispatch_source_t;$/;"	t	namespace:__asan	file:
+dispatch_time_t	asan_intercepted_functions.h	/^typedef u64 dispatch_time_t;$/;"	t
+dispatch_time_t	asan_mac.cc	/^typedef u64 dispatch_time_t;$/;"	t	namespace:__asan	file:
+end	asan_allocator.cc	/^  uptr end;$/;"	m	struct:__asan::PageGroup	file:
+error_message_buffer	asan_report.cc	/^static char *error_message_buffer = 0;$/;"	m	namespace:__asan	file:
+error_message_buffer_pos	asan_report.cc	/^static uptr error_message_buffer_pos = 0;$/;"	m	namespace:__asan	file:
+error_message_buffer_size	asan_report.cc	/^static uptr error_message_buffer_size = 0;$/;"	m	namespace:__asan	file:
+error_report_callback	asan_report.cc	/^static void (*error_report_callback)(const char*);$/;"	m	namespace:__asan	file:
+exitcode	asan_flags.h	/^  int  exitcode;$/;"	m	struct:__asan::Flags
+externalBrokenFunction	lit_tests/Helpers/blacklist-extra.cc	/^int externalBrokenFunction(int argc) {$/;"	f
+fake_mallinfo	asan_malloc_linux.cc	/^struct fake_mallinfo {$/;"	s	file:
+fake_stack	asan_thread.h	/^  FakeStack &fake_stack() { return fake_stack_; }$/;"	f	class:__asan::AsanThread
+fake_stack_	asan_thread.h	/^  FakeStack fake_stack_;$/;"	m	class:__asan::AsanThread
+fake_tsd	asan_win.cc	/^static __declspec(thread) void *fake_tsd = 0;$/;"	m	namespace:__asan	file:
+filetypes	scripts/asan_symbolize.py	/^filetypes = {}$/;"	v
+first_	asan_allocator.h	/^  AsanChunk *first_;$/;"	m	class:__asan::AsanChunkFifoList
+first_	asan_allocator.h	/^  FakeFrame *first_, *last_;$/;"	m	struct:__asan::FakeFrameFifo
+fix_filename	scripts/asan_symbolize.py	/^def fix_filename(file_name):$/;"	f
+flags	asan_rtl.cc	/^Flags *flags() {$/;"	f	namespace:__asan
+foo	lit_tests/force_inline_opt0.cc	/^void foo(int *x) {$/;"	f
+foo	tests/asan_test.cc	/^  int foo[100];$/;"	m	struct:LargeStruct	file:
+force_interface_symbols	asan_rtl.cc	/^static NOINLINE void force_interface_symbols() {$/;"	f	namespace:__asan
+free	asan_malloc_linux.cc	/^  void  (*free)(void* mem);$/;"	m	struct:MallocDebug	file:
+free	asan_malloc_win.cc	/^void free(void *ptr) {$/;"	f
+free	lit_tests/deep_stack_uaf.cc	/^  static void free(char *x) {$/;"	f	struct:DeepFree
+free_aaa	tests/asan_test.cc	/^NOINLINE void free_aaa(void *p) { free_bbb(p); break_optimization(0);}$/;"	f
+free_bbb	tests/asan_test.cc	/^NOINLINE void free_bbb(void *p) { free_ccc(p); break_optimization(0);}$/;"	f
+free_ccc	tests/asan_test.cc	/^NOINLINE void free_ccc(void *p) { free(p); break_optimization(0);}$/;"	f
+free_common	asan_malloc_mac.cc	/^void ALWAYS_INLINE free_common(void *context, void *ptr) {$/;"	f	namespace:__anon4
+free_lists_	asan_allocator.cc	/^  AsanChunk *free_lists_[kNumberOfSizeClasses];$/;"	m	class:__asan::MallocInfo	file:
+free_lists_	asan_allocator.h	/^  AsanChunk *free_lists_[kNumberOfSizeClasses];$/;"	m	struct:__asan::AsanThreadLocalMallocStorage
+free_tid	asan_allocator.cc	/^  uptr  free_tid    : 24;$/;"	m	struct:__asan::ChunkBase	file:
+freed	asan_stats.h	/^  uptr freed;$/;"	m	struct:__asan::AsanStats
+freed_by_size	asan_stats.h	/^  uptr freed_by_size[kNumberOfSizeClasses];$/;"	m	struct:__asan::AsanStats
+frees	asan_stats.h	/^  uptr frees;$/;"	m	struct:__asan::AsanStats
+fun_t	lit_tests/dlclose-test.cc	/^typedef int *(fun_t)();$/;"	t	file:
+fun_t	lit_tests/shared-lib-test.cc	/^typedef void (fun_t)(int x);$/;"	t	file:
+func	asan_mac.cc	/^  dispatch_function_t func;$/;"	m	struct:__asan::__anon2	file:
+g	asan_globals.cc	/^  const Global *g;$/;"	m	struct:__asan::ListOfGlobals	file:
+getAB	lit_tests/initialization-nobug.cc	/^int getAB() {$/;"	f
+getCoolestInteger	lit_tests/initialization-nobug.cc	/^int getCoolestInteger() { return coolestInteger.getValue(); }$/;"	f
+getValue	lit_tests/initialization-nobug.cc	/^  int getValue() {return value;}$/;"	f	class:Integer
+get_address_of_static_var	lit_tests/SharedLibs/dlclose-test-so.cc	/^int *get_address_of_static_var() {$/;"	f
+get_saved_cfallocator_ref	asan_malloc_mac.cc	/^void* ALWAYS_INLINE get_saved_cfallocator_ref(void *ptr) {$/;"	f
+get_sym_file_line	scripts/asan_symbolize.py	/^  def get_sym_file_line(self, addr):$/;"	m	class:BreakpadSymbolizer
+glob5	tests/asan_test.cc	/^char glob5[5];$/;"	v
+global	lit_tests/deep_tail_call.cc	/^int global[10];$/;"	v
+global_seed	tests/asan_noinst_test.cc	/^static u32 global_seed = 0;$/;"	v	file:
+global_seed	tests/asan_test.cc	/^static uint32_t global_seed = 0;$/;"	v	file:
+global_string	tests/asan_test.cc	/^static char global_string[] = "global";$/;"	v	file:
+global_string_length	tests/asan_test.cc	/^static size_t global_string_length = 6;$/;"	v	file:
+handle_segv	asan_flags.h	/^  bool handle_segv;$/;"	m	struct:__asan::Flags
+inc	lit_tests/SharedLibs/shared-lib-test-so.cc	/^void inc(int index) {$/;"	f
+initX	lit_tests/Linux/initialization-bug-any-order.cc	/^int __attribute__((noinline)) initX() {$/;"	f
+initX	lit_tests/initialization-bug.cc	/^int __attribute__((noinline)) initX() {$/;"	f
+initY	lit_tests/Helpers/initialization-bug-extra.cc	/^int initY() {$/;"	f
+initY	lit_tests/Helpers/initialization-bug-extra2.cc	/^int __attribute__((noinline)) initY() {$/;"	f
+initZ	lit_tests/initialization-bug.cc	/^int initZ() {$/;"	f
+inited_	asan_thread_registry.h	/^  bool inited_;$/;"	m	class:__asan::AsanThreadRegistry
+initializeSameTU	lit_tests/initialization-nobug.cc	/^int initializeSameTU() {$/;"	f
+int16_t	tests/asan_test_utils.h	/^typedef __int16          int16_t;$/;"	t
+int32_t	tests/asan_test_utils.h	/^typedef __int32          int32_t;$/;"	t
+int64_t	tests/asan_test_utils.h	/^typedef __int64          int64_t;$/;"	t
+int8_t	tests/asan_test_utils.h	/^typedef __int8           int8_t;$/;"	t
+interpose_substitution	dynamic/asan_interceptors_dynamic.cc	/^struct interpose_substitution {$/;"	s	namespace:__asan	file:
+island_allocator_pos	asan_mac.cc	/^static void *island_allocator_pos = 0;$/;"	m	namespace:__asan	file:
+kAltStackSize	asan_posix.cc	/^static const uptr kAltStackSize = SIGSTKSZ * 4;  \/\/ SIGSTKSZ is not enough.$/;"	v	file:
+kAsanDefaultOptions	lit_tests/default_options.cc	/^const char *kAsanDefaultOptions="verbosity=1 foo=bar";$/;"	v
+kAsanGlobalRedzoneMagic	asan_internal.h	/^const int kAsanGlobalRedzoneMagic = 0xf9;$/;"	m	namespace:__asan
+kAsanHeapFreeMagic	asan_internal.h	/^const int kAsanHeapFreeMagic = 0xfd;$/;"	m	namespace:__asan
+kAsanHeapLeftRedzoneMagic	asan_internal.h	/^const int kAsanHeapLeftRedzoneMagic = 0xfa;$/;"	m	namespace:__asan
+kAsanHeapRightRedzoneMagic	asan_internal.h	/^const int kAsanHeapRightRedzoneMagic = 0xfb;$/;"	m	namespace:__asan
+kAsanInitializationOrderMagic	asan_internal.h	/^const int kAsanInitializationOrderMagic = 0xf6;$/;"	m	namespace:__asan
+kAsanInternalHeapMagic	asan_internal.h	/^const int kAsanInternalHeapMagic = 0xfe;$/;"	m	namespace:__asan
+kAsanStackAfterReturnMagic	asan_internal.h	/^const int kAsanStackAfterReturnMagic = 0xf5;$/;"	m	namespace:__asan
+kAsanStackLeftRedzoneMagic	asan_internal.h	/^const int kAsanStackLeftRedzoneMagic = 0xf1;$/;"	m	namespace:__asan
+kAsanStackMidRedzoneMagic	asan_internal.h	/^const int kAsanStackMidRedzoneMagic = 0xf2;$/;"	m	namespace:__asan
+kAsanStackPartialRedzoneMagic	asan_internal.h	/^const int kAsanStackPartialRedzoneMagic = 0xf4;$/;"	m	namespace:__asan
+kAsanStackRightRedzoneMagic	asan_internal.h	/^const int kAsanStackRightRedzoneMagic = 0xf3;$/;"	m	namespace:__asan
+kAsanUserPoisonedMemoryMagic	asan_internal.h	/^const int kAsanUserPoisonedMemoryMagic = 0xf7;$/;"	m	namespace:__asan
+kCurrentStackFrameMagic	asan_internal.h	/^static const uptr kCurrentStackFrameMagic = 0x41B58AB3;$/;"	m	namespace:__asan
+kDeafultMallocContextSize	asan_rtl.cc	/^static const int kDeafultMallocContextSize = 30;$/;"	m	namespace:__asan	file:
+kDyldInsertLibraries	asan_mac.cc	/^static const char kDyldInsertLibraries[] = "DYLD_INSERT_LIBRARIES";$/;"	m	namespace:__asan	file:
+kGetAllocatedSizeErrorMsg	tests/asan_noinst_test.cc	/^static const char* kGetAllocatedSizeErrorMsg =$/;"	v	file:
+kGlobalAndStackRedzone	asan_mapping.h	66;"	d
+kHighMemBeg	asan_mapping.h	58;"	d
+kHighMemEnd	asan_mapping.h	/^  static const uptr kHighMemEnd = 0x00007fffffffffffUL;$/;"	v
+kHighMemEnd	asan_mapping.h	/^  static const uptr kHighMemEnd = 0xffffffff;$/;"	v
+kHighShadowBeg	asan_mapping.h	60;"	d
+kHighShadowEnd	asan_mapping.h	61;"	d
+kInvalidPoisonMessage	tests/asan_noinst_test.cc	/^static const char *kInvalidPoisonMessage = "invalid-poison-memory-range";$/;"	v	file:
+kInvalidTid	asan_thread.h	/^const u32 kInvalidTid = 0xffffff;  \/\/ Must fit into 24 bits.$/;"	m	namespace:__asan
+kInvalidUnpoisonMessage	tests/asan_noinst_test.cc	/^static const char *kInvalidUnpoisonMessage = "invalid-unpoison-memory-range";$/;"	v	file:
+kIslandBeg	asan_mac.cc	184;"	d	file:
+kIslandBeg	asan_mac.cc	187;"	d	file:
+kIslandEnd	asan_mac.cc	183;"	d	file:
+kIslandEnd	asan_mac.cc	186;"	d	file:
+kLargeMalloc	tests/asan_test.cc	/^const size_t kLargeMalloc = 1 << 24;$/;"	v
+kLowMemBeg	asan_mapping.h	52;"	d
+kLowMemEnd	asan_mapping.h	53;"	d
+kLowShadowBeg	asan_mapping.h	55;"	d
+kLowShadowEnd	asan_mapping.h	56;"	d
+kMallocSizeClassStep	asan_allocator.cc	/^static const uptr kMallocSizeClassStep = 1UL << kMallocSizeClassStepLog;$/;"	m	namespace:__asan	file:
+kMallocSizeClassStepLog	asan_allocator.cc	/^static const uptr kMallocSizeClassStepLog = 26;$/;"	m	namespace:__asan	file:
+kMallocUsableSizeErrorMsg	tests/asan_test.cc	/^static const char *kMallocUsableSizeErrorMsg =$/;"	v	file:
+kManyThreadsIterations	tests/asan_noinst_test.cc	/^static const size_t kManyThreadsIterations = 250;$/;"	v	file:
+kManyThreadsMallocSizes	tests/asan_noinst_test.cc	/^static const size_t kManyThreadsMallocSizes[] = {5, 1UL<<10, 1UL<<20, 357};$/;"	v	file:
+kManyThreadsNumThreads	tests/asan_noinst_test.cc	/^static const size_t kManyThreadsNumThreads = (__WORDSIZE == 32) ? 40 : 200;$/;"	v	file:
+kMaxAllowedMallocSize	asan_allocator.cc	/^static const uptr kMaxAllowedMallocSize =$/;"	m	namespace:__asan	file:
+kMaxAvailableRam	asan_allocator.cc	/^static const u64 kMaxAvailableRam = 128ULL << 30;  \/\/ 128G$/;"	m	namespace:__asan	file:
+kMaxNumberOfThreads	asan_thread_registry.h	/^  static const u32 kMaxNumberOfThreads = (1 << 22);  \/\/ 4M$/;"	m	class:__asan::AsanThreadRegistry
+kMaxSizeForThreadLocalFreeList	asan_allocator.cc	/^static const uptr kMaxSizeForThreadLocalFreeList =$/;"	m	namespace:__asan	file:
+kMaxStackFrameSizeLog	asan_allocator.h	/^  static const uptr kMaxStackFrameSizeLog = 16;  \/\/ Max stack frame is 64K.$/;"	m	class:__asan::FakeStack
+kMaxStackMallocSize	asan_allocator.h	/^  static const uptr kMaxStackMallocSize = 1 << kMaxStackFrameSizeLog;$/;"	m	class:__asan::FakeStack
+kMaxThreadLocalQuarantine	asan_allocator.cc	/^static const uptr kMaxThreadLocalQuarantine = 1 << 20;  \/\/ 1M$/;"	m	namespace:__asan	file:
+kMinAllocSize	asan_allocator.cc	/^static const uptr kMinAllocSize = REDZONE * 2;$/;"	m	namespace:__asan	file:
+kMinMmapSize	asan_allocator.cc	/^static const uptr kMinMmapSize = (ASAN_LOW_MEMORY) ? 4UL << 17 : 4UL << 20;$/;"	m	namespace:__asan	file:
+kMinStackFrameSizeLog	asan_allocator.h	/^  static const uptr kMinStackFrameSizeLog = 9;  \/\/ Min frame is 512B.$/;"	m	class:__asan::FakeStack
+kNumberOfSizeClasses	asan_allocator.h	/^  static const uptr kNumberOfSizeClasses =$/;"	m	class:__asan::FakeStack
+kNumberOfSizeClasses	asan_allocator.h	/^static const uptr kNumberOfSizeClasses = 255;$/;"	m	namespace:__asan
+kOverriddenHandler	tests/asan_test.cc	/^const char kOverriddenHandler[] = "ASan signal handler has been overridden\\n";$/;"	m	namespace:__anon5	file:
+kPageSize	lit_tests/dlclose-test.cc	/^static const int kPageSize = 4096;$/;"	v	file:
+kPageSize	tests/asan_test.cc	/^static const int kPageSize = 4096;$/;"	v	file:
+kRetiredStackFrameMagic	asan_internal.h	/^static const uptr kRetiredStackFrameMagic = 0x45E0360E;$/;"	m	namespace:__asan
+kShadowGapBeg	asan_mapping.h	63;"	d
+kShadowGapEnd	asan_mapping.h	64;"	d
+kUnknownCrash	tests/asan_test.cc	/^const char kUnknownCrash[] = "AddressSanitizer: SEGV on unknown address";$/;"	m	namespace:__anon5	file:
+kUseAfterPoisonErrorMessage	tests/asan_noinst_test.cc	/^static const char* kUseAfterPoisonErrorMessage = "use-after-poison";$/;"	v	file:
+last_	asan_allocator.h	/^  AsanChunk *last_;$/;"	m	class:__asan::AsanChunkFifoList
+last_	asan_allocator.h	/^  FakeFrame *first_, *last_;$/;"	m	struct:__asan::FakeFrameFifo
+last_chunk	asan_allocator.cc	/^  uptr last_chunk;$/;"	m	struct:__asan::PageGroup	file:
+list_of_all_globals	asan_globals.cc	/^static ListOfGlobals *list_of_all_globals;$/;"	m	namespace:__asan	file:
+list_of_dynamic_init_globals	asan_globals.cc	/^static ListOfGlobals *list_of_dynamic_init_globals;$/;"	m	namespace:__asan	file:
+llvm_symbolizer	scripts/asan_symbolize.py	/^llvm_symbolizer = None$/;"	v
+log_path	asan_flags.h	/^  const char *log_path;$/;"	m	struct:__asan::Flags
+loop	scripts/asan_symbolize.py	/^  loop = SymbolizationLoop()$/;"	v	class:SymbolizationLoop
+mac_ignore_invalid_free	asan_flags.h	/^  bool mac_ignore_invalid_free;$/;"	m	struct:__asan::Flags
+magic	asan_allocator.h	/^  uptr magic;  \/\/ Modified by the instrumented code.$/;"	m	struct:__asan::FakeFrame
+main	lit_tests/Linux/clone_test.cc	/^int main(int argc, char **argv) {$/;"	f
+main	lit_tests/Linux/initialization-bug-any-order.cc	/^int main() {$/;"	f
+main	lit_tests/Linux/interception_failure_test.cc	/^int main() {$/;"	f
+main	lit_tests/Linux/interception_malloc_test.cc	/^int main() {$/;"	f
+main	lit_tests/Linux/interception_test.cc	/^int main() {$/;"	f
+main	lit_tests/Linux/rlimit_mmap_test.cc	/^int main(int argc, char **argv) {$/;"	f
+main	lit_tests/blacklist.cc	/^int main(int argc, char **argv) {$/;"	f
+main	lit_tests/deep_stack_uaf.cc	/^int main() {$/;"	f
+main	lit_tests/deep_tail_call.cc	/^int main(int argc, char **argv) {$/;"	f
+main	lit_tests/deep_thread_stack.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lit_tests/default_options.cc	/^int main() {$/;"	f
+main	lit_tests/dlclose-test.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lit_tests/force_inline_opt0.cc	/^int main() {$/;"	f
+main	lit_tests/global-overflow.cc	/^int main(int argc, char **argv) {$/;"	f
+main	lit_tests/heap-overflow.cc	/^int main(int argc, char **argv) {$/;"	f
+main	lit_tests/initialization-bug.cc	/^int main() {$/;"	f
+main	lit_tests/initialization-nobug.cc	/^int main() { return 0; }$/;"	f
+main	lit_tests/interface_symbols.c	/^int main() { return 0; }$/;"	f
+main	lit_tests/large_func_test.cc	/^int main(int argc, char **argv) {$/;"	f
+main	lit_tests/log-path_test.cc	/^int main(int argc, char **argv) {$/;"	f
+main	lit_tests/malloc_hook.cc	/^int main() {$/;"	f
+main	lit_tests/memcmp_test.cc	/^int main(int argc, char **argv) {$/;"	f
+main	lit_tests/null_deref.cc	/^int main() {$/;"	f
+main	lit_tests/on_error_callback.cc	/^int main() {$/;"	f
+main	lit_tests/sanity_check_pure_c.c	/^int main() {$/;"	f
+main	lit_tests/shared-lib-test.cc	/^int main(int argc, char *argv[]) {$/;"	f
+main	lit_tests/sleep_before_dying.c	/^int main() {$/;"	f
+main	lit_tests/stack-overflow.cc	/^int main(int argc, char **argv) {$/;"	f
+main	lit_tests/stack-use-after-return.cc	/^int main(int argc, char **argv) {$/;"	f
+main	lit_tests/strip_path_prefix.c	/^int main() {$/;"	f
+main	lit_tests/strncpy-overflow.cc	/^int main(int argc, char **argv) {$/;"	f
+main	lit_tests/symbolize_callback.cc	/^int main() {$/;"	f
+main	lit_tests/use-after-free.cc	/^int main() {$/;"	f
+main	tests/asan_benchmarks_test.cc	/^int main(int argc, char **argv) {$/;"	f
+main	tests/asan_exceptions_test.cc	/^int main() {$/;"	f
+main	tests/asan_racy_double_free_test.cc	/^int main() {$/;"	f
+main	tests/asan_test_main.cc	/^int main(int argc, char **argv) {$/;"	f
+main_thread_	asan_thread_registry.h	/^  AsanThread main_thread_;$/;"	m	class:__asan::AsanThreadRegistry
+main_thread_summary_	asan_thread_registry.h	/^  AsanThreadSummary main_thread_summary_;$/;"	m	class:__asan::AsanThreadRegistry
+malloc	asan_malloc_linux.cc	/^  void* (*malloc)(uptr bytes);$/;"	m	struct:MallocDebug	file:
+malloc	asan_malloc_win.cc	/^void *malloc(size_t size) {$/;"	f
+malloc	lit_tests/Linux/interception_malloc_test.cc	/^extern "C" void *malloc(size_t size) {$/;"	f
+malloc_aaa	tests/asan_test.cc	/^NOINLINE void *malloc_aaa(size_t size) {$/;"	f
+malloc_bbb	tests/asan_test.cc	/^NOINLINE void *malloc_bbb(size_t size) {$/;"	f
+malloc_ccc	tests/asan_test.cc	/^NOINLINE void *malloc_ccc(size_t size) {$/;"	f
+malloc_context_size	asan_flags.h	/^  int  malloc_context_size;$/;"	m	struct:__asan::Flags
+malloc_ddd	tests/asan_test.cc	/^NOINLINE void *malloc_ddd(size_t size) {$/;"	f
+malloc_eee	tests/asan_test.cc	/^NOINLINE void *malloc_eee(size_t size) {$/;"	f
+malloc_fff	tests/asan_test.cc	/^NOINLINE void *malloc_fff(size_t size) {$/;"	f
+malloc_large	asan_stats.h	/^  uptr malloc_large;$/;"	m	struct:__asan::AsanStats
+malloc_small_slow	asan_stats.h	/^  uptr malloc_small_slow;$/;"	m	struct:__asan::AsanStats
+malloc_storage	asan_thread.h	/^  AsanThreadLocalMallocStorage &malloc_storage() { return malloc_storage_; }$/;"	f	class:__asan::AsanThread
+malloc_storage_	asan_thread.h	/^  AsanThreadLocalMallocStorage malloc_storage_;$/;"	m	class:__asan::AsanThread
+malloced	asan_stats.h	/^  uptr malloced;$/;"	m	struct:__asan::AsanStats
+malloced_by_size	asan_stats.h	/^  uptr malloced_by_size[kNumberOfSizeClasses];$/;"	m	struct:__asan::AsanStats
+malloced_redzones	asan_stats.h	/^  uptr malloced_redzones;$/;"	m	struct:__asan::AsanStats
+mallocs	asan_stats.h	/^  uptr mallocs;$/;"	m	struct:__asan::AsanStats
+max_malloc_fill_size	asan_flags.h	/^  int  max_malloc_fill_size;$/;"	m	struct:__asan::Flags
+max_malloced_memory_	asan_thread_registry.h	/^  uptr max_malloced_memory_;$/;"	m	class:__asan::AsanThreadRegistry
+max_size_in_use	asan_stats.h	/^  uptr max_size_in_use;$/;"	m	struct:__asan::AsanMallocStats
+memalign	asan_malloc_linux.cc	/^  void* (*memalign)(uptr alignment, uptr bytes);$/;"	m	struct:MallocDebug	file:
+memalign_aaa	tests/asan_test.cc	/^NOINLINE void *memalign_aaa(size_t alignment, size_t size) {$/;"	f
+memalign_bbb	tests/asan_test.cc	/^NOINLINE void *memalign_bbb(size_t alignment, size_t size) {$/;"	f
+memalign_ccc	tests/asan_test.cc	/^NOINLINE void *memalign_ccc(size_t alignment, size_t size) {$/;"	f
+memalign_ddd	tests/asan_test.cc	/^NOINLINE void *memalign_ddd(size_t alignment, size_t size) {$/;"	f
+memalign_eee	tests/asan_test.cc	/^NOINLINE void *memalign_eee(size_t alignment, size_t size) {$/;"	f
+memalign_fff	tests/asan_test.cc	/^NOINLINE void *memalign_fff(size_t alignment, size_t size) {$/;"	f
+mi_check	asan_malloc_mac.cc	/^boolean_t mi_check(malloc_zone_t *zone) {$/;"	f	namespace:__anon4
+mi_enumerator	asan_malloc_mac.cc	/^kern_return_t mi_enumerator(task_t task, void *,$/;"	f	namespace:__anon4
+mi_force_lock	asan_malloc_mac.cc	/^void mi_force_lock(malloc_zone_t *zone) {$/;"	f	namespace:__anon4
+mi_force_unlock	asan_malloc_mac.cc	/^void mi_force_unlock(malloc_zone_t *zone) {$/;"	f	namespace:__anon4
+mi_good_size	asan_malloc_mac.cc	/^size_t mi_good_size(malloc_zone_t *zone, size_t size) {$/;"	f	namespace:__anon4
+mi_log	asan_malloc_mac.cc	/^void mi_log(malloc_zone_t *zone, void *address) {$/;"	f	namespace:__anon4
+mi_print	asan_malloc_mac.cc	/^void mi_print(malloc_zone_t *zone, boolean_t verbose) {$/;"	f	namespace:__anon4
+mi_statistics	asan_malloc_mac.cc	/^void mi_statistics(malloc_zone_t *zone, malloc_statistics_t *stats) {$/;"	f	namespace:__anon4
+mi_zone_locked	asan_malloc_mac.cc	/^boolean_t mi_zone_locked(malloc_zone_t *zone) {$/;"	f	namespace:__anon4
+mmaped	asan_stats.h	/^  uptr mmaped;$/;"	m	struct:__asan::AsanStats
+mmaped_by_size	asan_stats.h	/^  uptr mmaped_by_size[kNumberOfSizeClasses];$/;"	m	struct:__asan::AsanStats
+mmaps	asan_stats.h	/^  uptr mmaps;$/;"	m	struct:__asan::AsanStats
+mu_	asan_allocator.cc	/^  AsanLock mu_;$/;"	m	class:__asan::MallocInfo	file:
+mu_	asan_thread_registry.h	/^  AsanLock mu_;$/;"	m	class:__asan::AsanThreadRegistry
+my_rand	tests/asan_noinst_test.cc	/^static inline u32 my_rand(u32* state) {$/;"	f	file:
+my_rand	tests/asan_test.cc	/^static inline uint32_t my_rand(uint32_t* state) {$/;"	f	file:
+my_sigaction_sighandler	tests/asan_test.cc	/^void my_sigaction_sighandler(int, siginfo_t*, void*) {$/;"	f	namespace:__anon5
+my_signal_sighandler	tests/asan_test.cc	/^void my_signal_sighandler(int signum) {$/;"	f	namespace:__anon5
+mz_calloc	asan_malloc_mac.cc	/^void *mz_calloc(malloc_zone_t *zone, size_t nmemb, size_t size) {$/;"	f	namespace:__anon4
+mz_destroy	asan_malloc_mac.cc	/^void mz_destroy(malloc_zone_t* zone) {$/;"	f	namespace:__anon4
+mz_free	asan_malloc_mac.cc	/^void mz_free(malloc_zone_t *zone, void *ptr) {$/;"	f	namespace:__anon4
+mz_malloc	asan_malloc_mac.cc	/^void *mz_malloc(malloc_zone_t *zone, size_t size) {$/;"	f	namespace:__anon4
+mz_memalign	asan_malloc_mac.cc	/^void *mz_memalign(malloc_zone_t *zone, size_t align, size_t size) {$/;"	f	namespace:__anon4
+mz_realloc	asan_malloc_mac.cc	/^void *mz_realloc(malloc_zone_t *zone, void *ptr, size_t size) {$/;"	f	namespace:__anon4
+mz_size	asan_malloc_mac.cc	/^size_t mz_size(malloc_zone_t* zone, const void* ptr) {$/;"	f	namespace:__anon4
+mz_valloc	asan_malloc_mac.cc	/^void *mz_valloc(malloc_zone_t *zone, size_t size) {$/;"	f	namespace:__anon4
+n_page_groups_	asan_allocator.cc	/^  atomic_uint32_t n_page_groups_;$/;"	m	class:__asan::MallocInfo	file:
+n_sorted_page_groups_	asan_allocator.cc	/^  int n_sorted_page_groups_;$/;"	m	class:__asan::MallocInfo	file:
+n_threads_	asan_thread_registry.h	/^  u32 n_threads_;$/;"	m	class:__asan::AsanThreadRegistry
+next	asan_allocator.cc	/^  AsanChunk *next;$/;"	m	struct:__asan::ChunkBase	file:
+next	asan_allocator.h	/^  FakeFrame *next;$/;"	m	struct:__asan::FakeFrame
+next	asan_globals.cc	/^  ListOfGlobals *next;$/;"	m	struct:__asan::ListOfGlobals	file:
+offset	asan_poisoning.cc	/^  s8 offset;  \/\/ in [0, SHADOW_GRANULARITY)$/;"	m	struct:__asan::ShadowSegmentEndpoint	file:
+one	lit_tests/Helpers/initialization-nobug-extra.cc	/^static int one = countCalls();$/;"	v	file:
+oob_test	tests/asan_test.cc	/^NOINLINE void oob_test(int size, int off) {$/;"	f
+opaque_storage_	asan_lock.h	/^  uptr opaque_storage_[10];$/;"	m	class:__asan::AsanLock
+open_addr2line	scripts/asan_symbolize.py	/^  def open_addr2line(self):$/;"	m	class:Addr2LineSymbolizer
+open_atos	scripts/asan_symbolize.py	/^  def open_atos(self):$/;"	m	class:DarwinSymbolizer
+open_llvm_symbolizer	scripts/asan_symbolize.py	/^  def open_llvm_symbolizer(self):$/;"	m	class:LLVMSymbolizer
+operator delete	asan_new_delete.cc	/^void operator delete(void *ptr) throw() { OPERATOR_DELETE_BODY; }$/;"	f
+operator delete	asan_new_delete.cc	/^void operator delete(void *ptr, std::nothrow_t const&) throw()$/;"	f
+operator delete[]	asan_new_delete.cc	/^void operator delete[](void *ptr) throw() { OPERATOR_DELETE_BODY; }$/;"	f
+operator delete[]	asan_new_delete.cc	/^void operator delete[](void *ptr, std::nothrow_t const&) throw()$/;"	f
+operator new	asan_new_delete.cc	/^void *operator new(size_t size) throw(std::bad_alloc) { OPERATOR_NEW_BODY; }$/;"	f
+operator new	asan_new_delete.cc	/^void *operator new(size_t size, std::nothrow_t const&) throw()$/;"	f
+operator new[]	asan_new_delete.cc	/^void *operator new[](size_t size) throw(std::bad_alloc) { OPERATOR_NEW_BODY; }$/;"	f
+operator new[]	asan_new_delete.cc	/^void *operator new[](size_t size, std::nothrow_t const&) throw()$/;"	f
+original	dynamic/asan_interceptors_dynamic.cc	/^  const uptr original;$/;"	m	struct:__asan::interpose_substitution	file:
+os	scripts/asan_symbolize.py	/^import os$/;"	i
+owner_	asan_lock.h	/^  uptr owner_;  \/\/ for debugging and for malloc_introspection_t interface$/;"	m	class:__asan::AsanLock
+pad	lit_tests/SharedLibs/shared-lib-test-so.cc	/^int pad[10];$/;"	v
+pad1	lit_tests/SharedLibs/dlclose-test-so.cc	/^static int pad1;$/;"	v	file:
+pad2	lit_tests/SharedLibs/dlclose-test-so.cc	/^static int pad2;$/;"	v	file:
+page_groups_	asan_allocator.cc	/^  PageGroup *page_groups_[kMaxAvailableRam \/ kMinMmapSize];$/;"	m	class:__asan::MallocInfo	file:
+parent_tid	asan_mac.cc	/^  u32 parent_tid;$/;"	m	struct:__asan::__anon2	file:
+parent_tid	asan_thread.h	/^  u32 parent_tid() { return parent_tid_; }$/;"	f	class:__asan::AsanThreadSummary
+parent_tid_	asan_thread.h	/^  u32 parent_tid_;$/;"	m	class:__asan::AsanThreadSummary
+parse_lines	scripts/asan_symbolize.py	/^  def parse_lines(self, lines):$/;"	m	class:BreakpadSymbolizer
+pc_array	tests/asan_noinst_test.cc	/^static uptr pc_array[] = {$/;"	v	file:
+print_full_thread_history	asan_flags.h	/^  bool print_full_thread_history;$/;"	m	struct:__asan::Flags
+print_symbolized_lines	scripts/asan_symbolize.py	/^  def print_symbolized_lines(self, symbolized_lines):$/;"	m	class:SymbolizationLoop
+process_stdin	scripts/asan_symbolize.py	/^  def process_stdin(self):$/;"	m	class:SymbolizationLoop
+pthread_workitem_handle_t	asan_intercepted_functions.h	/^typedef void* pthread_workitem_handle_t;$/;"	t
+pthread_workitem_handle_t	asan_mac.cc	/^typedef void* pthread_workitem_handle_t;$/;"	t	namespace:__asan	file:
+pthread_workqueue_t	asan_intercepted_functions.h	/^typedef void* pthread_workqueue_t;$/;"	t
+pthread_workqueue_t	asan_mac.cc	/^typedef void* pthread_workqueue_t;$/;"	t	namespace:__asan	file:
+quarantine_	asan_allocator.cc	/^  AsanChunkFifoList quarantine_;$/;"	m	class:__asan::MallocInfo	file:
+quarantine_	asan_allocator.h	/^  AsanChunkFifoList quarantine_;$/;"	m	struct:__asan::AsanThreadLocalMallocStorage
+quarantine_size	asan_flags.h	/^  int  quarantine_size;$/;"	m	struct:__asan::Flags
+re	scripts/asan_symbolize.py	/^import re$/;"	i
+readBadGlobal	lit_tests/blacklist.cc	/^int readBadGlobal() {$/;"	f
+real_frees	asan_stats.h	/^  uptr real_frees;$/;"	m	struct:__asan::AsanStats
+real_stack	asan_allocator.h	/^  u64 real_stack     : 48;$/;"	m	struct:__asan::FakeFrame
+realloc	asan_malloc_linux.cc	/^  void* (*realloc)(void* oldMem, uptr bytes);$/;"	m	struct:MallocDebug	file:
+realloc	asan_malloc_win.cc	/^void *realloc(void *ptr, size_t size) {$/;"	f
+realloced	asan_stats.h	/^  uptr realloced;$/;"	m	struct:__asan::AsanStats
+reallocs	asan_stats.h	/^  uptr reallocs;$/;"	m	struct:__asan::AsanStats
+really_freed	asan_stats.h	/^  uptr really_freed;$/;"	m	struct:__asan::AsanStats
+really_freed_by_size	asan_stats.h	/^  uptr really_freed_by_size[kNumberOfSizeClasses];$/;"	m	struct:__asan::AsanStats
+really_freed_redzones	asan_stats.h	/^  uptr really_freed_redzones;$/;"	m	struct:__asan::AsanStats
+redzone	asan_flags.h	/^  int  redzone;$/;"	m	struct:__asan::Flags
+replace_cfallocator	asan_flags.h	/^  bool replace_cfallocator;$/;"	m	struct:__asan::Flags
+replace_intrin	asan_flags.h	/^  bool replace_intrin;$/;"	m	struct:__asan::Flags
+replace_str	asan_flags.h	/^  bool replace_str;$/;"	m	struct:__asan::Flags
+replacement	dynamic/asan_interceptors_dynamic.cc	/^  const uptr replacement;$/;"	m	struct:__asan::interpose_substitution	file:
+report_globals	asan_flags.h	/^  int  report_globals;$/;"	m	struct:__asan::Flags
+sameTU	lit_tests/initialization-nobug.cc	/^int sameTU = initializeSameTU();$/;"	v
+set_announced	asan_thread.h	/^  void set_announced(bool announced) { announced_ = announced; }$/;"	f	class:__asan::AsanThreadSummary
+set_summary	asan_thread.h	/^  void set_summary(AsanThreadSummary *summary) { summary_ = summary; }$/;"	f	class:__asan::AsanThread
+set_thread	asan_thread.h	/^  void set_thread(AsanThread *thread) { thread_ = thread; }$/;"	f	class:__asan::AsanThreadSummary
+set_tid	asan_thread.h	/^  void set_tid(u32 tid) { tid_ = tid; }$/;"	f	class:__asan::AsanThreadSummary
+size	asan_allocator.h	/^  uptr size() { return size_; }$/;"	f	class:__asan::AsanChunkFifoList
+size_	asan_allocator.h	/^  uptr size_;$/;"	m	class:__asan::AsanChunkFifoList
+size_allocated	asan_stats.h	/^  uptr size_allocated;$/;"	m	struct:__asan::AsanMallocStats
+size_class	asan_allocator.cc	/^  uptr  size_class  : 8;$/;"	m	struct:__asan::ChunkBase	file:
+size_classes_	asan_allocator.h	/^  FakeFrameFifo size_classes_[kNumberOfSizeClasses];$/;"	m	class:__asan::FakeStack
+size_in_use	asan_stats.h	/^  uptr size_in_use;$/;"	m	struct:__asan::AsanMallocStats
+size_minus_one	asan_allocator.h	/^  u64 size_minus_one : 16;$/;"	m	struct:__asan::FakeFrame
+size_of_chunk	asan_allocator.cc	/^  uptr size_of_chunk;$/;"	m	struct:__asan::PageGroup	file:
+sleep_before_dying	asan_flags.h	/^  int  sleep_before_dying;$/;"	m	struct:__asan::Flags
+stack	asan_thread.h	/^  StackTrace *stack() { return &stack_; }$/;"	f	class:__asan::AsanThreadSummary
+stack_	asan_thread.h	/^  StackTrace stack_;$/;"	m	class:__asan::AsanThreadSummary
+stack_bottom	asan_thread.h	/^  uptr stack_bottom() { return stack_bottom_; }$/;"	f	class:__asan::AsanThread
+stack_bottom_	asan_thread.h	/^  uptr  stack_bottom_;$/;"	m	class:__asan::AsanThread
+stack_size	asan_thread.h	/^  uptr stack_size() { return stack_top_ - stack_bottom_; }$/;"	f	class:__asan::AsanThread
+stack_size_	asan_allocator.h	/^  uptr stack_size_;$/;"	m	class:__asan::FakeStack
+stack_top	asan_thread.h	/^  uptr stack_top() { return stack_top_; }$/;"	f	class:__asan::AsanThread
+stack_top_	asan_thread.h	/^  uptr  stack_top_;$/;"	m	class:__asan::AsanThread
+start_routine_	asan_thread.h	/^  thread_callback_t start_routine_;$/;"	m	class:__asan::AsanThread
+static10	tests/asan_globals_test.cc	/^static char static10[10];$/;"	v	file:
+static110	tests/asan_test.cc	/^static char static110[110];$/;"	v	file:
+static_var	lit_tests/SharedLibs/dlclose-test-so.cc	/^static int static_var;$/;"	v	file:
+stats	asan_thread.h	/^  AsanStats &stats() { return stats_; }$/;"	f	class:__asan::AsanThread
+stats_	asan_thread.h	/^  AsanStats stats_;$/;"	m	class:__asan::AsanThread
+strip_path_prefix	asan_flags.h	/^  const char *strip_path_prefix;$/;"	m	struct:__asan::Flags
+strtol	lit_tests/Linux/interception_failure_test.cc	/^extern "C" long strtol(const char *nptr, char **endptr, int base) {$/;"	f
+strtol	lit_tests/Linux/interception_test.cc	/^extern "C" long strtol(const char *nptr, char **endptr, int base) {$/;"	f
+subprocess	scripts/asan_symbolize.py	/^import subprocess$/;"	i
+substitutions	dynamic/asan_interceptors_dynamic.cc	/^const interpose_substitution substitutions[]$/;"	m	namespace:__asan	file:
+summary	asan_thread.h	/^  AsanThreadSummary *summary() { return summary_; }$/;"	f	class:__asan::AsanThread
+summary_	asan_thread.h	/^  AsanThreadSummary *summary_;$/;"	m	class:__asan::AsanThread
+symbolize	asan_flags.h	/^  bool symbolize;$/;"	m	struct:__asan::Flags
+symbolize	scripts/asan_symbolize.py	/^  def symbolize(self, addr, binary, offset):$/;"	m	class:Addr2LineSymbolizer
+symbolize	scripts/asan_symbolize.py	/^  def symbolize(self, addr, binary, offset):$/;"	m	class:BreakpadSymbolizer
+symbolize	scripts/asan_symbolize.py	/^  def symbolize(self, addr, binary, offset):$/;"	m	class:ChainSymbolizer
+symbolize	scripts/asan_symbolize.py	/^  def symbolize(self, addr, binary, offset):$/;"	m	class:DarwinSymbolizer
+symbolize	scripts/asan_symbolize.py	/^  def symbolize(self, addr, binary, offset):$/;"	m	class:LLVMSymbolizer
+symbolize	scripts/asan_symbolize.py	/^  def symbolize(self, addr, binary, offset):$/;"	m	class:Symbolizer
+symbolize_address	scripts/asan_symbolize.py	/^  def symbolize_address(self, addr, binary, offset):$/;"	m	class:SymbolizationLoop
+symbolizers	scripts/asan_symbolize.py	/^symbolizers = {}$/;"	v
+sys	scripts/asan_symbolize.py	/^import sys$/;"	i
+system_malloc_zone	asan_malloc_mac.cc	/^static malloc_zone_t *system_malloc_zone = 0;$/;"	v	file:
+system_purgeable_zone	asan_malloc_mac.cc	/^static malloc_zone_t *system_purgeable_zone = 0;$/;"	v	file:
+thread	asan_thread.h	/^  AsanThread *thread() { return thread_; }$/;"	f	class:__asan::AsanThreadSummary
+thread_	asan_thread.h	/^  AsanThread *thread_;$/;"	m	class:__asan::AsanThreadSummary
+thread_summaries_	asan_thread_registry.h	/^  AsanThreadSummary *thread_summaries_[kMaxNumberOfThreads];$/;"	m	class:__asan::AsanThreadRegistry
+tid	asan_thread.h	/^  u32 tid() { return summary_->tid(); }$/;"	f	class:__asan::AsanThread
+tid	asan_thread.h	/^  u32 tid() { return tid_; }$/;"	f	class:__asan::AsanThreadSummary
+tid_	asan_thread.h	/^  u32 tid_;$/;"	m	class:__asan::AsanThreadSummary
+top	asan_allocator.h	/^  FakeFrame *top() { return top_; }$/;"	f	class:__asan::FakeFrameLifo
+top_	asan_allocator.h	/^  FakeFrame *top_;$/;"	m	class:__asan::FakeFrameLifo
+transfer	tests/asan_test.cc	/^  static void* transfer(void *to, const void *from, size_t size) {$/;"	f	class:MemCpyWrapper
+transfer	tests/asan_test.cc	/^  static void* transfer(void *to, const void *from, size_t size) {$/;"	f	class:MemMoveWrapper
+tsd_key	asan_posix.cc	/^static pthread_key_t tsd_key;$/;"	m	namespace:__asan	file:
+tsd_key_inited	asan_posix.cc	/^static bool tsd_key_inited = false;$/;"	m	namespace:__asan	file:
+tsd_key_inited	asan_win.cc	/^static bool tsd_key_inited = false;$/;"	m	namespace:__asan	file:
+uaf_test	tests/asan_test.cc	/^NOINLINE void uaf_test(int size, int off) {$/;"	f
+uint16_t	tests/asan_test_utils.h	/^typedef unsigned __int16 uint16_t;$/;"	t
+uint32_t	tests/asan_test_utils.h	/^typedef unsigned __int32 uint32_t;$/;"	t
+uint64_t	tests/asan_test_utils.h	/^typedef unsigned __int64 uint64_t;$/;"	t
+uint8_t	tests/asan_test_utils.h	/^typedef unsigned __int8  uint8_t;$/;"	t
+unmap_shadow_on_exit	asan_flags.h	/^  bool unmap_shadow_on_exit;$/;"	m	struct:__asan::Flags
+use_fake_stack	asan_flags.h	/^  bool use_fake_stack;$/;"	m	struct:__asan::Flags
+use_sigaltstack	asan_flags.h	/^  bool use_sigaltstack;$/;"	m	struct:__asan::Flags
+used_size	asan_allocator.cc	/^  uptr used_size : FIRST_32_SECOND_64(32, 56);  \/\/ Size requested by the user.$/;"	m	struct:__asan::ChunkBase	file:
+value	asan_poisoning.cc	/^  s8 value;  \/\/ = *chunk;$/;"	m	struct:__asan::ShadowSegmentEndpoint	file:
+value	lit_tests/initialization-nobug.cc	/^  int value;$/;"	m	class:Integer	file:
+verbosity	asan_flags.h	/^  int  verbosity;$/;"	m	struct:__asan::Flags
+vmaddrs	scripts/asan_symbolize.py	/^vmaddrs = {}$/;"	v
+worker_t	asan_intercepted_functions.h	/^typedef void* (*worker_t)(void *block);$/;"	t
+worker_t	asan_mac.cc	/^typedef void* (*worker_t)(void *block);$/;"	t	namespace:__asan	file:
+wrap_workitem_func	asan_mac.cc	/^void *wrap_workitem_func(void *arg) {$/;"	f
+write_addr_to_pipe	scripts/asan_symbolize.py	/^  def write_addr_to_pipe(self, offset):$/;"	m	class:DarwinSymbolizer
+x	asan_malloc_linux.cc	/^  int x[10];$/;"	m	struct:fake_mallinfo	file:
+x	lit_tests/Linux/initialization-bug-any-order.cc	/^static int x = initX();$/;"	v	file:
+x	lit_tests/Linux/rlimit_mmap_test.cc	/^static volatile void *x;$/;"	v	file:
+x	lit_tests/deep_thread_stack.cc	/^int *x;$/;"	v
+x	lit_tests/initialization-bug.cc	/^static int x = initX();$/;"	v	file:
+x	tests/asan_racy_double_free_test.cc	/^void *x[N];$/;"	v
+y	lit_tests/Helpers/initialization-bug-extra.cc	/^int y = initY();$/;"	v
+y	lit_tests/Helpers/initialization-bug-extra2.cc	/^int y = initY();$/;"	v
+z	lit_tests/initialization-bug.cc	/^int z = initZ();$/;"	v
+~ScopedInErrorReport	asan_report.cc	/^  NORETURN ~ScopedInErrorReport() {$/;"	f	class:__asan::ScopedInErrorReport

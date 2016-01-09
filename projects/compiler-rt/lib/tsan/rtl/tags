@@ -1,0 +1,1294 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Acquire	tsan_rtl_mutex.cc	/^void Acquire(ThreadState *thr, uptr pc, uptr addr) {$/;"	f	namespace:__tsan
+AddExpectRace	tsan_interface_ann.cc	/^static void AddExpectRace(ExpectRace *list,$/;"	f	namespace:__tsan
+AddLocation	tsan_rtl_report.cc	/^void ScopedReport::AddLocation(uptr addr, uptr size) {$/;"	f	class:__tsan::ScopedReport
+AddMemoryAccess	tsan_rtl_report.cc	/^void ScopedReport::AddMemoryAccess(uptr addr, Shadow s,$/;"	f	class:__tsan::ScopedReport
+AddMutex	tsan_rtl_report.cc	/^void ScopedReport::AddMutex(const SyncVar *s) {$/;"	f	class:__tsan::ScopedReport
+AddRacyStacks	tsan_rtl_report.cc	/^static void AddRacyStacks(ThreadState *thr, const StackTrace (&traces)[2],$/;"	f	namespace:__tsan
+AddSleep	tsan_rtl_report.cc	/^void ScopedReport::AddSleep(u32 stack_id) {$/;"	f	class:__tsan::ScopedReport
+AddStack	tsan_rtl_report.cc	/^void ScopedReport::AddStack(const StackTrace *stack) {$/;"	f	class:__tsan::ScopedReport
+AddThread	tsan_rtl_report.cc	/^void ScopedReport::AddThread(const ThreadContext *tctx) {$/;"	f	class:__tsan::ScopedReport
+Addr0AndSizeAreEqual	tsan_rtl.h	/^  static inline bool Addr0AndSizeAreEqual(const Shadow s1, const Shadow s2) {$/;"	f	class:__tsan::Shadow
+AfterSleep	tsan_rtl_mutex.cc	/^void AfterSleep(ThreadState *thr, uptr pc) {$/;"	f	namespace:__tsan
+Allocator	tsan_rtl.h	/^    SecondaryAllocator> Allocator;$/;"	t	namespace:__tsan
+AllocatorCache	tsan_rtl.h	/^    PrimaryAllocator> AllocatorCache;$/;"	t	namespace:__tsan
+AlloctorThreadFinish	tsan_mman.cc	/^void AlloctorThreadFinish(ThreadState *thr) {$/;"	f	namespace:__tsan
+AlternativeAddress	tsan_platform.h	/^static inline uptr AlternativeAddress(uptr addr) {$/;"	f	namespace:__tsan
+AnnotateBenignRace	tsan_interface_ann.cc	/^void AnnotateBenignRace(char *f, int l, uptr mem, char *desc) {$/;"	f
+AnnotateBenignRaceSized	tsan_interface_ann.cc	/^void AnnotateBenignRaceSized(char *f, int l, uptr mem, uptr size, char *desc) {$/;"	f
+AnnotateCondVarSignal	tsan_interface_ann.cc	/^void AnnotateCondVarSignal(char *f, int l, uptr cv) {$/;"	f
+AnnotateCondVarSignalAll	tsan_interface_ann.cc	/^void AnnotateCondVarSignalAll(char *f, int l, uptr cv) {$/;"	f
+AnnotateCondVarWait	tsan_interface_ann.cc	/^void AnnotateCondVarWait(char *f, int l, uptr cv, uptr lock) {$/;"	f
+AnnotateEnableRaceDetection	tsan_interface_ann.cc	/^void AnnotateEnableRaceDetection(char *f, int l, int enable) {$/;"	f
+AnnotateExpectRace	tsan_interface_ann.cc	/^void AnnotateExpectRace(char *f, int l, uptr mem, char *desc) {$/;"	f
+AnnotateFlushExpectedRaces	tsan_interface_ann.cc	/^void AnnotateFlushExpectedRaces(char *f, int l) {$/;"	f
+AnnotateFlushState	tsan_interface_ann.cc	/^void AnnotateFlushState(char *f, int l) {$/;"	f
+AnnotateHappensAfter	tsan_interface_ann.cc	/^void AnnotateHappensAfter(char *f, int l, uptr addr) {$/;"	f
+AnnotateHappensBefore	tsan_interface_ann.cc	/^void AnnotateHappensBefore(char *f, int l, uptr addr) {$/;"	f
+AnnotateIgnoreReadsBegin	tsan_interface_ann.cc	/^void AnnotateIgnoreReadsBegin(char *f, int l) {$/;"	f
+AnnotateIgnoreReadsEnd	tsan_interface_ann.cc	/^void AnnotateIgnoreReadsEnd(char *f, int l) {$/;"	f
+AnnotateIgnoreWritesBegin	tsan_interface_ann.cc	/^void AnnotateIgnoreWritesBegin(char *f, int l) {$/;"	f
+AnnotateIgnoreWritesEnd	tsan_interface_ann.cc	/^void AnnotateIgnoreWritesEnd(char *f, int l) {$/;"	f
+AnnotateMutexIsNotPHB	tsan_interface_ann.cc	/^void AnnotateMutexIsNotPHB(char *f, int l, uptr mu) {$/;"	f
+AnnotateMutexIsUsedAsCondVar	tsan_interface_ann.cc	/^void AnnotateMutexIsUsedAsCondVar(char *f, int l, uptr mu) {$/;"	f
+AnnotateNewMemory	tsan_interface_ann.cc	/^void AnnotateNewMemory(char *f, int l, uptr mem, uptr size) {$/;"	f
+AnnotateNoOp	tsan_interface_ann.cc	/^void AnnotateNoOp(char *f, int l, uptr mem) {$/;"	f
+AnnotatePCQCreate	tsan_interface_ann.cc	/^void AnnotatePCQCreate(char *f, int l, uptr pcq) {$/;"	f
+AnnotatePCQDestroy	tsan_interface_ann.cc	/^void AnnotatePCQDestroy(char *f, int l, uptr pcq) {$/;"	f
+AnnotatePCQGet	tsan_interface_ann.cc	/^void AnnotatePCQGet(char *f, int l, uptr pcq) {$/;"	f
+AnnotatePCQPut	tsan_interface_ann.cc	/^void AnnotatePCQPut(char *f, int l, uptr pcq) {$/;"	f
+AnnotatePublishMemoryRange	tsan_interface_ann.cc	/^void AnnotatePublishMemoryRange(char *f, int l, uptr addr, uptr size) {$/;"	f
+AnnotateRWLockAcquired	tsan_interface_ann.cc	/^void AnnotateRWLockAcquired(char *f, int l, uptr m, uptr is_w) {$/;"	f
+AnnotateRWLockCreate	tsan_interface_ann.cc	/^void AnnotateRWLockCreate(char *f, int l, uptr m) {$/;"	f
+AnnotateRWLockCreateStatic	tsan_interface_ann.cc	/^void AnnotateRWLockCreateStatic(char *f, int l, uptr m) {$/;"	f
+AnnotateRWLockDestroy	tsan_interface_ann.cc	/^void AnnotateRWLockDestroy(char *f, int l, uptr m) {$/;"	f
+AnnotateRWLockReleased	tsan_interface_ann.cc	/^void AnnotateRWLockReleased(char *f, int l, uptr m, uptr is_w) {$/;"	f
+AnnotateThreadName	tsan_interface_ann.cc	/^void AnnotateThreadName(char *f, int l, char *name) {$/;"	f
+AnnotateTraceMemory	tsan_interface_ann.cc	/^void AnnotateTraceMemory(char *f, int l, uptr mem) {$/;"	f
+AnnotateUnpublishMemoryRange	tsan_interface_ann.cc	/^void AnnotateUnpublishMemoryRange(char *f, int l, uptr addr, uptr size) {$/;"	f
+AsmSources	Makefile.mk	/^AsmSources := $(foreach file,$(wildcard $(Dir)\/*.S),$(notdir $(file)))$/;"	m
+AtExitContext	tsan_interceptors.cc	/^  AtExitContext()$/;"	f	class:AtExitContext
+AtExitContext	tsan_interceptors.cc	/^class AtExitContext {$/;"	c	file:
+AtomicCAS	tsan_interface_atomic.cc	/^static bool AtomicCAS(ThreadState *thr, uptr pc,$/;"	f	file:
+AtomicExchange	tsan_interface_atomic.cc	/^static T AtomicExchange(ThreadState *thr, uptr pc, volatile T *a, T v,$/;"	f	file:
+AtomicFence	tsan_interface_atomic.cc	/^static void AtomicFence(ThreadState *thr, uptr pc, morder mo) {$/;"	f	file:
+AtomicFetchAdd	tsan_interface_atomic.cc	/^static T AtomicFetchAdd(ThreadState *thr, uptr pc, volatile T *a, T v,$/;"	f	file:
+AtomicFetchAnd	tsan_interface_atomic.cc	/^static T AtomicFetchAnd(ThreadState *thr, uptr pc, volatile T *a, T v,$/;"	f	file:
+AtomicFetchOr	tsan_interface_atomic.cc	/^static T AtomicFetchOr(ThreadState *thr, uptr pc, volatile T *a, T v,$/;"	f	file:
+AtomicFetchSub	tsan_interface_atomic.cc	/^static T AtomicFetchSub(ThreadState *thr, uptr pc, volatile T *a, T v,$/;"	f	file:
+AtomicFetchXor	tsan_interface_atomic.cc	/^static T AtomicFetchXor(ThreadState *thr, uptr pc, volatile T *a, T v,$/;"	f	file:
+AtomicLoad	tsan_interface_atomic.cc	/^static T AtomicLoad(ThreadState *thr, uptr pc, const volatile T *a,$/;"	f	file:
+AtomicStatInc	tsan_interface_atomic.cc	/^static void AtomicStatInc(ThreadState *thr, uptr size, morder mo, StatType t) {$/;"	f	file:
+AtomicStore	tsan_interface_atomic.cc	/^static void AtomicStore(ThreadState *thr, uptr pc, volatile T *a, T v,$/;"	f	file:
+Backoff	tsan_mutex.cc	/^  Backoff()$/;"	f	class:__tsan::Backoff
+Backoff	tsan_mutex.cc	/^class Backoff {$/;"	c	namespace:__tsan	file:
+Begin	tsan_sync.cc	/^const uptr *StackTrace::Begin() const {$/;"	f	class:__tsan::StackTrace
+BenignRaceImpl	tsan_interface_ann.cc	/^static void BenignRaceImpl(char *f, int l, uptr mem, uptr size, char *desc) {$/;"	f	file:
+BothReads	tsan_rtl.cc	/^static inline bool BothReads(Shadow s, int kAccessIsWrite) {$/;"	f	namespace:__tsan
+CALLERPC	tsan_interface.cc	18;"	d	file:
+CALLERPC	tsan_interface_ann.cc	23;"	d	file:
+CALLERPC	tsan_interface_inl.h	17;"	d
+CTX	tsan_rtl.cc	/^Context *CTX() {$/;"	f	namespace:__tsan
+CanLockAdj	tsan_mutex.cc	/^static bool CanLockAdj[MutexTypeCount][MutexTypeCount];$/;"	m	namespace:__tsan	file:
+CanLockTab	tsan_mutex.cc	/^static MutexType CanLockTab[MutexTypeCount][MutexTypeCount] = {$/;"	m	namespace:__tsan	file:
+CheckContains	tsan_interface_ann.cc	/^static bool CheckContains(ExpectRace *list, uptr addr, uptr size) {$/;"	f	namespace:__tsan
+CheckLocked	tsan_mutex.cc	/^void Mutex::CheckLocked() {$/;"	f	class:__tsan::Mutex
+CheckPIE	tsan_platform_linux.cc	/^static void CheckPIE() {$/;"	f	namespace:__tsan
+ClearIgnoreBit	tsan_rtl.h	/^  void ClearIgnoreBit() { x_ &= ~kIgnoreBit; }$/;"	f	class:__tsan::FastState
+ComputeSearchOffset	tsan_rtl.h	/^  unsigned ComputeSearchOffset() {$/;"	f	class:__tsan::Shadow
+Contention	tsan_mutex.cc	/^  u64 Contention() const {$/;"	f	class:__tsan::Backoff
+Context	tsan_rtl.cc	/^Context::Context()$/;"	f	class:__tsan::Context
+Context	tsan_rtl.h	/^struct Context {$/;"	s	namespace:__tsan
+CopyFrom	tsan_sync.cc	/^void StackTrace::CopyFrom(const StackTrace& other) {$/;"	f	class:__tsan::StackTrace
+CurrentStackId	tsan_rtl.cc	/^u32 CurrentStackId(ThreadState *thr, uptr pc) {$/;"	f	namespace:__tsan
+DPrintf	tsan_rtl.h	457;"	d
+DPrintf	tsan_rtl.h	459;"	d
+DPrintf2	tsan_rtl.h	463;"	d
+DPrintf2	tsan_rtl.h	465;"	d
+DeadlockDetector	tsan_mutex.cc	/^DeadlockDetector::DeadlockDetector() {$/;"	f	class:__tsan::DeadlockDetector
+DeadlockDetector	tsan_mutex.h	/^class DeadlockDetector {$/;"	c	namespace:__tsan
+Dependencies	Makefile.mk	/^Dependencies := $(wildcard $(Dir)\/*.h)$/;"	m
+DestroyAndFree	tsan_mman.h	/^void DestroyAndFree(T *&p) {$/;"	f	namespace:__tsan
+Disable	tsan_clock.cc	/^void ThreadClock::Disable(unsigned tid) {$/;"	f	class:__tsan::ThreadClock
+DlIteratePhdrCtx	tsan_symbolize_addr2line_linux.cc	/^struct DlIteratePhdrCtx {$/;"	s	namespace:__tsan	file:
+Do	tsan_mutex.cc	/^  bool Do() {$/;"	f	class:__tsan::Backoff
+DynamicAnnContext	tsan_interface_ann.cc	/^  DynamicAnnContext()$/;"	f	struct:__tsan::DynamicAnnContext
+DynamicAnnContext	tsan_interface_ann.cc	/^struct DynamicAnnContext {$/;"	s	namespace:__tsan	file:
+EBUSY	tsan_interceptors.cc	/^const int EBUSY = 16;$/;"	v
+EINVAL	tsan_interceptors.cc	/^const int EINVAL = 22;$/;"	v
+EPOLL_CTL_ADD	tsan_interceptors.cc	/^const int EPOLL_CTL_ADD = 1;$/;"	v
+EnsureSize	tsan_vector.h	/^  void EnsureSize(uptr size) {$/;"	f	class:__tsan::Vector
+Event	tsan_trace.h	/^typedef u64 Event;$/;"	t	namespace:__tsan
+EventType	tsan_trace.h	/^enum EventType {$/;"	g	namespace:__tsan
+EventTypeFuncEnter	tsan_trace.h	/^  EventTypeFuncEnter,$/;"	e	enum:__tsan::EventType
+EventTypeFuncExit	tsan_trace.h	/^  EventTypeFuncExit,$/;"	e	enum:__tsan::EventType
+EventTypeLock	tsan_trace.h	/^  EventTypeLock,$/;"	e	enum:__tsan::EventType
+EventTypeMop	tsan_trace.h	/^  EventTypeMop,$/;"	e	enum:__tsan::EventType
+EventTypeRLock	tsan_trace.h	/^  EventTypeRLock,$/;"	e	enum:__tsan::EventType
+EventTypeRUnlock	tsan_trace.h	/^  EventTypeRUnlock$/;"	e	enum:__tsan::EventType
+EventTypeUnlock	tsan_trace.h	/^  EventTypeUnlock,$/;"	e	enum:__tsan::EventType
+ExpectRace	tsan_interface_ann.cc	/^struct ExpectRace {$/;"	s	namespace:__tsan	file:
+F	tsan_md5.cc	17;"	d	file:
+F_LOCK	tsan_interceptors.cc	74;"	d	file:
+F_TEST	tsan_interceptors.cc	76;"	d	file:
+F_TLOCK	tsan_interceptors.cc	75;"	d	file:
+F_ULOCK	tsan_interceptors.cc	73;"	d	file:
+FastState	tsan_rtl.h	/^  FastState(u64 tid, u64 epoch) {$/;"	f	class:__tsan::FastState
+FastState	tsan_rtl.h	/^  explicit FastState(u64 x)$/;"	f	class:__tsan::FastState
+FastState	tsan_rtl.h	/^class FastState {$/;"	c	namespace:__tsan
+Finalize	tsan_rtl.cc	/^int Finalize(ThreadState *thr) {$/;"	f	namespace:__tsan
+FinalizePlatform	tsan_platform_linux.cc	/^void FinalizePlatform() {$/;"	f	namespace:__tsan
+FinalizePlatform	tsan_platform_mac.cc	/^void FinalizePlatform() {$/;"	f	namespace:__tsan
+FindRace	tsan_interface_ann.cc	/^static ExpectRace *FindRace(ExpectRace *list, uptr addr, uptr size) {$/;"	f	namespace:__tsan
+FindThread	tsan_rtl_report.cc	/^static ThreadContext *FindThread(int unique_id) {$/;"	f	namespace:__tsan
+FiredSuppression	tsan_rtl.h	/^struct FiredSuppression {$/;"	s	namespace:__tsan
+Flags	tsan_flags.h	/^struct Flags {$/;"	s	namespace:__tsan
+FlushShadowMemory	tsan_platform_linux.cc	/^void FlushShadowMemory() {$/;"	f	namespace:__tsan
+FlushShadowMemory	tsan_platform_mac.cc	/^void FlushShadowMemory() {$/;"	f	namespace:__tsan
+FuncEntry	tsan_rtl.cc	/^void FuncEntry(ThreadState *thr, uptr pc) {$/;"	f	namespace:__tsan
+FuncExit	tsan_rtl.cc	/^void FuncExit(ThreadState *thr) {$/;"	f	namespace:__tsan
+G	tsan_md5.cc	18;"	d	file:
+GET	tsan_md5.cc	29;"	d	file:
+Get	tsan_sync.cc	/^uptr StackTrace::Get(uptr i) const {$/;"	f	class:__tsan::StackTrace
+GetAndLock	tsan_sync.cc	/^SyncVar* SyncTab::GetAndLock(ThreadState *thr, uptr pc,$/;"	f	class:__tsan::SyncTab
+GetAndRemove	tsan_sync.cc	/^SyncVar* SyncTab::GetAndRemove(ThreadState *thr, uptr pc, uptr addr) {$/;"	f	class:__tsan::SyncTab
+GetFreedAndReset	tsan_rtl.h	/^  bool GetFreedAndReset() {$/;"	f	class:__tsan::Shadow
+GetIgnoreBit	tsan_rtl.h	/^  bool GetIgnoreBit() const { return x_ & kIgnoreBit; }$/;"	f	class:__tsan::FastState
+GetMemoryConsumption	tsan_sync.cc	/^uptr SyncTab::GetMemoryConsumption(uptr *nsync) {$/;"	f	class:__tsan::SyncTab
+GetMemoryConsumption	tsan_sync.cc	/^uptr SyncVar::GetMemoryConsumption() {$/;"	f	class:__tsan::SyncVar
+GetReport	tsan_rtl_report.cc	/^const ReportDesc *ScopedReport::GetReport() const {$/;"	f	class:__tsan::ScopedReport
+GetSectionDesc	tsan_symbolize_addr2line_linux.cc	/^static SectionDesc *GetSectionDesc(uptr addr) {$/;"	f	namespace:__tsan
+GetShadowMemoryConsumption	tsan_platform_linux.cc	/^uptr GetShadowMemoryConsumption() {$/;"	f	namespace:__tsan
+GetShadowMemoryConsumption	tsan_platform_mac.cc	/^uptr GetShadowMemoryConsumption() {$/;"	f	namespace:__tsan
+GetThreadStackAndTls	tsan_platform_linux.cc	/^void GetThreadStackAndTls(bool main, uptr *stk_addr, uptr *stk_size,$/;"	f	namespace:__tsan
+GetThreadStackAndTls	tsan_platform_mac.cc	/^void GetThreadStackAndTls(bool main, uptr *stk_addr, uptr *stk_size,$/;"	f	namespace:__tsan
+GetTlsSize	tsan_platform_linux.cc	/^uptr GetTlsSize() {$/;"	f	namespace:__tsan
+GetTlsSize	tsan_platform_mac.cc	/^uptr GetTlsSize() {$/;"	f	namespace:__tsan
+H	tsan_md5.cc	19;"	d	file:
+HACKY_CALL	tsan_rtl.h	525;"	d
+HACKY_CALL	tsan_rtl.h	533;"	d
+HandleRace	tsan_rtl.cc	/^static inline void HandleRace(ThreadState *thr, u64 *shadow_mem,$/;"	f	namespace:__tsan
+HandleRacyStacks	tsan_rtl_report.cc	/^static bool HandleRacyStacks(ThreadState *thr, const StackTrace (&traces)[2],$/;"	f	namespace:__tsan
+HappensBefore	tsan_rtl.cc	/^static inline bool HappensBefore(Shadow old, ThreadState *thr) {$/;"	f	namespace:__tsan
+I	tsan_md5.cc	20;"	d	file:
+INTERNAL_FUNCTION	tsan_platform_linux.cc	/^    __attribute__((weak)) INTERNAL_FUNCTION;$/;"	m	namespace:__tsan	file:
+INTERNAL_FUNCTION	tsan_platform_linux.cc	175;"	d	file:
+INTERNAL_FUNCTION	tsan_platform_linux.cc	177;"	d	file:
+IgnoreCtl	tsan_rtl.cc	/^void IgnoreCtl(ThreadState *thr, bool write, bool begin) {$/;"	f	namespace:__tsan
+Implementation	Makefile.mk	/^Implementation := Generic$/;"	m
+IncrementEpoch	tsan_rtl.h	/^  void IncrementEpoch() {$/;"	f	class:__tsan::FastState
+Init	tsan_sync.cc	/^void StackTrace::Init(const uptr *pcs, uptr cnt) {$/;"	f	class:__tsan::StackTrace
+InitDataSeg	tsan_platform_linux.cc	/^static void InitDataSeg() {$/;"	f	namespace:__tsan
+InitList	tsan_interface_ann.cc	/^static void InitList(ExpectRace *list) {$/;"	f	namespace:__tsan
+InitModule	tsan_symbolize_addr2line_linux.cc	/^static void NOINLINE InitModule(ModuleDesc *m) {$/;"	f	namespace:__tsan
+InitSections	tsan_symbolize_addr2line_linux.cc	/^static SectionDesc *InitSections() {$/;"	f	namespace:__tsan
+InitTlsSize	tsan_platform_linux.cc	/^static int InitTlsSize() {$/;"	f	namespace:__tsan
+Initialize	tsan_rtl.cc	/^void Initialize(ThreadState *thr) {$/;"	f	namespace:__tsan
+InitializeAllocator	tsan_mman.cc	/^void InitializeAllocator() {$/;"	f	namespace:__tsan
+InitializeDynamicAnnotations	tsan_interface_ann.cc	/^void InitializeDynamicAnnotations() {$/;"	f	namespace:__tsan
+InitializeFlags	tsan_flags.cc	/^void InitializeFlags(Flags *f, const char *env) {$/;"	f	namespace:__tsan
+InitializeInterceptors	tsan_interceptors.cc	/^void InitializeInterceptors() {$/;"	f	namespace:__tsan
+InitializeMemoryFlush	tsan_rtl.cc	/^static void InitializeMemoryFlush() {$/;"	f	namespace:__tsan
+InitializeMemoryProfile	tsan_rtl.cc	/^static void InitializeMemoryProfile() {$/;"	f	namespace:__tsan
+InitializeMutex	tsan_mutex.cc	/^void InitializeMutex() {$/;"	f	namespace:__tsan
+InitializePlatform	tsan_platform_linux.cc	/^const char *InitializePlatform() {$/;"	f	namespace:__tsan
+InitializePlatform	tsan_platform_mac.cc	/^const char *InitializePlatform() {$/;"	f	namespace:__tsan
+InitializeShadowMemory	tsan_platform_linux.cc	/^void InitializeShadowMemory() {$/;"	f	namespace:__tsan
+InitializeShadowMemory	tsan_platform_mac.cc	/^void InitializeShadowMemory() {$/;"	f	namespace:__tsan
+InitializeSuppressions	tsan_suppressions.cc	/^void InitializeSuppressions() {$/;"	f	namespace:__tsan
+IsAcquireOrder	tsan_interface_atomic.cc	/^static bool IsAcquireOrder(morder mo) {$/;"	f	file:
+IsAppMem	tsan_platform.h	/^static inline bool IsAppMem(uptr mem) {$/;"	f	namespace:__tsan
+IsEmpty	tsan_sync.cc	/^bool StackTrace::IsEmpty() const {$/;"	f	class:__tsan::StackTrace
+IsExpectedReport	tsan_interface_ann.cc	/^bool IsExpectedReport(uptr addr, uptr size) {$/;"	f	namespace:__tsan
+IsFiredSuppression	tsan_rtl_report.cc	/^bool IsFiredSuppression(Context *ctx,$/;"	f	namespace:__tsan
+IsGlobalVar	tsan_platform_linux.cc	/^bool IsGlobalVar(uptr addr) {$/;"	f	namespace:__tsan
+IsLoadOrder	tsan_interface_atomic.cc	/^static bool IsLoadOrder(morder mo) {$/;"	f	file:
+IsReleaseOrder	tsan_interface_atomic.cc	/^static bool IsReleaseOrder(morder mo) {$/;"	f	file:
+IsShadowMem	tsan_platform.h	/^static inline bool IsShadowMem(uptr mem) {$/;"	f	namespace:__tsan
+IsStoreOrder	tsan_interface_atomic.cc	/^static bool IsStoreOrder(morder mo) {$/;"	f	file:
+IsSuppressed	tsan_suppressions.cc	/^uptr IsSuppressed(ReportType typ, const ReportStack *stack) {$/;"	f	namespace:__tsan
+IsZero	tsan_rtl.h	/^  bool IsZero() const { return x_ == 0; }$/;"	f	class:__tsan::Shadow
+LoadShadow	tsan_rtl.cc	/^static Shadow LoadShadow(u64 *p) {$/;"	f	namespace:__tsan
+Lock	tsan_mutex.cc	/^void DeadlockDetector::Lock(MutexType t) {$/;"	f	class:__tsan::DeadlockDetector
+Lock	tsan_mutex.cc	/^void Mutex::Lock() {$/;"	f	class:__tsan::Mutex
+Lock	tsan_mutex.h	/^typedef GenericScopedLock<Mutex> Lock;$/;"	t	namespace:__tsan
+MAP_FAILED	tsan_interceptors.cc	/^void *const MAP_FAILED = (void*)-1;$/;"	v
+MAP_FIXED	tsan_interceptors.cc	/^const int MAP_FIXED = 0x10;$/;"	v
+MBlock	tsan_rtl.h	/^struct MBlock {$/;"	s	namespace:__tsan
+MBlockAtExit	tsan_mman.h	/^  MBlockAtExit,$/;"	e	enum:__tsan::MBlockType
+MBlockClock	tsan_mman.h	/^  MBlockClock,$/;"	e	enum:__tsan::MBlockType
+MBlockDeadInfo	tsan_mman.h	/^  MBlockDeadInfo,$/;"	e	enum:__tsan::MBlockType
+MBlockExpectRace	tsan_mman.h	/^  MBlockExpectRace,$/;"	e	enum:__tsan::MBlockType
+MBlockFlag	tsan_mman.h	/^  MBlockFlag,$/;"	e	enum:__tsan::MBlockType
+MBlockRacyAddresses	tsan_mman.h	/^  MBlockRacyAddresses,$/;"	e	enum:__tsan::MBlockType
+MBlockRacyStacks	tsan_mman.h	/^  MBlockRacyStacks,$/;"	e	enum:__tsan::MBlockType
+MBlockReport	tsan_mman.h	/^  MBlockReport,$/;"	e	enum:__tsan::MBlockType
+MBlockReportLoc	tsan_mman.h	/^  MBlockReportLoc,$/;"	e	enum:__tsan::MBlockType
+MBlockReportMop	tsan_mman.h	/^  MBlockReportMop,$/;"	e	enum:__tsan::MBlockType
+MBlockReportMutex	tsan_mman.h	/^  MBlockReportMutex,$/;"	e	enum:__tsan::MBlockType
+MBlockReportStack	tsan_mman.h	/^  MBlockReportStack,$/;"	e	enum:__tsan::MBlockType
+MBlockReportThread	tsan_mman.h	/^  MBlockReportThread,$/;"	e	enum:__tsan::MBlockType
+MBlockScopedBuf	tsan_mman.h	/^  MBlockScopedBuf,$/;"	e	enum:__tsan::MBlockType
+MBlockShadowStack	tsan_mman.h	/^  MBlockShadowStack,$/;"	e	enum:__tsan::MBlockType
+MBlockSignal	tsan_mman.h	/^  MBlockSignal,$/;"	e	enum:__tsan::MBlockType
+MBlockStackTrace	tsan_mman.h	/^  MBlockStackTrace,$/;"	e	enum:__tsan::MBlockType
+MBlockString	tsan_mman.h	/^  MBlockString,$/;"	e	enum:__tsan::MBlockType
+MBlockSuppression	tsan_mman.h	/^  MBlockSuppression,$/;"	e	enum:__tsan::MBlockType
+MBlockSync	tsan_mman.h	/^  MBlockSync,$/;"	e	enum:__tsan::MBlockType
+MBlockThreadContex	tsan_mman.h	/^  MBlockThreadContex,$/;"	e	enum:__tsan::MBlockType
+MBlockType	tsan_mman.h	/^enum MBlockType {$/;"	g	namespace:__tsan
+MBlockTypeCount	tsan_mman.h	/^  MBlockTypeCount$/;"	e	enum:__tsan::MBlockType
+MD5Hash	tsan_defs.h	/^struct MD5Hash {$/;"	s	namespace:__tsan
+MD5_CTX	tsan_md5.cc	/^} MD5_CTX;$/;"	t	namespace:__tsan	typeref:struct:__tsan::__anon3	file:
+MD5_Final	tsan_md5.cc	/^void MD5_Final(unsigned char *result, MD5_CTX *ctx) {$/;"	f	namespace:__tsan
+MD5_Init	tsan_md5.cc	/^void MD5_Init(MD5_CTX *ctx) {$/;"	f	namespace:__tsan
+MD5_Update	tsan_md5.cc	/^void MD5_Update(MD5_CTX *ctx, void *data, ulong_t size) {$/;"	f	namespace:__tsan
+MD5_u32plus	tsan_md5.cc	/^typedef unsigned int MD5_u32plus;$/;"	t	namespace:__tsan	file:
+MarkAsFreed	tsan_rtl.h	/^  void MarkAsFreed() {$/;"	f	class:__tsan::Shadow
+MaybeReportThreadLeak	tsan_rtl_thread.cc	/^static void MaybeReportThreadLeak(ThreadContext *tctx) {$/;"	f	namespace:__tsan
+MemToShadow	tsan_platform.h	42;"	d
+MemToShadow	tsan_platform.h	45;"	d
+MemoryAccess	tsan_rtl.cc	/^void MemoryAccess(ThreadState *thr, uptr pc, uptr addr,$/;"	f	namespace:__tsan
+MemoryAccessImpl	tsan_rtl.cc	/^void MemoryAccessImpl(ThreadState *thr, uptr addr,$/;"	f	namespace:__tsan
+MemoryAccessRange	tsan_rtl_thread.cc	/^void MemoryAccessRange(ThreadState *thr, uptr pc, uptr addr,$/;"	f	namespace:__tsan
+MemoryFlushThread	tsan_rtl.cc	/^static void MemoryFlushThread(void *arg) {$/;"	f	namespace:__tsan
+MemoryProfileThread	tsan_rtl.cc	/^static void MemoryProfileThread(void *arg) {$/;"	f	namespace:__tsan
+MemoryRangeFreed	tsan_rtl.cc	/^void MemoryRangeFreed(ThreadState *thr, uptr pc, uptr addr, uptr size) {$/;"	f	namespace:__tsan
+MemoryRangeImitateWrite	tsan_rtl.cc	/^void MemoryRangeImitateWrite(ThreadState *thr, uptr pc, uptr addr, uptr size) {$/;"	f	namespace:__tsan
+MemoryRangeSet	tsan_rtl.cc	/^static void MemoryRangeSet(ThreadState *thr, uptr pc, uptr addr, uptr size,$/;"	f	namespace:__tsan
+MemoryRead1Byte	tsan_rtl_thread.cc	/^void MemoryRead1Byte(ThreadState *thr, uptr pc, uptr addr) {$/;"	f	namespace:__tsan
+MemoryRead8Byte	tsan_rtl_thread.cc	/^void MemoryRead8Byte(ThreadState *thr, uptr pc, uptr addr) {$/;"	f	namespace:__tsan
+MemoryResetRange	tsan_rtl.cc	/^void MemoryResetRange(ThreadState *thr, uptr pc, uptr addr, uptr size) {$/;"	f	namespace:__tsan
+MemoryWrite1Byte	tsan_rtl_thread.cc	/^void MemoryWrite1Byte(ThreadState *thr, uptr pc, uptr addr) {$/;"	f	namespace:__tsan
+MemoryWrite8Byte	tsan_rtl_thread.cc	/^void MemoryWrite8Byte(ThreadState *thr, uptr pc, uptr addr) {$/;"	f	namespace:__tsan
+ModuleDesc	tsan_symbolize_addr2line_linux.cc	/^struct ModuleDesc {$/;"	s	namespace:__tsan	file:
+ModuleName	Makefile.mk	/^ModuleName := tsan$/;"	m
+Mutex	tsan_mutex.cc	/^Mutex::Mutex(MutexType type, StatType stat_type) {$/;"	f	class:__tsan::Mutex
+Mutex	tsan_mutex.h	/^class Mutex {$/;"	c	namespace:__tsan
+MutexCreate	tsan_rtl_mutex.cc	/^void MutexCreate(ThreadState *thr, uptr pc, uptr addr,$/;"	f	namespace:__tsan
+MutexDestroy	tsan_rtl_mutex.cc	/^void MutexDestroy(ThreadState *thr, uptr pc, uptr addr) {$/;"	f	namespace:__tsan
+MutexLock	tsan_rtl_mutex.cc	/^void MutexLock(ThreadState *thr, uptr pc, uptr addr) {$/;"	f	namespace:__tsan
+MutexReadLock	tsan_rtl_mutex.cc	/^void MutexReadLock(ThreadState *thr, uptr pc, uptr addr) {$/;"	f	namespace:__tsan
+MutexReadOrWriteUnlock	tsan_rtl_mutex.cc	/^void MutexReadOrWriteUnlock(ThreadState *thr, uptr pc, uptr addr) {$/;"	f	namespace:__tsan
+MutexReadUnlock	tsan_rtl_mutex.cc	/^void MutexReadUnlock(ThreadState *thr, uptr pc, uptr addr) {$/;"	f	namespace:__tsan
+MutexType	tsan_mutex.h	/^enum MutexType {$/;"	g	namespace:__tsan
+MutexTypeAnnotations	tsan_mutex.h	/^  MutexTypeAnnotations,$/;"	e	enum:__tsan::MutexType
+MutexTypeAtExit	tsan_mutex.h	/^  MutexTypeAtExit,$/;"	e	enum:__tsan::MutexType
+MutexTypeCount	tsan_mutex.h	/^  MutexTypeCount$/;"	e	enum:__tsan::MutexType
+MutexTypeInvalid	tsan_mutex.h	/^  MutexTypeInvalid,$/;"	e	enum:__tsan::MutexType
+MutexTypeLeaf	tsan_mutex.cc	/^const MutexType MutexTypeLeaf = (MutexType)-1;$/;"	m	namespace:__tsan	file:
+MutexTypeReport	tsan_mutex.h	/^  MutexTypeReport,$/;"	e	enum:__tsan::MutexType
+MutexTypeSlab	tsan_mutex.h	/^  MutexTypeSlab,$/;"	e	enum:__tsan::MutexType
+MutexTypeSyncTab	tsan_mutex.h	/^  MutexTypeSyncTab,$/;"	e	enum:__tsan::MutexType
+MutexTypeSyncVar	tsan_mutex.h	/^  MutexTypeSyncVar,$/;"	e	enum:__tsan::MutexType
+MutexTypeThreads	tsan_mutex.h	/^  MutexTypeThreads,$/;"	e	enum:__tsan::MutexType
+MutexTypeTrace	tsan_mutex.h	/^  MutexTypeTrace,$/;"	e	enum:__tsan::MutexType
+MutexUnlock	tsan_rtl_mutex.cc	/^void MutexUnlock(ThreadState *thr, uptr pc, uptr addr) {$/;"	f	namespace:__tsan
+NewReportStackEntry	tsan_symbolize.cc	/^ReportStack *NewReportStackEntry(uptr addr) {$/;"	f	namespace:__tsan
+NewReportStackEntry	tsan_symbolize.cc	/^static ReportStack *NewReportStackEntry(const AddressInfo &info) {$/;"	f	namespace:__tsan
+OPERATOR_DELETE_BODY	tsan_interceptors.cc	360;"	d	file:
+OPERATOR_NEW_BODY	tsan_interceptors.cc	338;"	d	file:
+ObjNames	Makefile.mk	/^ObjNames := $(Sources:%.cc=%.o) $(AsmSources:%.S=%.o)$/;"	m
+ObtainCurrent	tsan_sync.cc	/^void StackTrace::ObtainCurrent(ThreadState *thr, uptr toppc) {$/;"	f	class:__tsan::StackTrace
+OldIsInSameSynchEpoch	tsan_rtl.cc	/^static inline bool OldIsInSameSynchEpoch(Shadow old, ThreadState *thr) {$/;"	f	namespace:__tsan
+OldIsRWStronger	tsan_rtl.cc	/^static inline bool OldIsRWStronger(Shadow old, int kAccessIsWrite) {$/;"	f	namespace:__tsan
+OldIsRWWeaker	tsan_rtl.cc	/^static inline bool OldIsRWWeaker(Shadow old, int kAccessIsWrite) {$/;"	f	namespace:__tsan
+OnReport	tsan_rtl_report.cc	/^bool WEAK OnReport(const ReportDesc *rep, bool suppressed) {$/;"	f	namespace:__tsan
+OutputReport	tsan_rtl_report.cc	/^bool OutputReport(Context *ctx,$/;"	f	namespace:__tsan
+OverrideFlags	tsan_flags.cc	/^void WEAK OverrideFlags(Flags *f) {$/;"	f	namespace:__tsan
+PTHREAD_BARRIER_SERIAL_THREAD	tsan_interceptors.cc	/^const int PTHREAD_BARRIER_SERIAL_THREAD = -1;$/;"	v
+PTHREAD_MUTEX_RECURSIVE	tsan_interceptors.cc	/^const int PTHREAD_MUTEX_RECURSIVE = 1;$/;"	v
+PTHREAD_MUTEX_RECURSIVE_NP	tsan_interceptors.cc	/^const int PTHREAD_MUTEX_RECURSIVE_NP = 1;$/;"	v
+Part	tsan_sync.cc	/^SyncTab::Part::Part()$/;"	f	class:__tsan::SyncTab::Part
+Part	tsan_sync.h	/^  struct Part {$/;"	s	class:__tsan::SyncTab
+PartIdx	tsan_sync.cc	/^int SyncTab::PartIdx(uptr addr) {$/;"	f	class:__tsan::SyncTab
+PrimaryAllocator	tsan_rtl.h	/^    DefaultSizeClassMap> PrimaryAllocator;$/;"	t	namespace:__tsan
+PrintCurrentStack	tsan_rtl_report.cc	/^void PrintCurrentStack(ThreadState *thr, uptr pc) {$/;"	f	namespace:__tsan
+PrintHeader	tsan_report.cc	/^static void PrintHeader(ReportType typ) {$/;"	f	namespace:__tsan
+PrintLocation	tsan_report.cc	/^static void PrintLocation(const ReportLocation *loc) {$/;"	f	namespace:__tsan
+PrintMop	tsan_report.cc	/^static void PrintMop(const ReportMop *mop, bool first) {$/;"	f	namespace:__tsan
+PrintMutex	tsan_report.cc	/^static void PrintMutex(const ReportMutex *rm) {$/;"	f	namespace:__tsan
+PrintReport	tsan_report.cc	/^void PrintReport(const ReportDesc *rep) {$/;"	f	namespace:__tsan
+PrintSleep	tsan_report.cc	/^static void PrintSleep(const ReportStack *s) {$/;"	f	namespace:__tsan
+PrintStack	tsan_report.cc	/^void PrintStack(const ReportStack *ent) {$/;"	f	namespace:__tsan
+PrintThread	tsan_report.cc	/^static void PrintThread(const ReportThread *rt) {$/;"	f	namespace:__tsan
+ProtectRange	tsan_platform_linux.cc	/^static void ProtectRange(uptr beg, uptr end) {$/;"	f	namespace:__tsan
+PushBack	tsan_vector.h	/^  T *PushBack(T v = T()) {$/;"	f	class:__tsan::Vector
+RacyAddress	tsan_rtl.h	/^struct RacyAddress {$/;"	s	namespace:__tsan
+RacyStacks	tsan_rtl.h	/^struct RacyStacks {$/;"	s	namespace:__tsan
+ReadFile	tsan_suppressions.cc	/^static char *ReadFile(const char *filename) {$/;"	f	namespace:__tsan
+ReadLock	tsan_mutex.cc	/^void Mutex::ReadLock() {$/;"	f	class:__tsan::Mutex
+ReadLock	tsan_mutex.h	/^typedef GenericScopedReadLock<Mutex> ReadLock;$/;"	t	namespace:__tsan
+ReadUnlock	tsan_mutex.cc	/^void Mutex::ReadUnlock() {$/;"	f	class:__tsan::Mutex
+Release	tsan_rtl_mutex.cc	/^void Release(ThreadState *thr, uptr pc, uptr addr) {$/;"	f	namespace:__tsan
+ReleaseStore	tsan_clock.cc	/^void ThreadClock::ReleaseStore(SyncClock *dst) const {$/;"	f	class:__tsan::ThreadClock
+ReleaseStore	tsan_rtl_mutex.cc	/^void ReleaseStore(ThreadState *thr, uptr pc, uptr addr) {$/;"	f	namespace:__tsan
+ReportDesc	tsan_report.cc	/^ReportDesc::ReportDesc()$/;"	f	class:__tsan::ReportDesc
+ReportDesc	tsan_report.h	/^class ReportDesc {$/;"	c	namespace:__tsan
+ReportLocation	tsan_report.h	/^struct ReportLocation {$/;"	s	namespace:__tsan
+ReportLocationGlobal	tsan_report.h	/^  ReportLocationGlobal,$/;"	e	enum:__tsan::ReportLocationType
+ReportLocationHeap	tsan_report.h	/^  ReportLocationHeap,$/;"	e	enum:__tsan::ReportLocationType
+ReportLocationStack	tsan_report.h	/^  ReportLocationStack$/;"	e	enum:__tsan::ReportLocationType
+ReportLocationType	tsan_report.h	/^enum ReportLocationType {$/;"	g	namespace:__tsan
+ReportMissedExpectedRace	tsan_interface_ann.cc	/^static void ReportMissedExpectedRace(ExpectRace *race) {$/;"	f	file:
+ReportMop	tsan_report.h	/^struct ReportMop {$/;"	s	namespace:__tsan
+ReportMutex	tsan_report.h	/^struct ReportMutex {$/;"	s	namespace:__tsan
+ReportRace	tsan_rtl_report.cc	/^void ReportRace(ThreadState *thr) {$/;"	f	namespace:__tsan
+ReportStack	tsan_report.h	/^struct ReportStack {$/;"	s	namespace:__tsan
+ReportThread	tsan_report.h	/^struct ReportThread {$/;"	s	namespace:__tsan
+ReportType	tsan_report.h	/^enum ReportType {$/;"	g	namespace:__tsan
+ReportTypeErrnoInSignal	tsan_report.h	/^  ReportTypeErrnoInSignal$/;"	e	enum:__tsan::ReportType
+ReportTypeMutexDestroyLocked	tsan_report.h	/^  ReportTypeMutexDestroyLocked,$/;"	e	enum:__tsan::ReportType
+ReportTypeRace	tsan_report.h	/^  ReportTypeRace,$/;"	e	enum:__tsan::ReportType
+ReportTypeSignalUnsafe	tsan_report.h	/^  ReportTypeSignalUnsafe,$/;"	e	enum:__tsan::ReportType
+ReportTypeThreadLeak	tsan_report.h	/^  ReportTypeThreadLeak,$/;"	e	enum:__tsan::ReportType
+ReportTypeUseAfterFree	tsan_report.h	/^  ReportTypeUseAfterFree,$/;"	e	enum:__tsan::ReportType
+Reset	tsan_clock.h	/^  void Reset() {$/;"	f	class:__tsan::SyncClock
+Reset	tsan_sync.cc	/^void StackTrace::Reset() {$/;"	f	class:__tsan::StackTrace
+Reset	tsan_vector.h	/^  void Reset() {$/;"	f	class:__tsan::Vector
+Resize	tsan_vector.h	/^  void Resize(uptr size) {$/;"	f	class:__tsan::Vector
+RestoreStack	tsan_rtl_report.cc	/^void RestoreStack(int tid, const u64 epoch, StackTrace *stk) {$/;"	f	namespace:__tsan
+RoundUp	tsan_defs.h	/^T RoundUp(T p, int align) {$/;"	f	namespace:__tsan
+RunningOnValgrind	tsan_interface_ann.cc	/^int RunningOnValgrind() {$/;"	f
+SA_SIGINFO	tsan_interceptors.cc	/^const int SA_SIGINFO = 4;$/;"	v
+SCOPED_ANNOTATION	tsan_interface_ann.cc	51;"	d	file:
+SCOPED_ATOMIC	tsan_interface_atomic.cc	82;"	d	file:
+SCOPED_INTERCEPTOR_RAW	tsan_interceptors.h	32;"	d
+SCOPED_TSAN_INTERCEPTOR	tsan_interceptors.h	43;"	d
+SET	tsan_md5.cc	27;"	d	file:
+SIGABRT	tsan_interceptors.cc	/^const int SIGABRT = 6;$/;"	v
+SIGBUS	tsan_interceptors.cc	/^const int SIGBUS = 7;$/;"	v
+SIGFPE	tsan_interceptors.cc	/^const int SIGFPE = 8;$/;"	v
+SIGILL	tsan_interceptors.cc	/^const int SIGILL = 4;$/;"	v
+SIGPIPE	tsan_interceptors.cc	/^const int SIGPIPE = 13;$/;"	v
+SIGSEGV	tsan_interceptors.cc	/^const int SIGSEGV = 11;$/;"	v
+SIG_DFL	tsan_interceptors.cc	/^const sighandler_t SIG_DFL = (sighandler_t)0;$/;"	v
+SIG_ERR	tsan_interceptors.cc	/^const sighandler_t SIG_ERR = (sighandler_t)-1;$/;"	v
+SIG_IGN	tsan_interceptors.cc	/^const sighandler_t SIG_IGN = (sighandler_t)1;$/;"	v
+SIG_SETMASK	tsan_interceptors.cc	/^const int SIG_SETMASK = 2;$/;"	v
+STEP	tsan_md5.cc	22;"	d	file:
+ScopedAnnotation	tsan_interface_ann.cc	/^  ScopedAnnotation(ThreadState *thr, const char *aname, const char *f, int l,$/;"	f	class:__tsan::ScopedAnnotation
+ScopedAnnotation	tsan_interface_ann.cc	/^class ScopedAnnotation {$/;"	c	namespace:__tsan	file:
+ScopedAtomic	tsan_interface_atomic.cc	/^  ScopedAtomic(ThreadState *thr, uptr pc, const char *func)$/;"	f	class:ScopedAtomic
+ScopedAtomic	tsan_interface_atomic.cc	/^class ScopedAtomic {$/;"	c	file:
+ScopedInRtl	tsan_platform_linux.cc	/^ScopedInRtl::ScopedInRtl()$/;"	f	class:__tsan::ScopedInRtl
+ScopedInRtl	tsan_platform_mac.cc	/^ScopedInRtl::ScopedInRtl() {$/;"	f	class:__tsan::ScopedInRtl
+ScopedInRtl	tsan_rtl.h	/^class ScopedInRtl {$/;"	c	namespace:__tsan
+ScopedInterceptor	tsan_interceptors.cc	/^ScopedInterceptor::ScopedInterceptor(ThreadState *thr, const char *fname,$/;"	f	class:ScopedInterceptor
+ScopedInterceptor	tsan_interceptors.h	/^class ScopedInterceptor {$/;"	c	namespace:__tsan
+ScopedReport	tsan_rtl.h	/^class ScopedReport {$/;"	c	namespace:__tsan
+ScopedReport	tsan_rtl_report.cc	/^ScopedReport::ScopedReport(ReportType typ) {$/;"	f	class:__tsan::ScopedReport
+SecondaryAllocator	tsan_rtl.h	/^typedef LargeMmapAllocator SecondaryAllocator;$/;"	t	namespace:__tsan
+SectionDesc	tsan_symbolize_addr2line_linux.cc	/^struct SectionDesc {$/;"	s	namespace:__tsan	file:
+SetAddr0AndSizeLog	tsan_rtl.h	/^  void SetAddr0AndSizeLog(u64 addr0, unsigned kAccessSizeLog) {$/;"	f	class:__tsan::Shadow
+SetIgnoreBit	tsan_rtl.h	/^  void SetIgnoreBit() { x_ |= kIgnoreBit; }$/;"	f	class:__tsan::FastState
+SetWrite	tsan_rtl.h	/^  void SetWrite(unsigned kAccessIsWrite) {$/;"	f	class:__tsan::Shadow
+Shadow	tsan_rtl.h	/^  explicit Shadow(const FastState &s) : FastState(s.x_) { }$/;"	f	class:__tsan::Shadow
+Shadow	tsan_rtl.h	/^  explicit Shadow(u64 x) : FastState(x) { }$/;"	f	class:__tsan::Shadow
+Shadow	tsan_rtl.h	/^class Shadow : public FastState {$/;"	c	namespace:__tsan
+ShadowToMem	tsan_platform.h	/^static inline uptr ShadowToMem(uptr shadow) {$/;"	f	namespace:__tsan
+SigCtx	tsan_interceptors.cc	/^static SignalContext *SigCtx(ThreadState *thr) {$/;"	f	file:
+SignalContext	tsan_interceptors.cc	/^struct SignalContext {$/;"	s	namespace:__tsan	file:
+SignalDesc	tsan_interceptors.cc	/^struct SignalDesc {$/;"	s	namespace:__tsan	file:
+SignalUnsafeCall	tsan_mman.cc	/^static void SignalUnsafeCall(ThreadState *thr, uptr pc) {$/;"	f	namespace:__tsan
+Size	tsan_sync.cc	/^uptr StackTrace::Size() const {$/;"	f	class:__tsan::StackTrace
+Size	tsan_vector.h	/^  uptr Size() const {$/;"	f	class:__tsan::Vector
+Sources	Makefile.mk	/^Sources := $(foreach file,$(wildcard $(Dir)\/*.cc),$(notdir $(file)))$/;"	m
+StackStripMain	tsan_rtl_report.cc	/^static void StackStripMain(ReportStack *stack) {$/;"	f	namespace:__tsan
+StackTrace	tsan_sync.cc	/^StackTrace::StackTrace()$/;"	f	class:__tsan::StackTrace
+StackTrace	tsan_sync.cc	/^StackTrace::StackTrace(uptr *buf, uptr cnt)$/;"	f	class:__tsan::StackTrace
+StackTrace	tsan_sync.h	/^class StackTrace {$/;"	c	namespace:__tsan
+StatAggregate	tsan_stat.cc	/^void StatAggregate(u64 *dst, u64 *src) {$/;"	f	namespace:__tsan
+StatAnnotateBenignRace	tsan_stat.h	/^  StatAnnotateBenignRace,$/;"	e	enum:__tsan::StatType
+StatAnnotateBenignRaceSized	tsan_stat.h	/^  StatAnnotateBenignRaceSized,$/;"	e	enum:__tsan::StatType
+StatAnnotateCondVarSignal	tsan_stat.h	/^  StatAnnotateCondVarSignal,$/;"	e	enum:__tsan::StatType
+StatAnnotateCondVarSignalAll	tsan_stat.h	/^  StatAnnotateCondVarSignalAll,$/;"	e	enum:__tsan::StatType
+StatAnnotateCondVarWait	tsan_stat.h	/^  StatAnnotateCondVarWait,$/;"	e	enum:__tsan::StatType
+StatAnnotateEnableRaceDetection	tsan_stat.h	/^  StatAnnotateEnableRaceDetection,$/;"	e	enum:__tsan::StatType
+StatAnnotateExpectRace	tsan_stat.h	/^  StatAnnotateExpectRace,$/;"	e	enum:__tsan::StatType
+StatAnnotateFlushExpectedRaces	tsan_stat.h	/^  StatAnnotateFlushExpectedRaces,$/;"	e	enum:__tsan::StatType
+StatAnnotateFlushState	tsan_stat.h	/^  StatAnnotateFlushState,$/;"	e	enum:__tsan::StatType
+StatAnnotateHappensAfter	tsan_stat.h	/^  StatAnnotateHappensAfter,$/;"	e	enum:__tsan::StatType
+StatAnnotateHappensBefore	tsan_stat.h	/^  StatAnnotateHappensBefore,$/;"	e	enum:__tsan::StatType
+StatAnnotateIgnoreReadsBegin	tsan_stat.h	/^  StatAnnotateIgnoreReadsBegin,$/;"	e	enum:__tsan::StatType
+StatAnnotateIgnoreReadsEnd	tsan_stat.h	/^  StatAnnotateIgnoreReadsEnd,$/;"	e	enum:__tsan::StatType
+StatAnnotateIgnoreWritesBegin	tsan_stat.h	/^  StatAnnotateIgnoreWritesBegin,$/;"	e	enum:__tsan::StatType
+StatAnnotateIgnoreWritesEnd	tsan_stat.h	/^  StatAnnotateIgnoreWritesEnd,$/;"	e	enum:__tsan::StatType
+StatAnnotateMutexIsNotPHB	tsan_stat.h	/^  StatAnnotateMutexIsNotPHB,$/;"	e	enum:__tsan::StatType
+StatAnnotateMutexIsUsedAsCondVar	tsan_stat.h	/^  StatAnnotateMutexIsUsedAsCondVar,$/;"	e	enum:__tsan::StatType
+StatAnnotateNewMemory	tsan_stat.h	/^  StatAnnotateNewMemory,$/;"	e	enum:__tsan::StatType
+StatAnnotateNoOp	tsan_stat.h	/^  StatAnnotateNoOp,$/;"	e	enum:__tsan::StatType
+StatAnnotatePCQCreate	tsan_stat.h	/^  StatAnnotatePCQCreate,$/;"	e	enum:__tsan::StatType
+StatAnnotatePCQDestroy	tsan_stat.h	/^  StatAnnotatePCQDestroy,$/;"	e	enum:__tsan::StatType
+StatAnnotatePCQGet	tsan_stat.h	/^  StatAnnotatePCQGet,$/;"	e	enum:__tsan::StatType
+StatAnnotatePCQPut	tsan_stat.h	/^  StatAnnotatePCQPut,$/;"	e	enum:__tsan::StatType
+StatAnnotatePublishMemoryRange	tsan_stat.h	/^  StatAnnotatePublishMemoryRange,$/;"	e	enum:__tsan::StatType
+StatAnnotateRWLockAcquired	tsan_stat.h	/^  StatAnnotateRWLockAcquired,$/;"	e	enum:__tsan::StatType
+StatAnnotateRWLockCreate	tsan_stat.h	/^  StatAnnotateRWLockCreate,$/;"	e	enum:__tsan::StatType
+StatAnnotateRWLockCreateStatic	tsan_stat.h	/^  StatAnnotateRWLockCreateStatic,$/;"	e	enum:__tsan::StatType
+StatAnnotateRWLockDestroy	tsan_stat.h	/^  StatAnnotateRWLockDestroy,$/;"	e	enum:__tsan::StatType
+StatAnnotateRWLockReleased	tsan_stat.h	/^  StatAnnotateRWLockReleased,$/;"	e	enum:__tsan::StatType
+StatAnnotateThreadName	tsan_stat.h	/^  StatAnnotateThreadName,$/;"	e	enum:__tsan::StatType
+StatAnnotateTraceMemory	tsan_stat.h	/^  StatAnnotateTraceMemory,$/;"	e	enum:__tsan::StatType
+StatAnnotateUnpublishMemoryRange	tsan_stat.h	/^  StatAnnotateUnpublishMemoryRange,$/;"	e	enum:__tsan::StatType
+StatAnnotation	tsan_stat.h	/^  StatAnnotation,$/;"	e	enum:__tsan::StatType
+StatAtomic	tsan_stat.h	/^  StatAtomic,$/;"	e	enum:__tsan::StatType
+StatAtomic1	tsan_stat.h	/^  StatAtomic1,$/;"	e	enum:__tsan::StatType
+StatAtomic2	tsan_stat.h	/^  StatAtomic2,$/;"	e	enum:__tsan::StatType
+StatAtomic4	tsan_stat.h	/^  StatAtomic4,$/;"	e	enum:__tsan::StatType
+StatAtomic8	tsan_stat.h	/^  StatAtomic8,$/;"	e	enum:__tsan::StatType
+StatAtomicAcq_Rel	tsan_stat.h	/^  StatAtomicAcq_Rel,$/;"	e	enum:__tsan::StatType
+StatAtomicAcquire	tsan_stat.h	/^  StatAtomicAcquire,$/;"	e	enum:__tsan::StatType
+StatAtomicCAS	tsan_stat.h	/^  StatAtomicCAS,$/;"	e	enum:__tsan::StatType
+StatAtomicConsume	tsan_stat.h	/^  StatAtomicConsume,$/;"	e	enum:__tsan::StatType
+StatAtomicExchange	tsan_stat.h	/^  StatAtomicExchange,$/;"	e	enum:__tsan::StatType
+StatAtomicFence	tsan_stat.h	/^  StatAtomicFence,$/;"	e	enum:__tsan::StatType
+StatAtomicFetchAdd	tsan_stat.h	/^  StatAtomicFetchAdd,$/;"	e	enum:__tsan::StatType
+StatAtomicFetchAnd	tsan_stat.h	/^  StatAtomicFetchAnd,$/;"	e	enum:__tsan::StatType
+StatAtomicFetchOr	tsan_stat.h	/^  StatAtomicFetchOr,$/;"	e	enum:__tsan::StatType
+StatAtomicFetchSub	tsan_stat.h	/^  StatAtomicFetchSub,$/;"	e	enum:__tsan::StatType
+StatAtomicFetchXor	tsan_stat.h	/^  StatAtomicFetchXor,$/;"	e	enum:__tsan::StatType
+StatAtomicLoad	tsan_stat.h	/^  StatAtomicLoad,$/;"	e	enum:__tsan::StatType
+StatAtomicRelaxed	tsan_stat.h	/^  StatAtomicRelaxed,$/;"	e	enum:__tsan::StatType
+StatAtomicRelease	tsan_stat.h	/^  StatAtomicRelease,$/;"	e	enum:__tsan::StatType
+StatAtomicSeq_Cst	tsan_stat.h	/^  StatAtomicSeq_Cst,$/;"	e	enum:__tsan::StatType
+StatAtomicStore	tsan_stat.h	/^  StatAtomicStore,$/;"	e	enum:__tsan::StatType
+StatCnt	tsan_stat.h	/^  StatCnt$/;"	e	enum:__tsan::StatType
+StatEvents	tsan_stat.h	/^  StatEvents,$/;"	e	enum:__tsan::StatType
+StatFuncEnter	tsan_stat.h	/^  StatFuncEnter,$/;"	e	enum:__tsan::StatType
+StatFuncExit	tsan_stat.h	/^  StatFuncExit,$/;"	e	enum:__tsan::StatType
+StatInc	tsan_rtl.h	/^void ALWAYS_INLINE INLINE StatInc(ThreadState *thr, StatType typ, u64 n = 1) {$/;"	f	namespace:__tsan
+StatInt__ZdaPv	tsan_stat.h	/^  StatInt__ZdaPv,$/;"	e	enum:__tsan::StatType
+StatInt__ZdaPvRKSt9nothrow_t	tsan_stat.h	/^  StatInt__ZdaPvRKSt9nothrow_t,$/;"	e	enum:__tsan::StatType
+StatInt__ZdlPv	tsan_stat.h	/^  StatInt__ZdlPv,$/;"	e	enum:__tsan::StatType
+StatInt__ZdlPvRKSt9nothrow_t	tsan_stat.h	/^  StatInt__ZdlPvRKSt9nothrow_t,$/;"	e	enum:__tsan::StatType
+StatInt__Znam	tsan_stat.h	/^  StatInt__Znam,$/;"	e	enum:__tsan::StatType
+StatInt__ZnamRKSt9nothrow_t	tsan_stat.h	/^  StatInt__ZnamRKSt9nothrow_t,$/;"	e	enum:__tsan::StatType
+StatInt__Znwm	tsan_stat.h	/^  StatInt__Znwm,$/;"	e	enum:__tsan::StatType
+StatInt__ZnwmRKSt9nothrow_t	tsan_stat.h	/^  StatInt__ZnwmRKSt9nothrow_t,$/;"	e	enum:__tsan::StatType
+StatInt___cxa_guard_acquire	tsan_stat.h	/^  StatInt___cxa_guard_acquire,$/;"	e	enum:__tsan::StatType
+StatInt___cxa_guard_release	tsan_stat.h	/^  StatInt___cxa_guard_release,$/;"	e	enum:__tsan::StatType
+StatInt_atexit	tsan_stat.h	/^  StatInt_atexit,$/;"	e	enum:__tsan::StatType
+StatInt_calloc	tsan_stat.h	/^  StatInt_calloc,$/;"	e	enum:__tsan::StatType
+StatInt_cfree	tsan_stat.h	/^  StatInt_cfree,$/;"	e	enum:__tsan::StatType
+StatInt_epoll_ctl	tsan_stat.h	/^  StatInt_epoll_ctl,$/;"	e	enum:__tsan::StatType
+StatInt_epoll_wait	tsan_stat.h	/^  StatInt_epoll_wait,$/;"	e	enum:__tsan::StatType
+StatInt_fopen	tsan_stat.h	/^  StatInt_fopen,$/;"	e	enum:__tsan::StatType
+StatInt_fread	tsan_stat.h	/^  StatInt_fread,$/;"	e	enum:__tsan::StatType
+StatInt_free	tsan_stat.h	/^  StatInt_free,$/;"	e	enum:__tsan::StatType
+StatInt_fwrite	tsan_stat.h	/^  StatInt_fwrite,$/;"	e	enum:__tsan::StatType
+StatInt_kill	tsan_stat.h	/^  StatInt_kill,$/;"	e	enum:__tsan::StatType
+StatInt_longjmp	tsan_stat.h	/^  StatInt_longjmp,$/;"	e	enum:__tsan::StatType
+StatInt_malloc	tsan_stat.h	/^  StatInt_malloc,$/;"	e	enum:__tsan::StatType
+StatInt_memalign	tsan_stat.h	/^  StatInt_memalign,$/;"	e	enum:__tsan::StatType
+StatInt_memchr	tsan_stat.h	/^  StatInt_memchr,$/;"	e	enum:__tsan::StatType
+StatInt_memcmp	tsan_stat.h	/^  StatInt_memcmp,$/;"	e	enum:__tsan::StatType
+StatInt_memcpy	tsan_stat.h	/^  StatInt_memcpy,$/;"	e	enum:__tsan::StatType
+StatInt_memmove	tsan_stat.h	/^  StatInt_memmove,$/;"	e	enum:__tsan::StatType
+StatInt_memrchr	tsan_stat.h	/^  StatInt_memrchr,$/;"	e	enum:__tsan::StatType
+StatInt_memset	tsan_stat.h	/^  StatInt_memset,$/;"	e	enum:__tsan::StatType
+StatInt_mmap	tsan_stat.h	/^  StatInt_mmap,$/;"	e	enum:__tsan::StatType
+StatInt_mmap64	tsan_stat.h	/^  StatInt_mmap64,$/;"	e	enum:__tsan::StatType
+StatInt_munmap	tsan_stat.h	/^  StatInt_munmap,$/;"	e	enum:__tsan::StatType
+StatInt_nanosleep	tsan_stat.h	/^  StatInt_nanosleep,$/;"	e	enum:__tsan::StatType
+StatInt_opendir	tsan_stat.h	/^  StatInt_opendir,$/;"	e	enum:__tsan::StatType
+StatInt_posix_memalign	tsan_stat.h	/^  StatInt_posix_memalign,$/;"	e	enum:__tsan::StatType
+StatInt_pread	tsan_stat.h	/^  StatInt_pread,$/;"	e	enum:__tsan::StatType
+StatInt_pread64	tsan_stat.h	/^  StatInt_pread64,$/;"	e	enum:__tsan::StatType
+StatInt_preadv64	tsan_stat.h	/^  StatInt_preadv64,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_barrier_destroy	tsan_stat.h	/^  StatInt_pthread_barrier_destroy,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_barrier_init	tsan_stat.h	/^  StatInt_pthread_barrier_init,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_barrier_wait	tsan_stat.h	/^  StatInt_pthread_barrier_wait,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_cond_broadcast	tsan_stat.h	/^  StatInt_pthread_cond_broadcast,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_cond_destroy	tsan_stat.h	/^  StatInt_pthread_cond_destroy,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_cond_init	tsan_stat.h	/^  StatInt_pthread_cond_init,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_cond_signal	tsan_stat.h	/^  StatInt_pthread_cond_signal,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_cond_timedwait	tsan_stat.h	/^  StatInt_pthread_cond_timedwait,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_cond_wait	tsan_stat.h	/^  StatInt_pthread_cond_wait,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_create	tsan_stat.h	/^  StatInt_pthread_create,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_detach	tsan_stat.h	/^  StatInt_pthread_detach,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_join	tsan_stat.h	/^  StatInt_pthread_join,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_kill	tsan_stat.h	/^  StatInt_pthread_kill,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_mutex_destroy	tsan_stat.h	/^  StatInt_pthread_mutex_destroy,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_mutex_init	tsan_stat.h	/^  StatInt_pthread_mutex_init,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_mutex_lock	tsan_stat.h	/^  StatInt_pthread_mutex_lock,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_mutex_timedlock	tsan_stat.h	/^  StatInt_pthread_mutex_timedlock,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_mutex_trylock	tsan_stat.h	/^  StatInt_pthread_mutex_trylock,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_mutex_unlock	tsan_stat.h	/^  StatInt_pthread_mutex_unlock,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_once	tsan_stat.h	/^  StatInt_pthread_once,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_rwlock_destroy	tsan_stat.h	/^  StatInt_pthread_rwlock_destroy,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_rwlock_init	tsan_stat.h	/^  StatInt_pthread_rwlock_init,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_rwlock_rdlock	tsan_stat.h	/^  StatInt_pthread_rwlock_rdlock,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_rwlock_timedrdlock	tsan_stat.h	/^  StatInt_pthread_rwlock_timedrdlock,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_rwlock_timedwrlock	tsan_stat.h	/^  StatInt_pthread_rwlock_timedwrlock,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_rwlock_tryrdlock	tsan_stat.h	/^  StatInt_pthread_rwlock_tryrdlock,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_rwlock_trywrlock	tsan_stat.h	/^  StatInt_pthread_rwlock_trywrlock,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_rwlock_unlock	tsan_stat.h	/^  StatInt_pthread_rwlock_unlock,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_rwlock_wrlock	tsan_stat.h	/^  StatInt_pthread_rwlock_wrlock,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_spin_destroy	tsan_stat.h	/^  StatInt_pthread_spin_destroy,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_spin_init	tsan_stat.h	/^  StatInt_pthread_spin_init,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_spin_lock	tsan_stat.h	/^  StatInt_pthread_spin_lock,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_spin_trylock	tsan_stat.h	/^  StatInt_pthread_spin_trylock,$/;"	e	enum:__tsan::StatType
+StatInt_pthread_spin_unlock	tsan_stat.h	/^  StatInt_pthread_spin_unlock,$/;"	e	enum:__tsan::StatType
+StatInt_puts	tsan_stat.h	/^  StatInt_puts,$/;"	e	enum:__tsan::StatType
+StatInt_pvalloc	tsan_stat.h	/^  StatInt_pvalloc,$/;"	e	enum:__tsan::StatType
+StatInt_pwrite	tsan_stat.h	/^  StatInt_pwrite,$/;"	e	enum:__tsan::StatType
+StatInt_pwrite64	tsan_stat.h	/^  StatInt_pwrite64,$/;"	e	enum:__tsan::StatType
+StatInt_pwritev64	tsan_stat.h	/^  StatInt_pwritev64,$/;"	e	enum:__tsan::StatType
+StatInt_raise	tsan_stat.h	/^  StatInt_raise,$/;"	e	enum:__tsan::StatType
+StatInt_read	tsan_stat.h	/^  StatInt_read,$/;"	e	enum:__tsan::StatType
+StatInt_readv	tsan_stat.h	/^  StatInt_readv,$/;"	e	enum:__tsan::StatType
+StatInt_realloc	tsan_stat.h	/^  StatInt_realloc,$/;"	e	enum:__tsan::StatType
+StatInt_recv	tsan_stat.h	/^  StatInt_recv,$/;"	e	enum:__tsan::StatType
+StatInt_recvmsg	tsan_stat.h	/^  StatInt_recvmsg,$/;"	e	enum:__tsan::StatType
+StatInt_rmdir	tsan_stat.h	/^  StatInt_rmdir,$/;"	e	enum:__tsan::StatType
+StatInt_sem_destroy	tsan_stat.h	/^  StatInt_sem_destroy,$/;"	e	enum:__tsan::StatType
+StatInt_sem_getvalue	tsan_stat.h	/^  StatInt_sem_getvalue,$/;"	e	enum:__tsan::StatType
+StatInt_sem_init	tsan_stat.h	/^  StatInt_sem_init,$/;"	e	enum:__tsan::StatType
+StatInt_sem_post	tsan_stat.h	/^  StatInt_sem_post,$/;"	e	enum:__tsan::StatType
+StatInt_sem_timedwait	tsan_stat.h	/^  StatInt_sem_timedwait,$/;"	e	enum:__tsan::StatType
+StatInt_sem_trywait	tsan_stat.h	/^  StatInt_sem_trywait,$/;"	e	enum:__tsan::StatType
+StatInt_sem_wait	tsan_stat.h	/^  StatInt_sem_wait,$/;"	e	enum:__tsan::StatType
+StatInt_send	tsan_stat.h	/^  StatInt_send,$/;"	e	enum:__tsan::StatType
+StatInt_sendmsg	tsan_stat.h	/^  StatInt_sendmsg,$/;"	e	enum:__tsan::StatType
+StatInt_sigaction	tsan_stat.h	/^  StatInt_sigaction,$/;"	e	enum:__tsan::StatType
+StatInt_siglongjmp	tsan_stat.h	/^  StatInt_siglongjmp,$/;"	e	enum:__tsan::StatType
+StatInt_signal	tsan_stat.h	/^  StatInt_signal,$/;"	e	enum:__tsan::StatType
+StatInt_sleep	tsan_stat.h	/^  StatInt_sleep,$/;"	e	enum:__tsan::StatType
+StatInt_strchr	tsan_stat.h	/^  StatInt_strchr,$/;"	e	enum:__tsan::StatType
+StatInt_strchrnul	tsan_stat.h	/^  StatInt_strchrnul,$/;"	e	enum:__tsan::StatType
+StatInt_strcmp	tsan_stat.h	/^  StatInt_strcmp,$/;"	e	enum:__tsan::StatType
+StatInt_strcpy	tsan_stat.h	/^  StatInt_strcpy,$/;"	e	enum:__tsan::StatType
+StatInt_strlen	tsan_stat.h	/^  StatInt_strlen,$/;"	e	enum:__tsan::StatType
+StatInt_strncmp	tsan_stat.h	/^  StatInt_strncmp,$/;"	e	enum:__tsan::StatType
+StatInt_strncpy	tsan_stat.h	/^  StatInt_strncpy,$/;"	e	enum:__tsan::StatType
+StatInt_strrchr	tsan_stat.h	/^  StatInt_strrchr,$/;"	e	enum:__tsan::StatType
+StatInt_strstr	tsan_stat.h	/^  StatInt_strstr,$/;"	e	enum:__tsan::StatType
+StatInt_unlink	tsan_stat.h	/^  StatInt_unlink,$/;"	e	enum:__tsan::StatType
+StatInt_usleep	tsan_stat.h	/^  StatInt_usleep,$/;"	e	enum:__tsan::StatType
+StatInt_valloc	tsan_stat.h	/^  StatInt_valloc,$/;"	e	enum:__tsan::StatType
+StatInt_write	tsan_stat.h	/^  StatInt_write,$/;"	e	enum:__tsan::StatType
+StatInt_writev	tsan_stat.h	/^  StatInt_writev,$/;"	e	enum:__tsan::StatType
+StatInterceptor	tsan_stat.h	/^  StatInterceptor,$/;"	e	enum:__tsan::StatType
+StatMop	tsan_stat.h	/^  StatMop,$/;"	e	enum:__tsan::StatType
+StatMop1	tsan_stat.h	/^  StatMop1,  \/\/ These must be consequtive.$/;"	e	enum:__tsan::StatType
+StatMop2	tsan_stat.h	/^  StatMop2,$/;"	e	enum:__tsan::StatType
+StatMop4	tsan_stat.h	/^  StatMop4,$/;"	e	enum:__tsan::StatType
+StatMop8	tsan_stat.h	/^  StatMop8,$/;"	e	enum:__tsan::StatType
+StatMopRange	tsan_stat.h	/^  StatMopRange,$/;"	e	enum:__tsan::StatType
+StatMopRead	tsan_stat.h	/^  StatMopRead,$/;"	e	enum:__tsan::StatType
+StatMopSame	tsan_stat.h	/^  StatMopSame,$/;"	e	enum:__tsan::StatType
+StatMopWrite	tsan_stat.h	/^  StatMopWrite,$/;"	e	enum:__tsan::StatType
+StatMtxAnnotations	tsan_stat.h	/^  StatMtxAnnotations,$/;"	e	enum:__tsan::StatType
+StatMtxAtExit	tsan_stat.h	/^  StatMtxAtExit,$/;"	e	enum:__tsan::StatType
+StatMtxReport	tsan_stat.h	/^  StatMtxReport,$/;"	e	enum:__tsan::StatType
+StatMtxSlab	tsan_stat.h	/^  StatMtxSlab,$/;"	e	enum:__tsan::StatType
+StatMtxSyncTab	tsan_stat.h	/^  StatMtxSyncTab,$/;"	e	enum:__tsan::StatType
+StatMtxSyncVar	tsan_stat.h	/^  StatMtxSyncVar,$/;"	e	enum:__tsan::StatType
+StatMtxThreads	tsan_stat.h	/^  StatMtxThreads,$/;"	e	enum:__tsan::StatType
+StatMtxTotal	tsan_stat.h	/^  StatMtxTotal,$/;"	e	enum:__tsan::StatType
+StatMtxTrace	tsan_stat.h	/^  StatMtxTrace,$/;"	e	enum:__tsan::StatType
+StatMutexCreate	tsan_stat.h	/^  StatMutexCreate,$/;"	e	enum:__tsan::StatType
+StatMutexDestroy	tsan_stat.h	/^  StatMutexDestroy,$/;"	e	enum:__tsan::StatType
+StatMutexLock	tsan_stat.h	/^  StatMutexLock,$/;"	e	enum:__tsan::StatType
+StatMutexReadLock	tsan_stat.h	/^  StatMutexReadLock,$/;"	e	enum:__tsan::StatType
+StatMutexReadUnlock	tsan_stat.h	/^  StatMutexReadUnlock,$/;"	e	enum:__tsan::StatType
+StatMutexRecLock	tsan_stat.h	/^  StatMutexRecLock,$/;"	e	enum:__tsan::StatType
+StatMutexRecUnlock	tsan_stat.h	/^  StatMutexRecUnlock,$/;"	e	enum:__tsan::StatType
+StatMutexUnlock	tsan_stat.h	/^  StatMutexUnlock,$/;"	e	enum:__tsan::StatType
+StatOutput	tsan_stat.cc	/^void StatOutput(u64 *stat) {$/;"	f	namespace:__tsan
+StatShadowAnotherThread	tsan_stat.h	/^  StatShadowAnotherThread,$/;"	e	enum:__tsan::StatType
+StatShadowIntersect	tsan_stat.h	/^  StatShadowIntersect,$/;"	e	enum:__tsan::StatType
+StatShadowNonZero	tsan_stat.h	/^  StatShadowNonZero,  \/\/ Derived.$/;"	e	enum:__tsan::StatType
+StatShadowNotIntersect	tsan_stat.h	/^  StatShadowNotIntersect,$/;"	e	enum:__tsan::StatType
+StatShadowProcessed	tsan_stat.h	/^  StatShadowProcessed,$/;"	e	enum:__tsan::StatType
+StatShadowReplace	tsan_stat.h	/^  StatShadowReplace,$/;"	e	enum:__tsan::StatType
+StatShadowSameSize	tsan_stat.h	/^  StatShadowSameSize,$/;"	e	enum:__tsan::StatType
+StatShadowSameThread	tsan_stat.h	/^  StatShadowSameThread,$/;"	e	enum:__tsan::StatType
+StatShadowZero	tsan_stat.h	/^  StatShadowZero,$/;"	e	enum:__tsan::StatType
+StatSyncAcquire	tsan_stat.h	/^  StatSyncAcquire,$/;"	e	enum:__tsan::StatType
+StatSyncCreated	tsan_stat.h	/^  StatSyncCreated,$/;"	e	enum:__tsan::StatType
+StatSyncDestroyed	tsan_stat.h	/^  StatSyncDestroyed,$/;"	e	enum:__tsan::StatType
+StatSyncRelease	tsan_stat.h	/^  StatSyncRelease,$/;"	e	enum:__tsan::StatType
+StatThreadCreate	tsan_stat.h	/^  StatThreadCreate,$/;"	e	enum:__tsan::StatType
+StatThreadFinish	tsan_stat.h	/^  StatThreadFinish,$/;"	e	enum:__tsan::StatType
+StatThreadMaxAlive	tsan_stat.h	/^  StatThreadMaxAlive,$/;"	e	enum:__tsan::StatType
+StatThreadMaxTid	tsan_stat.h	/^  StatThreadMaxTid,$/;"	e	enum:__tsan::StatType
+StatThreadReuse	tsan_stat.h	/^  StatThreadReuse,$/;"	e	enum:__tsan::StatType
+StatType	tsan_stat.h	/^enum StatType {$/;"	g	namespace:__tsan
+StoreIfNotYetStored	tsan_rtl.cc	/^static void StoreIfNotYetStored(u64 *sp, u64 *s) {$/;"	f	namespace:__tsan
+StoreShadow	tsan_rtl.cc	/^static void StoreShadow(u64 *sp, u64 s) {$/;"	f	namespace:__tsan
+SubDirs	Makefile.mk	/^SubDirs :=$/;"	m
+Suppression	tsan_suppressions.h	/^struct Suppression {$/;"	s	namespace:__tsan
+SuppressionMatch	tsan_suppressions.cc	/^bool SuppressionMatch(char *templ, const char *str) {$/;"	f	namespace:__tsan
+SuppressionMutex	tsan_suppressions.h	/^  SuppressionMutex,$/;"	e	enum:__tsan::SuppressionType
+SuppressionParse	tsan_suppressions.cc	/^Suppression *SuppressionParse(const char* supp) {$/;"	f	namespace:__tsan
+SuppressionRace	tsan_suppressions.h	/^  SuppressionRace,$/;"	e	enum:__tsan::SuppressionType
+SuppressionSignal	tsan_suppressions.h	/^  SuppressionSignal$/;"	e	enum:__tsan::SuppressionType
+SuppressionThread	tsan_suppressions.h	/^  SuppressionThread,$/;"	e	enum:__tsan::SuppressionType
+SuppressionType	tsan_suppressions.h	/^enum SuppressionType {$/;"	g	namespace:__tsan
+SymbolizeCode	tsan_symbolize.cc	/^ReportStack *SymbolizeCode(uptr addr) {$/;"	f	namespace:__tsan
+SymbolizeCodeAddr2Line	tsan_symbolize_addr2line_linux.cc	/^ReportStack *SymbolizeCodeAddr2Line(uptr addr) {$/;"	f	namespace:__tsan
+SymbolizeData	tsan_symbolize.cc	/^ReportStack *SymbolizeData(uptr addr) {$/;"	f	namespace:__tsan
+SymbolizeDataAddr2Line	tsan_symbolize_addr2line_linux.cc	/^ReportStack *SymbolizeDataAddr2Line(uptr addr) {$/;"	f	namespace:__tsan
+SymbolizeStack	tsan_rtl_report.cc	/^static ReportStack *SymbolizeStack(const StackTrace& trace) {$/;"	f	namespace:__tsan
+SyncClock	tsan_clock.cc	/^SyncClock::SyncClock()$/;"	f	class:__tsan::SyncClock
+SyncClock	tsan_clock.h	/^class SyncClock {$/;"	c	namespace:__tsan
+SyncTab	tsan_sync.cc	/^SyncTab::SyncTab() {$/;"	f	class:__tsan::SyncTab
+SyncTab	tsan_sync.h	/^class SyncTab {$/;"	c	namespace:__tsan
+SyncVar	tsan_sync.cc	/^SyncVar::SyncVar(uptr addr)$/;"	f	class:__tsan::SyncVar
+SyncVar	tsan_sync.h	/^struct SyncVar {$/;"	s	namespace:__tsan
+TSAN_CLOCK_H	tsan_clock.h	14;"	d
+TSAN_DEBUG	tsan_defs.h	22;"	d
+TSAN_DEFS_H	tsan_defs.h	15;"	d
+TSAN_FLAGS_H	tsan_flags.h	15;"	d
+TSAN_HISTORY_SIZE	tsan_trace.h	23;"	d
+TSAN_INTERCEPT	tsan_interceptors.h	50;"	d
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(char*, strchr, char *s, int c) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(char*, strchrnul, char *s, int c) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(char*, strcpy, char *dst, const char *src) {  \/\/ NOLINT$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(char*, strncpy, char *dst, char *src, uptr n) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(char*, strrchr, char *s, int c) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(const char*, strstr, const char *s1, const char *s2) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, __cxa_guard_acquire, char *m) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, atexit, void (*f)()) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, epoll_ctl, int epfd, int op, int fd, void *ev) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, epoll_wait, int epfd, void *ev, int cnt, int timeout) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, kill, int pid, int sig) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, memcmp, const void *s1, const void *s2, uptr n) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, munmap, void *addr, long_t sz) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, nanosleep, void *req, void *rem) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, posix_memalign, void **memptr, uptr align, uptr sz) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_barrier_destroy, void *b) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_barrier_init, void *b, void *a, unsigned count) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_barrier_wait, void *b) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_cond_broadcast, void *c) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_cond_destroy, void *c) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_cond_init, void *c, void *a) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_cond_signal, void *c) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_cond_timedwait, void *c, void *m, void *abstime) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_cond_wait, void *c, void *m) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_create,$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_detach, void *th) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_join, void *th, void **ret) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_kill, void *tid, int sig) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_mutex_destroy, void *m) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_mutex_init, void *m, void *a) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_mutex_lock, void *m) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_mutex_timedlock, void *m, void *abstime) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_mutex_trylock, void *m) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_mutex_unlock, void *m) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_once, void *o, void (*f)()) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_rwlock_destroy, void *m) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_rwlock_init, void *m, void *a) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_rwlock_rdlock, void *m) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_rwlock_timedrdlock, void *m, void *abstime) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_rwlock_timedwrlock, void *m, void *abstime) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_rwlock_tryrdlock, void *m) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_rwlock_trywrlock, void *m) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_rwlock_unlock, void *m) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_rwlock_wrlock, void *m) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_spin_destroy, void *m) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_spin_init, void *m, int pshared) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_spin_lock, void *m) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_spin_trylock, void *m) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, pthread_spin_unlock, void *m) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, puts, const char *s) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, raise, int sig) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, rmdir, char *path) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, sem_destroy, void *s) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, sem_getvalue, void *s, int *sval) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, sem_init, void *s, int pshared, unsigned value) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, sem_post, void *s) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, sem_timedwait, void *s, void *abstime) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, sem_trywait, void *s) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, sem_wait, void *s) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, sigaction, int sig, sigaction_t *act, sigaction_t *old) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, strcmp, const char *s1, const char *s2) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, strncmp, const char *s1, const char *s2, uptr n) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, unlink, char *path) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(int, usleep, long_t usec) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(long_t, pread, int fd, void *buf, long_t sz, unsigned off) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(long_t, pread64, int fd, void *buf, long_t sz, u64 off) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(long_t, preadv64, int fd, void *vec, int cnt, u64 off) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(long_t, pwrite, int fd, void *buf, long_t sz, unsigned off) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(long_t, pwrite64, int fd, void *buf, long_t sz, u64 off) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(long_t, pwritev64, int fd, void *vec, int cnt, u64 off) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(long_t, read, int fd, void *buf, long_t sz) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(long_t, readv, int fd, void *vec, int cnt) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(long_t, recv, int fd, void *buf, long_t len, int flags) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(long_t, recvmsg, int fd, void *msg, int flags) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(long_t, send, int fd, void *buf, long_t len, int flags) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(long_t, sendmsg, int fd, void *msg, int flags) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(long_t, write, int fd, void *buf, long_t sz) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(long_t, writev, int fd, void *vec, int cnt) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(sighandler_t, signal, int sig, sighandler_t h) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(unsigned, sleep, unsigned sec) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(uptr, fread, void *ptr, uptr size, uptr nmemb, void *f) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(uptr, fwrite, const void *p, uptr size, uptr nmemb, void *f) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(uptr, strlen, const char *s) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void*, calloc, uptr size, uptr n) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void*, fopen, char *path, char *mode) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void*, malloc, uptr size) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void*, memalign, uptr align, uptr sz) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void*, memchr, void *s, int c, uptr n) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void*, memcpy, void *dst, const void *src, uptr size) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void*, memmove, void *dst, void *src, uptr n) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void*, memrchr, char *s, int c, uptr n) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void*, memset, void *dst, int v, uptr size) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void*, mmap, void *addr, long_t sz, int prot,$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void*, mmap64, void *addr, long_t sz, int prot,$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void*, opendir, char *path) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void*, pvalloc, uptr sz) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void*, realloc, void *p, uptr size) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void*, valloc, uptr sz) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void, __cxa_guard_release, char *m) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void, cfree, void *p) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void, free, void *p) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void, longjmp, void *env, int val) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.cc	/^TSAN_INTERCEPTOR(void, siglongjmp, void *env, int val) {$/;"	f
+TSAN_INTERCEPTOR	tsan_interceptors.h	49;"	d
+TSAN_INTERCEPTORS_H	tsan_interceptors.h	15;"	d
+TSAN_INTERFACE_ANN_H	tsan_interface_ann.h	15;"	d
+TSAN_INTERFACE_ATOMIC_H	tsan_interface_atomic.h	14;"	d
+TSAN_INTERFACE_H	tsan_interface.h	17;"	d
+TSAN_MMAN_H	tsan_mman.h	14;"	d
+TSAN_MUTEX_H	tsan_mutex.h	14;"	d
+TSAN_PLATFORM_H	tsan_platform.h	16;"	d
+TSAN_REPORT_H	tsan_report.h	14;"	d
+TSAN_RTL_H	tsan_rtl.h	27;"	d
+TSAN_STAT_H	tsan_stat.h	15;"	d
+TSAN_SUPPRESSIONS_H	tsan_suppressions.h	14;"	d
+TSAN_SYMBOLIZE_H	tsan_symbolize.h	14;"	d
+TSAN_SYNC_H	tsan_sync.h	14;"	d
+TSAN_TRACE_H	tsan_trace.h	14;"	d
+TSAN_VECTOR_H	tsan_vector.h	17;"	d
+ThreadClock	tsan_clock.cc	/^ThreadClock::ThreadClock() {$/;"	f	class:__tsan::ThreadClock
+ThreadClock	tsan_clock.h	/^struct ThreadClock {$/;"	s	namespace:__tsan
+ThreadContext	tsan_rtl.cc	/^ThreadContext::ThreadContext(int tid)$/;"	f	class:__tsan::ThreadContext
+ThreadContext	tsan_rtl.h	/^struct ThreadContext {$/;"	s	namespace:__tsan
+ThreadCreate	tsan_rtl_thread.cc	/^int ThreadCreate(ThreadState *thr, uptr pc, uptr uid, bool detached) {$/;"	f	namespace:__tsan
+ThreadDead	tsan_rtl_thread.cc	/^static void ThreadDead(ThreadState *thr, ThreadContext *tctx) {$/;"	f	namespace:__tsan
+ThreadDeadInfo	tsan_rtl.h	/^struct ThreadDeadInfo {$/;"	s	namespace:__tsan
+ThreadDetach	tsan_rtl_thread.cc	/^void ThreadDetach(ThreadState *thr, uptr pc, int tid) {$/;"	f	namespace:__tsan
+ThreadFinalize	tsan_rtl_thread.cc	/^void ThreadFinalize(ThreadState *thr) {$/;"	f	namespace:__tsan
+ThreadFinalizerGoroutine	tsan_rtl_thread.cc	/^void ThreadFinalizerGoroutine(ThreadState *thr) {$/;"	f	namespace:__tsan
+ThreadFinish	tsan_rtl_thread.cc	/^void ThreadFinish(ThreadState *thr) {$/;"	f	namespace:__tsan
+ThreadJoin	tsan_rtl_thread.cc	/^void ThreadJoin(ThreadState *thr, uptr pc, int tid) {$/;"	f	namespace:__tsan
+ThreadParam	tsan_interceptors.cc	/^struct ThreadParam {$/;"	s	file:
+ThreadSanitizerQuery	tsan_interface_ann.cc	/^const char *ThreadSanitizerQuery(const char *query) {$/;"	f
+ThreadStart	tsan_rtl_thread.cc	/^void ThreadStart(ThreadState *thr, int tid, uptr os_id) {$/;"	f	namespace:__tsan
+ThreadState	tsan_rtl.cc	/^ThreadState::ThreadState(Context *ctx, int tid, int unique_id, u64 epoch,$/;"	f	class:__tsan::ThreadState
+ThreadState	tsan_rtl.h	/^struct ThreadState {$/;"	s	namespace:__tsan
+ThreadStatus	tsan_rtl.h	/^enum ThreadStatus {$/;"	g	namespace:__tsan
+ThreadStatusCreated	tsan_rtl.h	/^  ThreadStatusCreated,   \/\/ Created but not yet running.$/;"	e	enum:__tsan::ThreadStatus
+ThreadStatusDead	tsan_rtl.h	/^  ThreadStatusDead       \/\/ Joined, but some info (trace) is still alive.$/;"	e	enum:__tsan::ThreadStatus
+ThreadStatusFinished	tsan_rtl.h	/^  ThreadStatusFinished,  \/\/ Joinable thread is finished but not yet joined.$/;"	e	enum:__tsan::ThreadStatus
+ThreadStatusInvalid	tsan_rtl.h	/^  ThreadStatusInvalid,   \/\/ Non-existent thread, data is invalid.$/;"	e	enum:__tsan::ThreadStatus
+ThreadStatusRunning	tsan_rtl.h	/^  ThreadStatusRunning,   \/\/ The thread is currently running.$/;"	e	enum:__tsan::ThreadStatus
+ThreadTid	tsan_rtl_thread.cc	/^int ThreadTid(ThreadState *thr, uptr pc, uptr uid) {$/;"	f	namespace:__tsan
+TidsAreEqual	tsan_rtl.h	/^  static inline bool TidsAreEqual(const Shadow s1, const Shadow s2) {$/;"	f	class:__tsan::Shadow
+Trace	tsan_trace.h	/^  Trace()$/;"	f	struct:__tsan::Trace
+Trace	tsan_trace.h	/^struct Trace {$/;"	s	namespace:__tsan
+TraceAddEvent	tsan_rtl.h	/^void ALWAYS_INLINE INLINE TraceAddEvent(ThreadState *thr, u64 epoch,$/;"	f	namespace:__tsan
+TraceHeader	tsan_trace.h	/^  TraceHeader()$/;"	f	struct:__tsan::TraceHeader
+TraceHeader	tsan_trace.h	/^struct TraceHeader {$/;"	s	namespace:__tsan
+TraceSwitch	tsan_rtl.cc	/^void TraceSwitch(ThreadState *thr) {$/;"	f	namespace:__tsan
+TsanCheckFailed	tsan_rtl_report.cc	/^void TsanCheckFailed(const char *file, int line, const char *cond,$/;"	f	namespace:__tsan
+TsanPrintf	tsan_printf.cc	/^void TsanPrintf(const char *format, ...) {$/;"	f	namespace:__tsan
+TwoRangesIntersect	tsan_rtl.h	/^  static inline bool TwoRangesIntersect(Shadow s1, Shadow s2,$/;"	f	class:__tsan::Shadow
+TwoRangesIntersectSLOW	tsan_rtl.h	/^  static bool TwoRangesIntersectSLOW(const Shadow s1, const Shadow s2) {$/;"	f	class:__tsan::Shadow
+Unlock	tsan_mutex.cc	/^void DeadlockDetector::Unlock(MutexType t) {$/;"	f	class:__tsan::DeadlockDetector
+Unlock	tsan_mutex.cc	/^void Mutex::Unlock() {$/;"	f	class:__tsan::Mutex
+ValgrindSlowdown	tsan_interface_ann.cc	/^double __attribute__((weak)) ValgrindSlowdown(void) {$/;"	f
+Vector	tsan_vector.h	/^  explicit Vector(MBlockType typ)$/;"	f	class:__tsan::Vector
+Vector	tsan_vector.h	/^class Vector {$/;"	c	namespace:__tsan
+WTFAnnotateBenignRaceSized	tsan_interface_ann.cc	/^void WTFAnnotateBenignRaceSized(char *f, int l, uptr mem, uptr sz, char *desc) {$/;"	f
+WTFAnnotateHappensAfter	tsan_interface_ann.cc	/^void WTFAnnotateHappensAfter(char *f, int l, uptr addr) {$/;"	f
+WTFAnnotateHappensBefore	tsan_interface_ann.cc	/^void WTFAnnotateHappensBefore(char *f, int l, uptr addr) {$/;"	f
+WriteMemoryProfile	tsan_rtl.cc	/^static void WriteMemoryProfile(char *buf, uptr buf_size, int num) {$/;"	f	namespace:__tsan
+__sanitizer	tsan_printf.cc	/^namespace __sanitizer {$/;"	n	file:
+__tsan	tsan_clock.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_clock.h	/^namespace __tsan {$/;"	n
+__tsan	tsan_defs.h	/^namespace __tsan {$/;"	n
+__tsan	tsan_flags.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_flags.h	/^namespace __tsan {$/;"	n
+__tsan	tsan_interceptors.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_interceptors.h	/^namespace __tsan {$/;"	n
+__tsan	tsan_interface_ann.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_md5.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_mman.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_mman.h	/^namespace __tsan {$/;"	n
+__tsan	tsan_mutex.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_mutex.h	/^namespace __tsan {$/;"	n
+__tsan	tsan_platform.h	/^namespace __tsan {$/;"	n
+__tsan	tsan_platform_linux.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_platform_mac.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_printf.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_report.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_report.h	/^namespace __tsan {$/;"	n
+__tsan	tsan_rtl.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_rtl.h	/^namespace __tsan {$/;"	n
+__tsan	tsan_rtl_mutex.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_rtl_report.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_rtl_thread.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_stat.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_stat.h	/^namespace __tsan {$/;"	n
+__tsan	tsan_suppressions.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_suppressions.h	/^namespace __tsan {$/;"	n
+__tsan	tsan_symbolize.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_symbolize.h	/^namespace __tsan {$/;"	n
+__tsan	tsan_symbolize_addr2line_linux.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_sync.cc	/^namespace __tsan {$/;"	n	file:
+__tsan	tsan_sync.h	/^namespace __tsan {$/;"	n
+__tsan	tsan_trace.h	/^namespace __tsan {$/;"	n
+__tsan	tsan_vector.h	/^namespace __tsan {$/;"	n
+__tsan_acquire	tsan_interface.cc	/^void __tsan_acquire(void *addr) {$/;"	f
+__tsan_atomic16	tsan_interface_atomic.h	/^typedef short __tsan_atomic16;  \/\/ NOLINT$/;"	t
+__tsan_atomic16_compare_exchange_strong	tsan_interface_atomic.cc	/^int __tsan_atomic16_compare_exchange_strong(volatile a16 *a, a16 *c, a16 v,$/;"	f
+__tsan_atomic16_compare_exchange_weak	tsan_interface_atomic.cc	/^int __tsan_atomic16_compare_exchange_weak(volatile a16 *a, a16 *c, a16 v,$/;"	f
+__tsan_atomic16_exchange	tsan_interface_atomic.cc	/^a16 __tsan_atomic16_exchange(volatile a16 *a, a16 v, morder mo) {$/;"	f
+__tsan_atomic16_fetch_add	tsan_interface_atomic.cc	/^a16 __tsan_atomic16_fetch_add(volatile a16 *a, a16 v, morder mo) {$/;"	f
+__tsan_atomic16_fetch_and	tsan_interface_atomic.cc	/^a16 __tsan_atomic16_fetch_and(volatile a16 *a, a16 v, morder mo) {$/;"	f
+__tsan_atomic16_fetch_or	tsan_interface_atomic.cc	/^a16 __tsan_atomic16_fetch_or(volatile a16 *a, a16 v, morder mo) {$/;"	f
+__tsan_atomic16_fetch_sub	tsan_interface_atomic.cc	/^a16 __tsan_atomic16_fetch_sub(volatile a16 *a, a16 v, morder mo) {$/;"	f
+__tsan_atomic16_fetch_xor	tsan_interface_atomic.cc	/^a16 __tsan_atomic16_fetch_xor(volatile a16 *a, a16 v, morder mo) {$/;"	f
+__tsan_atomic16_load	tsan_interface_atomic.cc	/^a16 __tsan_atomic16_load(const volatile a16 *a, morder mo) {$/;"	f
+__tsan_atomic16_store	tsan_interface_atomic.cc	/^void __tsan_atomic16_store(volatile a16 *a, a16 v, morder mo) {$/;"	f
+__tsan_atomic32	tsan_interface_atomic.h	/^typedef int   __tsan_atomic32;$/;"	t
+__tsan_atomic32_compare_exchange_strong	tsan_interface_atomic.cc	/^int __tsan_atomic32_compare_exchange_strong(volatile a32 *a, a32 *c, a32 v,$/;"	f
+__tsan_atomic32_compare_exchange_weak	tsan_interface_atomic.cc	/^int __tsan_atomic32_compare_exchange_weak(volatile a32 *a, a32 *c, a32 v,$/;"	f
+__tsan_atomic32_exchange	tsan_interface_atomic.cc	/^a32 __tsan_atomic32_exchange(volatile a32 *a, a32 v, morder mo) {$/;"	f
+__tsan_atomic32_fetch_add	tsan_interface_atomic.cc	/^a32 __tsan_atomic32_fetch_add(volatile a32 *a, a32 v, morder mo) {$/;"	f
+__tsan_atomic32_fetch_and	tsan_interface_atomic.cc	/^a32 __tsan_atomic32_fetch_and(volatile a32 *a, a32 v, morder mo) {$/;"	f
+__tsan_atomic32_fetch_or	tsan_interface_atomic.cc	/^a32 __tsan_atomic32_fetch_or(volatile a32 *a, a32 v, morder mo) {$/;"	f
+__tsan_atomic32_fetch_sub	tsan_interface_atomic.cc	/^a32 __tsan_atomic32_fetch_sub(volatile a32 *a, a32 v, morder mo) {$/;"	f
+__tsan_atomic32_fetch_xor	tsan_interface_atomic.cc	/^a32 __tsan_atomic32_fetch_xor(volatile a32 *a, a32 v, morder mo) {$/;"	f
+__tsan_atomic32_load	tsan_interface_atomic.cc	/^a32 __tsan_atomic32_load(const volatile a32 *a, morder mo) {$/;"	f
+__tsan_atomic32_store	tsan_interface_atomic.cc	/^void __tsan_atomic32_store(volatile a32 *a, a32 v, morder mo) {$/;"	f
+__tsan_atomic64	tsan_interface_atomic.h	/^typedef long  __tsan_atomic64;  \/\/ NOLINT$/;"	t
+__tsan_atomic64_compare_exchange_strong	tsan_interface_atomic.cc	/^int __tsan_atomic64_compare_exchange_strong(volatile a64 *a, a64 *c, a64 v,$/;"	f
+__tsan_atomic64_compare_exchange_weak	tsan_interface_atomic.cc	/^int __tsan_atomic64_compare_exchange_weak(volatile a64 *a, a64 *c, a64 v,$/;"	f
+__tsan_atomic64_exchange	tsan_interface_atomic.cc	/^a64 __tsan_atomic64_exchange(volatile a64 *a, a64 v, morder mo) {$/;"	f
+__tsan_atomic64_fetch_add	tsan_interface_atomic.cc	/^a64 __tsan_atomic64_fetch_add(volatile a64 *a, a64 v, morder mo) {$/;"	f
+__tsan_atomic64_fetch_and	tsan_interface_atomic.cc	/^a64 __tsan_atomic64_fetch_and(volatile a64 *a, a64 v, morder mo) {$/;"	f
+__tsan_atomic64_fetch_or	tsan_interface_atomic.cc	/^a64 __tsan_atomic64_fetch_or(volatile a64 *a, a64 v, morder mo) {$/;"	f
+__tsan_atomic64_fetch_sub	tsan_interface_atomic.cc	/^a64 __tsan_atomic64_fetch_sub(volatile a64 *a, a64 v, morder mo) {$/;"	f
+__tsan_atomic64_fetch_xor	tsan_interface_atomic.cc	/^a64 __tsan_atomic64_fetch_xor(volatile a64 *a, a64 v, morder mo) {$/;"	f
+__tsan_atomic64_load	tsan_interface_atomic.cc	/^a64 __tsan_atomic64_load(const volatile a64 *a, morder mo) {$/;"	f
+__tsan_atomic64_store	tsan_interface_atomic.cc	/^void __tsan_atomic64_store(volatile a64 *a, a64 v, morder mo) {$/;"	f
+__tsan_atomic8	tsan_interface_atomic.h	/^typedef char  __tsan_atomic8;$/;"	t
+__tsan_atomic8_compare_exchange_strong	tsan_interface_atomic.cc	/^int __tsan_atomic8_compare_exchange_strong(volatile a8 *a, a8 *c, a8 v,$/;"	f
+__tsan_atomic8_compare_exchange_weak	tsan_interface_atomic.cc	/^int __tsan_atomic8_compare_exchange_weak(volatile a8 *a, a8 *c, a8 v,$/;"	f
+__tsan_atomic8_exchange	tsan_interface_atomic.cc	/^a8 __tsan_atomic8_exchange(volatile a8 *a, a8 v, morder mo) {$/;"	f
+__tsan_atomic8_fetch_add	tsan_interface_atomic.cc	/^a8 __tsan_atomic8_fetch_add(volatile a8 *a, a8 v, morder mo) {$/;"	f
+__tsan_atomic8_fetch_and	tsan_interface_atomic.cc	/^a8 __tsan_atomic8_fetch_and(volatile a8 *a, a8 v, morder mo) {$/;"	f
+__tsan_atomic8_fetch_or	tsan_interface_atomic.cc	/^a8 __tsan_atomic8_fetch_or(volatile a8 *a, a8 v, morder mo) {$/;"	f
+__tsan_atomic8_fetch_sub	tsan_interface_atomic.cc	/^a8 __tsan_atomic8_fetch_sub(volatile a8 *a, a8 v, morder mo) {$/;"	f
+__tsan_atomic8_fetch_xor	tsan_interface_atomic.cc	/^a8 __tsan_atomic8_fetch_xor(volatile a8 *a, a8 v, morder mo) {$/;"	f
+__tsan_atomic8_load	tsan_interface_atomic.cc	/^a8 __tsan_atomic8_load(const volatile a8 *a, morder mo) {$/;"	f
+__tsan_atomic8_store	tsan_interface_atomic.cc	/^void __tsan_atomic8_store(volatile a8 *a, a8 v, morder mo) {$/;"	f
+__tsan_atomic_signal_fence	tsan_interface_atomic.cc	/^void __tsan_atomic_signal_fence(morder mo) {$/;"	f
+__tsan_atomic_thread_fence	tsan_interface_atomic.cc	/^void __tsan_atomic_thread_fence(morder mo) {$/;"	f
+__tsan_free_hook	tsan_mman.cc	/^extern "C" void WEAK __tsan_free_hook(void *ptr) {$/;"	f
+__tsan_func_entry	tsan_interface_inl.h	/^void __tsan_func_entry(void *pc) {$/;"	f
+__tsan_func_exit	tsan_interface_inl.h	/^void __tsan_func_exit() {$/;"	f
+__tsan_init	tsan_interface.cc	/^void __tsan_init() {$/;"	f
+__tsan_malloc_hook	tsan_mman.cc	/^extern "C" void WEAK __tsan_malloc_hook(void *ptr, uptr size) {$/;"	f
+__tsan_memory_order	tsan_interface_atomic.h	/^} __tsan_memory_order;$/;"	t	typeref:enum:__anon2
+__tsan_memory_order_acq_rel	tsan_interface_atomic.h	/^  __tsan_memory_order_acq_rel = 1 << 4,$/;"	e	enum:__anon2
+__tsan_memory_order_acquire	tsan_interface_atomic.h	/^  __tsan_memory_order_acquire = 1 << 2,$/;"	e	enum:__anon2
+__tsan_memory_order_consume	tsan_interface_atomic.h	/^  __tsan_memory_order_consume = 1 << 1,$/;"	e	enum:__anon2
+__tsan_memory_order_relaxed	tsan_interface_atomic.h	/^  __tsan_memory_order_relaxed = 1 << 0,$/;"	e	enum:__anon2
+__tsan_memory_order_release	tsan_interface_atomic.h	/^  __tsan_memory_order_release = 1 << 3,$/;"	e	enum:__anon2
+__tsan_memory_order_seq_cst	tsan_interface_atomic.h	/^  __tsan_memory_order_seq_cst = 1 << 5$/;"	e	enum:__anon2
+__tsan_read1	tsan_interface_inl.h	/^void __tsan_read1(void *addr) {$/;"	f
+__tsan_read16	tsan_interface.cc	/^void __tsan_read16(void *addr) {$/;"	f
+__tsan_read2	tsan_interface_inl.h	/^void __tsan_read2(void *addr) {$/;"	f
+__tsan_read4	tsan_interface_inl.h	/^void __tsan_read4(void *addr) {$/;"	f
+__tsan_read8	tsan_interface_inl.h	/^void __tsan_read8(void *addr) {$/;"	f
+__tsan_release	tsan_interface.cc	/^void __tsan_release(void *addr) {$/;"	f
+__tsan_report_race	tsan_rtl.cc	/^extern "C" void __tsan_report_race() {$/;"	f	namespace:__tsan
+__tsan_report_race_thunk	tsan_rtl_amd64.S	/^__tsan_report_race_thunk:$/;"	l
+__tsan_resume	tsan_rtl.cc	/^extern "C" void __tsan_resume() {$/;"	f
+__tsan_resumed	tsan_rtl.cc	/^volatile int __tsan_resumed = 0;$/;"	v
+__tsan_thread_start_func	tsan_interceptors.cc	/^extern "C" void *__tsan_thread_start_func(void *arg) {$/;"	f
+__tsan_trace_switch	tsan_rtl.cc	/^extern "C" void __tsan_trace_switch() {$/;"	f	namespace:__tsan
+__tsan_trace_switch_thunk	tsan_rtl_amd64.S	/^__tsan_trace_switch_thunk:$/;"	l
+__tsan_vptr_update	tsan_interface_inl.h	/^void __tsan_vptr_update(void **vptr_p, void *new_val) {$/;"	f
+__tsan_write1	tsan_interface_inl.h	/^void __tsan_write1(void *addr) {$/;"	f
+__tsan_write16	tsan_interface.cc	/^void __tsan_write16(void *addr) {$/;"	f
+__tsan_write2	tsan_interface_inl.h	/^void __tsan_write2(void *addr) {$/;"	f
+__tsan_write4	tsan_interface_inl.h	/^void __tsan_write4(void *addr) {$/;"	f
+__tsan_write8	tsan_interface_inl.h	/^void __tsan_write8(void *addr) {$/;"	f
+a	tsan_md5.cc	/^  MD5_u32plus a, b, c, d;$/;"	m	struct:__tsan::__anon3	file:
+a16	tsan_interface_atomic.cc	/^typedef __tsan_atomic16 a16;$/;"	t	file:
+a32	tsan_interface_atomic.cc	/^typedef __tsan_atomic32 a32;$/;"	t	file:
+a64	tsan_interface_atomic.cc	/^typedef __tsan_atomic64 a64;$/;"	t	file:
+a8	tsan_interface_atomic.cc	/^typedef __tsan_atomic8 a8;$/;"	t	file:
+acq_rel	tsan_clock.cc	/^void ThreadClock::acq_rel(SyncClock *dst) {$/;"	f	class:__tsan::ThreadClock
+acquire	tsan_clock.cc	/^void ThreadClock::acquire(const SyncClock *src) {$/;"	f	class:__tsan::ThreadClock
+addr	tsan_interface_ann.cc	/^  uptr addr;$/;"	m	struct:__tsan::ExpectRace	file:
+addr	tsan_report.h	/^  uptr addr;$/;"	m	struct:__tsan::ReportLocation
+addr	tsan_report.h	/^  uptr addr;$/;"	m	struct:__tsan::ReportMop
+addr	tsan_sync.h	/^  const uptr addr;$/;"	m	struct:__tsan::SyncVar
+addr0	tsan_rtl.h	/^  u64 addr0() const { return x_ & 7; }$/;"	f	class:__tsan::Shadow
+addr_max	tsan_rtl.h	/^  uptr addr_max;$/;"	m	struct:__tsan::RacyAddress
+addr_min	tsan_rtl.h	/^  uptr addr_min;$/;"	m	struct:__tsan::RacyAddress
+align	tsan_interceptors.cc	/^  void *align;$/;"	m	union:pthread_attr_t	file:
+alive_threads	tsan_rtl.h	/^  int alive_threads;$/;"	m	struct:__tsan::Context
+alloc_cache	tsan_rtl.h	/^  AllocatorCache alloc_cache;$/;"	m	struct:__tsan::ThreadState
+alloc_stack_id	tsan_rtl.h	/^  u32 alloc_stack_id;$/;"	m	struct:__tsan::MBlock
+alloc_tid	tsan_rtl.h	/^  u32 alloc_tid;$/;"	m	struct:__tsan::MBlock
+allocator	tsan_mman.cc	/^Allocator *allocator() {$/;"	f	namespace:__tsan
+armed	tsan_interceptors.cc	/^  bool armed;$/;"	m	struct:__tsan::SignalDesc	file:
+atexit	tsan_interceptors.cc	/^  int atexit(ThreadState *thr, uptr pc, atexit_t f) {$/;"	f	class:AtExitContext
+atexit_ctx	tsan_interceptors.cc	/^static AtExitContext *atexit_ctx;$/;"	v	file:
+atexit_sleep_ms	tsan_flags.h	/^  int atexit_sleep_ms;$/;"	m	struct:__tsan::Flags
+atexit_t	tsan_interceptors.cc	/^  typedef void(*atexit_t)();$/;"	t	class:AtExitContext	file:
+b	tsan_md5.cc	/^  MD5_u32plus a, b, c, d;$/;"	m	struct:__tsan::__anon3	file:
+base	tsan_symbolize_addr2line_linux.cc	/^  uptr base;$/;"	m	struct:__tsan::ModuleDesc	file:
+base	tsan_symbolize_addr2line_linux.cc	/^  uptr base;$/;"	m	struct:__tsan::SectionDesc	file:
+begin_	tsan_vector.h	/^  T *begin_;$/;"	m	class:__tsan::Vector
+benign	tsan_interface_ann.cc	/^  ExpectRace benign;$/;"	m	struct:__tsan::DynamicAnnContext	file:
+block	tsan_md5.cc	/^  MD5_u32plus block[16];$/;"	m	struct:__tsan::__anon3	file:
+body	tsan_md5.cc	/^static void *body(MD5_CTX *ctx, void *data, ulong_t size) {$/;"	f	namespace:__tsan
+buffer	tsan_md5.cc	/^  unsigned char buffer[64];$/;"	m	struct:__tsan::__anon3	file:
+build_consistency	tsan_defs.h	/^static inline void USED build_consistency() {$/;"	f	namespace:__tsan
+build_consistency_debug	tsan_rtl.cc	/^void build_consistency_debug() {}$/;"	f	namespace:__tsan
+build_consistency_nostats	tsan_rtl.cc	/^void build_consistency_nostats() {}$/;"	f	namespace:__tsan
+build_consistency_release	tsan_rtl.cc	/^void build_consistency_release() {}$/;"	f	namespace:__tsan
+build_consistency_shadow1	tsan_rtl.cc	/^void build_consistency_shadow1() {}$/;"	f	namespace:__tsan
+build_consistency_shadow2	tsan_rtl.cc	/^void build_consistency_shadow2() {}$/;"	f	namespace:__tsan
+build_consistency_shadow4	tsan_rtl.cc	/^void build_consistency_shadow4() {}$/;"	f	namespace:__tsan
+build_consistency_shadow8	tsan_rtl.cc	/^void build_consistency_shadow8() {}$/;"	f	namespace:__tsan
+build_consistency_stats	tsan_rtl.cc	/^void build_consistency_stats() {}$/;"	f	namespace:__tsan
+c	tsan_md5.cc	/^  MD5_u32plus a, b, c, d;$/;"	m	struct:__tsan::__anon3	file:
+c_	tsan_sync.h	/^  const uptr c_;$/;"	m	class:__tsan::StackTrace
+callback	tsan_interceptors.cc	/^  void* (*callback)(void *arg);$/;"	m	struct:ThreadParam	file:
+clk_	tsan_clock.h	/^  Vector<u64> clk_;$/;"	m	class:__tsan::SyncClock
+clk_	tsan_clock.h	/^  u64 clk_[kMaxTidInClock];$/;"	m	struct:__tsan::ThreadClock
+clock	tsan_rtl.h	/^  ThreadClock clock;$/;"	m	struct:__tsan::ThreadState
+clock	tsan_sync.h	/^  SyncClock clock;$/;"	m	struct:__tsan::SyncVar
+col	tsan_report.h	/^  int col;$/;"	m	struct:__tsan::ReportStack
+creation_stack	tsan_rtl.h	/^  StackTrace creation_stack;$/;"	m	struct:__tsan::ThreadContext
+creation_stack	tsan_sync.h	/^  StackTrace creation_stack;$/;"	m	struct:__tsan::SyncVar
+ctx	tsan_interceptors.cc	/^  ucontext_t ctx;$/;"	m	struct:__tsan::SignalDesc	file:
+ctx	tsan_rtl.cc	/^static Context *ctx;$/;"	m	namespace:__tsan	file:
+ctx_	tsan_rtl.h	/^  Context *ctx_;$/;"	m	class:__tsan::ScopedReport
+cur_thread	tsan_rtl.h	/^INLINE ThreadState *cur_thread() {$/;"	f	namespace:__tsan
+d	tsan_md5.cc	/^  MD5_u32plus a, b, c, d;$/;"	m	struct:__tsan::__anon3	file:
+dead_info	tsan_rtl.h	/^  ThreadDeadInfo *dead_info;$/;"	m	struct:__tsan::ThreadContext
+dead_list_head	tsan_rtl.h	/^  ThreadContext* dead_list_head;$/;"	m	struct:__tsan::Context
+dead_list_size	tsan_rtl.h	/^  int dead_list_size;$/;"	m	struct:__tsan::Context
+dead_list_tail	tsan_rtl.h	/^  ThreadContext* dead_list_tail;$/;"	m	struct:__tsan::Context
+dead_next	tsan_rtl.h	/^  ThreadContext *dead_next;  \/\/ In dead thread list.$/;"	m	struct:__tsan::ThreadContext
+deadlock_detector	tsan_rtl.h	/^  DeadlockDetector deadlock_detector;$/;"	m	struct:__tsan::ThreadState
+desc	tsan_interface_ann.cc	/^  char desc[kMaxDescLen];$/;"	m	struct:__tsan::ExpectRace	file:
+detached	tsan_rtl.h	/^  bool detached;$/;"	m	struct:__tsan::ThreadContext
+dir2addr	tsan_interceptors.cc	/^static uptr dir2addr(char *path) {$/;"	f	file:
+dl_iterate_phdr_cb	tsan_symbolize_addr2line_linux.cc	/^static int dl_iterate_phdr_cb(dl_phdr_info *info, size_t size, void *arg) {$/;"	f	namespace:__tsan
+dyn_ann_ctx	tsan_interface_ann.cc	/^static DynamicAnnContext *dyn_ann_ctx;$/;"	m	namespace:__tsan	file:
+enable_annotations	tsan_flags.h	/^  bool enable_annotations;$/;"	m	struct:__tsan::Flags
+end	tsan_symbolize_addr2line_linux.cc	/^  uptr end;$/;"	m	struct:__tsan::SectionDesc	file:
+end_	tsan_vector.h	/^  T *end_;$/;"	m	class:__tsan::Vector
+epoch	tsan_rtl.h	/^  u64 epoch() const {$/;"	f	class:__tsan::FastState
+epoch0	tsan_rtl.h	/^  u64 epoch0;$/;"	m	struct:__tsan::ThreadContext
+epoch0	tsan_trace.h	/^  u64        epoch0;  \/\/ Start epoch for the trace.$/;"	m	struct:__tsan::TraceHeader
+epoch1	tsan_rtl.h	/^  u64 epoch1;$/;"	m	struct:__tsan::ThreadContext
+epollfd2addr	tsan_interceptors.cc	/^static uptr epollfd2addr(int fd) {$/;"	f	file:
+errno	tsan_interceptors.cc	80;"	d	file:
+errno_	tsan_rtl.h	/^  int errno_;$/;"	m	class:__tsan::ScopedInRtl
+events	tsan_trace.h	/^  Event events[kTraceSize];$/;"	m	struct:__tsan::Trace
+exit	tsan_interceptors.cc	/^  void exit(ThreadState *thr, uptr pc) {$/;"	f	class:AtExitContext
+exitcode	tsan_flags.h	/^  int exitcode;$/;"	m	struct:__tsan::Flags
+expect	tsan_interface_ann.cc	/^  ExpectRace expect;$/;"	m	struct:__tsan::DynamicAnnContext	file:
+external_symbolizer_path	tsan_flags.h	/^  const char *external_symbolizer_path;$/;"	m	struct:__tsan::Flags
+fast_state	tsan_rtl.h	/^  FastState fast_state;$/;"	m	struct:__tsan::ThreadState
+fast_synch_epoch	tsan_rtl.h	/^  u64 fast_synch_epoch;$/;"	m	struct:__tsan::ThreadState
+fd2addr	tsan_interceptors.cc	/^static uptr fd2addr(int fd) {$/;"	f	file:
+file	tsan_interface_ann.cc	/^  char *file;$/;"	m	struct:__tsan::ExpectRace	file:
+file	tsan_report.h	/^  char *file;$/;"	m	struct:__tsan::ReportLocation
+file	tsan_report.h	/^  char *file;$/;"	m	struct:__tsan::ReportStack
+file2addr	tsan_interceptors.cc	/^static uptr file2addr(char *path) {$/;"	f	file:
+finalize	tsan_interceptors.cc	/^static void finalize(void *arg) {$/;"	f	file:
+fired_suppressions	tsan_rtl.h	/^  Vector<FiredSuppression> fired_suppressions;$/;"	m	struct:__tsan::Context
+fix_mmap_addr	tsan_interceptors.cc	/^static bool fix_mmap_addr(void **addr, long_t sz, int flags) {$/;"	f	file:
+flags	tsan_flags.cc	/^Flags *flags() {$/;"	f	namespace:__tsan
+flags	tsan_rtl.h	/^  Flags flags;$/;"	m	struct:__tsan::Context
+flush_memory_ms	tsan_flags.h	/^  int flush_memory_ms;$/;"	m	struct:__tsan::Flags
+force_seq_cst_atomics	tsan_flags.h	/^  bool force_seq_cst_atomics;$/;"	m	struct:__tsan::Flags
+fullname	tsan_symbolize_addr2line_linux.cc	/^  const char *fullname;$/;"	m	struct:__tsan::ModuleDesc	file:
+func	tsan_report.h	/^  char *func;$/;"	m	struct:__tsan::ReportStack
+g_data_end	tsan_platform_linux.cc	/^static uptr g_data_end;$/;"	m	namespace:__tsan	file:
+g_data_start	tsan_platform_linux.cc	/^static uptr g_data_start;$/;"	m	namespace:__tsan	file:
+g_suppressions	tsan_suppressions.cc	/^static Suppression *g_suppressions;$/;"	m	namespace:__tsan	file:
+g_thread_finalize_key	tsan_interceptors.cc	/^static unsigned g_thread_finalize_key;$/;"	v	file:
+g_tls_size	tsan_platform_linux.cc	/^static uptr g_tls_size;$/;"	m	namespace:__tsan	file:
+get	tsan_clock.h	/^  u64 get(unsigned tid) const {$/;"	f	struct:__tsan::ThreadClock
+hash	tsan_defs.h	/^  u64 hash[2];$/;"	m	struct:__tsan::MD5Hash
+hash	tsan_rtl.h	/^  MD5Hash hash[2];$/;"	m	struct:__tsan::RacyStacks
+head	tsan_rtl.h	/^  SyncVar *head;$/;"	m	struct:__tsan::MBlock
+headers	tsan_trace.h	/^  TraceHeader headers[kTraceParts];$/;"	m	struct:__tsan::Trace
+hi	tsan_md5.cc	/^  MD5_u32plus lo, hi;$/;"	m	struct:__tsan::__anon3	file:
+hitcount	tsan_interface_ann.cc	/^  int hitcount;$/;"	m	struct:__tsan::ExpectRace	file:
+id	tsan_report.h	/^  int id;$/;"	m	struct:__tsan::ReportMutex
+id	tsan_report.h	/^  int id;$/;"	m	struct:__tsan::ReportThread
+ignore_reads_and_writes	tsan_rtl.h	/^  int ignore_reads_and_writes;$/;"	m	struct:__tsan::ThreadState
+in_rtl	tsan_rtl.h	/^  int in_rtl;$/;"	m	struct:__tsan::ThreadState
+in_rtl_	tsan_interceptors.h	/^  const int in_rtl_;$/;"	m	class:__tsan::ScopedInterceptor
+in_rtl_	tsan_interface_ann.cc	/^  const int in_rtl_;$/;"	m	class:__tsan::ScopedAnnotation	file:
+in_rtl_	tsan_interface_atomic.cc	/^  ScopedInRtl in_rtl_;$/;"	m	class:ScopedAtomic	file:
+in_rtl_	tsan_rtl.h	/^  int in_rtl_;$/;"	m	class:__tsan::ScopedInRtl
+in_signal_handler	tsan_rtl.h	/^  bool in_signal_handler;$/;"	m	struct:__tsan::ThreadState
+initialized	tsan_rtl.h	/^  bool initialized;$/;"	m	struct:__tsan::Context
+inp_fd	tsan_symbolize_addr2line_linux.cc	/^  int inp_fd;$/;"	m	struct:__tsan::ModuleDesc	file:
+int_alloc_cnt	tsan_rtl.h	/^  u64 int_alloc_cnt[MBlockTypeCount];$/;"	m	struct:__tsan::Context
+int_alloc_siz	tsan_rtl.h	/^  u64 int_alloc_siz[MBlockTypeCount];$/;"	m	struct:__tsan::Context
+int_signal_send	tsan_interceptors.cc	/^  int int_signal_send;$/;"	m	struct:__tsan::SignalContext	file:
+internal_alloc	tsan_mman.cc	/^void *internal_alloc(MBlockType typ, uptr sz) {$/;"	f	namespace:__tsan
+internal_free	tsan_mman.cc	/^void internal_free(void *p) {$/;"	f	namespace:__tsan
+internal_start_thread	tsan_interceptors.cc	/^void internal_start_thread(void(*func)(void *arg), void *arg) {$/;"	f	namespace:__tsan
+invoke_free_hook	tsan_mman.cc	/^void invoke_free_hook(void *ptr) {$/;"	f	namespace:__tsan
+invoke_malloc_hook	tsan_mman.cc	/^void invoke_malloc_hook(void *ptr, uptr size) {$/;"	f	namespace:__tsan
+is_alive	tsan_rtl.h	/^  bool is_alive;$/;"	m	struct:__tsan::ThreadState
+is_broken	tsan_sync.h	/^  bool is_broken;$/;"	m	struct:__tsan::SyncVar
+is_first	tsan_symbolize_addr2line_linux.cc	/^  bool is_first;$/;"	m	struct:__tsan::DlIteratePhdrCtx	file:
+is_linker_init	tsan_sync.h	/^  bool is_linker_init;$/;"	m	struct:__tsan::SyncVar
+is_recursive	tsan_sync.h	/^  bool is_recursive;$/;"	m	struct:__tsan::SyncVar
+is_rw	tsan_sync.h	/^  bool is_rw;$/;"	m	struct:__tsan::SyncVar
+is_write	tsan_rtl.h	/^  bool is_write() const { return x_ & 32; }$/;"	f	class:__tsan::Shadow
+iter_	tsan_mutex.cc	/^  int iter_;$/;"	m	class:__tsan::Backoff	file:
+kActiveSpinCnt	tsan_mutex.cc	/^  static const int kActiveSpinCnt = 20;$/;"	m	class:__tsan::Backoff	file:
+kActiveSpinIters	tsan_mutex.cc	/^  static const int kActiveSpinIters = 10;$/;"	m	class:__tsan::Backoff	file:
+kAllocatorSize	tsan_rtl.h	/^const uptr kAllocatorSize  =  0x10000000000ULL;  \/\/ 1T.$/;"	m	namespace:__tsan
+kAllocatorSpace	tsan_rtl.h	/^const uptr kAllocatorSpace = 0x7d0000000000ULL;$/;"	m	namespace:__tsan
+kClkBits	tsan_defs.h	/^const int kClkBits = 43;$/;"	m	namespace:__tsan
+kClkShift	tsan_rtl.h	/^  static const int kClkShift = kTidShift - kClkBits;$/;"	m	class:__tsan::FastState
+kCollectStats	tsan_defs.h	/^const bool kCollectStats = false;$/;"	m	namespace:__tsan
+kCollectStats	tsan_defs.h	/^const bool kCollectStats = true;$/;"	m	namespace:__tsan
+kDefaultAlignment	tsan_mman.h	/^const uptr kDefaultAlignment = 16;$/;"	m	namespace:__tsan
+kFreedBit	tsan_rtl.h	/^  static const u64 kFreedBit = 1ull << 63;$/;"	m	class:__tsan::FastState
+kIgnoreBit	tsan_rtl.h	/^  static const u64 kIgnoreBit = 1ull;$/;"	m	class:__tsan::FastState
+kInvalidTid	tsan_sync.h	/^  static const int kInvalidTid = -1;$/;"	m	struct:__tsan::SyncVar
+kLinuxAppMemBeg	tsan_platform.h	/^static const uptr kLinuxAppMemBeg = 0x000000000000ULL;$/;"	m	namespace:__tsan
+kLinuxAppMemEnd	tsan_platform.h	/^static const uptr kLinuxAppMemEnd = 0x00fcffffffffULL;$/;"	m	namespace:__tsan
+kLinuxAppMemMsk	tsan_platform.h	/^static const uptr kLinuxAppMemMsk = 0x7c0000000000ULL;$/;"	m	namespace:__tsan
+kLinuxShadowBeg	tsan_platform.h	/^static const uptr kLinuxShadowBeg = MemToShadow(kLinuxAppMemBeg);$/;"	m	namespace:__tsan
+kLinuxShadowEnd	tsan_platform.h	/^static const uptr kLinuxShadowEnd =$/;"	m	namespace:__tsan
+kLinuxShadowMsk	tsan_platform.h	/^static const uptr kLinuxShadowMsk = 0x100000000000ULL;$/;"	m	namespace:__tsan
+kMaxAtExit	tsan_interceptors.cc	/^  static const int kMaxAtExit = 128;$/;"	m	class:AtExitContext	file:
+kMaxDescLen	tsan_interface_ann.cc	/^static const int kMaxDescLen = 128;$/;"	m	namespace:__tsan	file:
+kMaxTid	tsan_defs.h	/^const unsigned kMaxTid = 1 << kTidBits;$/;"	m	namespace:__tsan
+kMaxTidInClock	tsan_defs.h	/^const unsigned kMaxTidInClock = kMaxTid * 2;  \/\/ This includes msb 'freed' bit.$/;"	m	namespace:__tsan
+kPartCount	tsan_sync.h	/^  static const int kPartCount = 1009;$/;"	m	class:__tsan::SyncTab
+kPthreadAttrSize	tsan_interceptors.cc	/^const int kPthreadAttrSize = 56;$/;"	v
+kReadLock	tsan_mutex.cc	/^const uptr kReadLock = 2;$/;"	m	namespace:__tsan	file:
+kShadowCell	tsan_defs.h	/^const unsigned kShadowCell = 8;$/;"	m	namespace:__tsan
+kShadowCnt	tsan_defs.h	/^const unsigned kShadowCnt = 8;$/;"	m	namespace:__tsan
+kShadowCnt	tsan_defs.h	/^const unsigned kShadowCnt = TSAN_SHADOW_COUNT;$/;"	m	namespace:__tsan
+kShadowFreed	tsan_rtl.h	/^const u64 kShadowFreed = 0xfffffffffffffff8ull;$/;"	m	namespace:__tsan
+kShadowSize	tsan_defs.h	/^const unsigned kShadowSize = 8;$/;"	m	namespace:__tsan
+kShadowStackSize	tsan_defs.h	/^const int kShadowStackSize = 4 * 1024;$/;"	m	namespace:__tsan
+kSigCount	tsan_interceptors.cc	/^const int kSigCount = 128;$/;"	v
+kThreadQuarantineSize	tsan_rtl_thread.cc	/^const int kThreadQuarantineSize = 16;$/;"	m	namespace:__tsan	file:
+kTidBits	tsan_defs.h	/^const int kTidBits = 13;$/;"	m	namespace:__tsan
+kTidShift	tsan_rtl.h	/^  static const int kTidShift = 64 - kTidBits - 1;$/;"	m	class:__tsan::FastState
+kTracePartSize	tsan_trace.h	/^const int kTracePartSize = 16 * 1024;$/;"	m	namespace:__tsan
+kTraceParts	tsan_trace.h	/^const int kTraceParts = TSAN_HISTORY_SIZE * 1024 \/ kTracePartSize;$/;"	m	namespace:__tsan
+kTraceSize	tsan_trace.h	/^const int kTraceSize = kTracePartSize * kTraceParts;$/;"	m	namespace:__tsan
+kTraceStackSize	tsan_defs.h	/^const int kTraceStackSize = 256;$/;"	m	namespace:__tsan
+kUnlocked	tsan_mutex.cc	/^const uptr kUnlocked = 0;$/;"	m	namespace:__tsan	file:
+kWriteLock	tsan_mutex.cc	/^const uptr kWriteLock = 1;$/;"	m	namespace:__tsan	file:
+last_	tsan_vector.h	/^  T *last_;$/;"	m	class:__tsan::Vector
+last_lock	tsan_sync.h	/^  u64 last_lock;$/;"	m	struct:__tsan::SyncVar
+last_sleep_clock	tsan_rtl.h	/^  ThreadClock last_sleep_clock;$/;"	m	struct:__tsan::ThreadState
+last_sleep_stack_id	tsan_rtl.h	/^  u32 last_sleep_stack_id;$/;"	m	struct:__tsan::ThreadState
+line	tsan_interface_ann.cc	/^  int line;$/;"	m	struct:__tsan::ExpectRace	file:
+line	tsan_report.h	/^  int line;$/;"	m	struct:__tsan::ReportLocation
+line	tsan_report.h	/^  int line;$/;"	m	struct:__tsan::ReportStack
+lo	tsan_md5.cc	/^  MD5_u32plus lo, hi;$/;"	m	struct:__tsan::__anon3	file:
+locked_	tsan_mutex.h	/^  u64 locked_[MutexTypeCount];$/;"	m	class:__tsan::DeadlockDetector
+locs	tsan_report.h	/^  Vector<ReportLocation*> locs;$/;"	m	class:__tsan::ReportDesc
+log_fileno	tsan_flags.h	/^  int log_fileno;$/;"	m	struct:__tsan::Flags
+long_t	tsan_interceptors.cc	/^typedef long long_t;  \/\/ NOLINT$/;"	t	file:
+max	tsan_defs.h	/^T max(T a, T b) {$/;"	f	namespace:__tsan
+max_alive_threads	tsan_rtl.h	/^  int max_alive_threads;$/;"	m	struct:__tsan::Context
+md5_hash	tsan_md5.cc	/^MD5Hash md5_hash(const void *data, uptr size) {$/;"	f	namespace:__tsan
+min	tsan_defs.h	/^T min(T a, T b) {$/;"	f	namespace:__tsan
+mo_acq_rel	tsan_interface_atomic.cc	/^const int mo_acq_rel = __tsan_memory_order_acq_rel;$/;"	v
+mo_acquire	tsan_interface_atomic.cc	/^const int mo_acquire = __tsan_memory_order_acquire;$/;"	v
+mo_consume	tsan_interface_atomic.cc	/^const int mo_consume = __tsan_memory_order_consume;$/;"	v
+mo_relaxed	tsan_interface_atomic.cc	/^const int mo_relaxed = __tsan_memory_order_relaxed;$/;"	v
+mo_release	tsan_interface_atomic.cc	/^const int mo_release = __tsan_memory_order_release;$/;"	v
+mo_seq_cst	tsan_interface_atomic.cc	/^const int mo_seq_cst = __tsan_memory_order_seq_cst;$/;"	v
+module	tsan_report.h	/^  char *module;$/;"	m	struct:__tsan::ReportStack
+module	tsan_symbolize_addr2line_linux.cc	/^  ModuleDesc *module;$/;"	m	struct:__tsan::SectionDesc	file:
+mops	tsan_report.h	/^  Vector<ReportMop*> mops;$/;"	m	class:__tsan::ReportDesc
+morder	tsan_interface_atomic.cc	/^typedef __tsan_memory_order morder;$/;"	t	file:
+mtx	tsan_interface_ann.cc	/^  Mutex mtx;$/;"	m	struct:__tsan::DynamicAnnContext	file:
+mtx	tsan_rtl.h	/^  Mutex mtx;$/;"	m	struct:__tsan::MBlock
+mtx	tsan_sync.h	/^    Mutex mtx;$/;"	m	struct:__tsan::SyncTab::Part
+mtx	tsan_sync.h	/^  Mutex mtx;$/;"	m	struct:__tsan::SyncVar
+mtx	tsan_trace.h	/^  Mutex mtx;$/;"	m	struct:__tsan::Trace
+mtx_	tsan_interceptors.cc	/^  Mutex mtx_;$/;"	m	class:AtExitContext	file:
+mutex	tsan_report.h	/^  int *mutex;$/;"	m	struct:__tsan::ReportMop
+mutexes	tsan_report.h	/^  Vector<ReportMutex*> mutexes;$/;"	m	class:__tsan::ReportDesc
+my_siginfo_t	tsan_interceptors.cc	/^struct my_siginfo_t {$/;"	s	file:
+n_	tsan_sync.h	/^  uptr n_;$/;"	m	class:__tsan::StackTrace
+name	tsan_report.h	/^  char *name;$/;"	m	struct:__tsan::ReportLocation
+name	tsan_report.h	/^  char *name;$/;"	m	struct:__tsan::ReportThread
+name	tsan_symbolize_addr2line_linux.cc	/^  const char *name;$/;"	m	struct:__tsan::ModuleDesc	file:
+nclk_	tsan_clock.h	/^  uptr nclk_;$/;"	m	struct:__tsan::ThreadClock
+next	tsan_interface_ann.cc	/^  ExpectRace *next;$/;"	m	struct:__tsan::ExpectRace	file:
+next	tsan_report.h	/^  ReportStack *next;$/;"	m	struct:__tsan::ReportStack
+next	tsan_suppressions.h	/^  Suppression *next;$/;"	m	struct:__tsan::Suppression
+next	tsan_symbolize_addr2line_linux.cc	/^  SectionDesc *next;$/;"	m	struct:__tsan::SectionDesc	file:
+next	tsan_sync.h	/^  SyncVar *next;  \/\/ In SyncTab hashtable.$/;"	m	struct:__tsan::SyncVar
+nmissed_expected	tsan_rtl.h	/^  int nmissed_expected;$/;"	m	struct:__tsan::Context
+nmutex	tsan_report.h	/^  int nmutex;$/;"	m	struct:__tsan::ReportMop
+nomalloc	tsan_rtl.h	/^  int nomalloc;$/;"	m	struct:__tsan::ThreadState
+nothrow_t	tsan_interceptors.cc	/^struct nothrow_t {};$/;"	s	namespace:std	file:
+nreported	tsan_rtl.h	/^  int nreported;$/;"	m	struct:__tsan::Context
+offset	tsan_report.h	/^  uptr offset;$/;"	m	struct:__tsan::ReportStack
+opaque	tsan_interceptors.cc	/^  int opaque[128];$/;"	m	struct:my_siginfo_t	file:
+opaque	tsan_interceptors.cc	/^  uptr opaque[117];$/;"	m	struct:ucontext_t	file:
+operator ==	tsan_rtl.cc	/^bool MD5Hash::operator==(const MD5Hash &other) const {$/;"	f	class:__tsan::MD5Hash
+operator ==	tsan_rtl.h	/^  bool operator==(const RacyStacks &other) const {$/;"	f	struct:__tsan::RacyStacks
+operator []	tsan_vector.h	/^  T &operator[](uptr i) {$/;"	f	class:__tsan::Vector
+operator []	tsan_vector.h	/^  const T &operator[](uptr i) const {$/;"	f	class:__tsan::Vector
+operator delete	tsan_interceptors.cc	/^void operator delete(void *ptr) {$/;"	f
+operator delete	tsan_interceptors.cc	/^void operator delete(void *ptr, std::nothrow_t const&) {$/;"	f
+operator delete[]	tsan_interceptors.cc	/^void operator delete[](void *ptr) {$/;"	f
+operator delete[]	tsan_interceptors.cc	/^void operator delete[](void *ptr, std::nothrow_t const&) {$/;"	f
+operator new	tsan_interceptors.cc	/^void *operator new(__sanitizer::uptr size) {$/;"	f
+operator new	tsan_interceptors.cc	/^void *operator new(__sanitizer::uptr size, std::nothrow_t const&) {$/;"	f
+operator new[]	tsan_interceptors.cc	/^void *operator new[](__sanitizer::uptr size) {$/;"	f
+operator new[]	tsan_interceptors.cc	/^void *operator new[](__sanitizer::uptr size, std::nothrow_t const&) {$/;"	f
+os_id	tsan_rtl.h	/^  uptr os_id;  \/\/ pid$/;"	m	struct:__tsan::ThreadContext
+out_fd	tsan_symbolize_addr2line_linux.cc	/^  int out_fd;$/;"	m	struct:__tsan::ModuleDesc	file:
+owner_tid	tsan_sync.h	/^  int owner_tid;  \/\/ Set only by exclusive owners.$/;"	m	struct:__tsan::SyncVar
+pad	tsan_sync.h	/^    char pad[kCacheLineSize - sizeof(Mutex) - sizeof(SyncVar*)];  \/\/ NOLINT$/;"	m	struct:__tsan::SyncTab::Part
+param	tsan_interceptors.cc	/^  void *param;$/;"	m	struct:ThreadParam	file:
+pc	tsan_report.h	/^  uptr pc;$/;"	m	struct:__tsan::ReportStack
+pc	tsan_rtl.h	/^  uptr pc;$/;"	m	struct:__tsan::FiredSuppression
+pending_signal_count	tsan_interceptors.cc	/^  int pending_signal_count;$/;"	m	struct:__tsan::SignalContext	file:
+pending_signals	tsan_interceptors.cc	/^  SignalDesc pending_signals[kSigCount];$/;"	m	struct:__tsan::SignalContext	file:
+pid	tsan_report.h	/^  uptr pid;$/;"	m	struct:__tsan::ReportThread
+pos_	tsan_interceptors.cc	/^  int pos_;$/;"	m	class:AtExitContext	file:
+prev	tsan_interface_ann.cc	/^  ExpectRace *prev;$/;"	m	struct:__tsan::ExpectRace	file:
+process_pending_signals	tsan_interceptors.cc	/^static void process_pending_signals(ThreadState *thr) {$/;"	f	file:
+profile_memory	tsan_flags.h	/^  const char *profile_memory;$/;"	m	struct:__tsan::Flags
+pthread_attr_t	tsan_interceptors.cc	/^union pthread_attr_t {$/;"	u	file:
+racy_addresses	tsan_rtl.h	/^  Vector<RacyAddress> racy_addresses;$/;"	m	struct:__tsan::Context
+racy_shadow_addr	tsan_rtl.h	/^  u64 *racy_shadow_addr;$/;"	m	struct:__tsan::ThreadState
+racy_stacks	tsan_rtl.h	/^  Vector<RacyStacks> racy_stacks;$/;"	m	struct:__tsan::Context
+racy_state	tsan_rtl.h	/^  u64 racy_state[2];$/;"	m	struct:__tsan::ThreadState
+raw	tsan_rtl.h	/^  u64 raw() const {$/;"	f	class:__tsan::FastState
+read_clock	tsan_sync.h	/^  SyncClock read_clock;  \/\/ Used for rw mutexes only.$/;"	m	struct:__tsan::SyncVar
+recursion	tsan_sync.h	/^  int recursion;$/;"	m	struct:__tsan::SyncVar
+release	tsan_clock.cc	/^void ThreadClock::release(SyncClock *dst) const {$/;"	f	class:__tsan::ThreadClock
+rep_	tsan_rtl.h	/^  ReportDesc *rep_;$/;"	m	class:__tsan::ScopedReport
+report_destroy_locked	tsan_flags.h	/^  bool report_destroy_locked;$/;"	m	struct:__tsan::Flags
+report_mtx	tsan_rtl.h	/^  Mutex report_mtx;$/;"	m	struct:__tsan::Context
+report_signal_unsafe	tsan_flags.h	/^  bool report_signal_unsafe;$/;"	m	struct:__tsan::Flags
+report_thread_leaks	tsan_flags.h	/^  bool report_thread_leaks;$/;"	m	struct:__tsan::Flags
+reuse_count	tsan_rtl.h	/^  int reuse_count;$/;"	m	struct:__tsan::ThreadContext
+rtl_generic_sighandler	tsan_interceptors.cc	/^static void ALWAYS_INLINE rtl_generic_sighandler(bool sigact, int sig,$/;"	f	file:
+rtl_sigaction	tsan_interceptors.cc	/^static void rtl_sigaction(int sig, my_siginfo_t *info, void *ctx) {$/;"	f	file:
+rtl_sighandler	tsan_interceptors.cc	/^static void rtl_sighandler(int sig) {$/;"	f	file:
+running	tsan_report.h	/^  bool running;$/;"	m	struct:__tsan::ReportThread
+running_on_valgrind	tsan_flags.h	/^  bool running_on_valgrind;$/;"	m	struct:__tsan::Flags
+s_	tsan_sync.h	/^  uptr *s_;$/;"	m	class:__tsan::StackTrace
+sa_flags	tsan_interceptors.cc	/^  int sa_flags;$/;"	m	struct:sigaction_t	file:
+sa_handler	tsan_interceptors.cc	/^    sighandler_t sa_handler;$/;"	m	union:sigaction_t::__anon1	file:
+sa_mask	tsan_interceptors.cc	/^  sigset_t sa_mask;$/;"	m	struct:sigaction_t	file:
+sa_restorer	tsan_interceptors.cc	/^  void (*sa_restorer)();$/;"	m	struct:sigaction_t	file:
+sa_sigaction	tsan_interceptors.cc	/^    void (*sa_sigaction)(int sig, my_siginfo_t *siginfo, void *uctx);$/;"	m	union:sigaction_t::__anon1	file:
+sections	tsan_symbolize_addr2line_linux.cc	/^  SectionDesc *sections;$/;"	m	struct:__tsan::DlIteratePhdrCtx	file:
+seq_	tsan_mutex.h	/^  u64 seq_;$/;"	m	class:__tsan::DeadlockDetector
+set	tsan_clock.h	/^  void set(unsigned tid, u64 v) {$/;"	f	struct:__tsan::ThreadClock
+shadow_stack	tsan_rtl.h	/^  uptr *shadow_stack;$/;"	m	struct:__tsan::ThreadState
+shadow_stack	tsan_rtl.h	/^  uptr shadow_stack[kShadowStackSize];$/;"	m	struct:__tsan::ThreadState
+shadow_stack_end	tsan_rtl.h	/^  uptr *shadow_stack_end;$/;"	m	struct:__tsan::ThreadState
+shadow_stack_pos	tsan_rtl.h	/^  uptr *shadow_stack_pos;$/;"	m	struct:__tsan::ThreadState
+sigaction	tsan_interceptors.cc	/^  bool sigaction;$/;"	m	struct:__tsan::SignalDesc	file:
+sigaction_t	tsan_interceptors.cc	/^struct sigaction_t {$/;"	s	file:
+sigactions	tsan_interceptors.cc	/^static sigaction_t sigactions[kSigCount];$/;"	v	file:
+sighandler_t	tsan_interceptors.cc	/^typedef void (*sighandler_t)(int sig);$/;"	t	file:
+siginfo	tsan_interceptors.cc	/^  my_siginfo_t siginfo;$/;"	m	struct:__tsan::SignalDesc	file:
+signal_ctx	tsan_rtl.h	/^  SignalContext *signal_ctx;$/;"	m	struct:__tsan::ThreadState
+sigset_t	tsan_interceptors.cc	/^struct sigset_t {$/;"	s	file:
+size	tsan_clock.h	/^  uptr size() const {$/;"	f	class:__tsan::SyncClock
+size	tsan_clock.h	/^  uptr size() const {$/;"	f	struct:__tsan::ThreadClock
+size	tsan_interceptors.cc	/^  char size[kPthreadAttrSize];$/;"	m	union:pthread_attr_t	file:
+size	tsan_interface_ann.cc	/^  uptr size;$/;"	m	struct:__tsan::ExpectRace	file:
+size	tsan_report.h	/^  int size;$/;"	m	struct:__tsan::ReportMop
+size	tsan_report.h	/^  uptr size;$/;"	m	struct:__tsan::ReportLocation
+size	tsan_rtl.h	/^  u64 size() const { return 1ull << size_log(); }$/;"	f	class:__tsan::Shadow
+size	tsan_rtl.h	/^  uptr size;$/;"	m	struct:__tsan::MBlock
+size_log	tsan_rtl.h	/^  u64 size_log() const { return (x_ >> 3) & 3; }$/;"	f	class:__tsan::Shadow
+sleep	tsan_report.h	/^  ReportStack *sleep;$/;"	m	class:__tsan::ReportDesc
+stack	tsan_report.h	/^  ReportStack *stack;$/;"	m	struct:__tsan::ReportLocation
+stack	tsan_report.h	/^  ReportStack *stack;$/;"	m	struct:__tsan::ReportMop
+stack	tsan_report.h	/^  ReportStack *stack;$/;"	m	struct:__tsan::ReportMutex
+stack	tsan_report.h	/^  ReportStack *stack;$/;"	m	struct:__tsan::ReportThread
+stack0	tsan_trace.h	/^  StackTrace stack0;  \/\/ Start stack for the trace.$/;"	m	struct:__tsan::TraceHeader
+stack0buf	tsan_trace.h	/^  uptr       stack0buf[kTraceStackSize];$/;"	m	struct:__tsan::TraceHeader
+stack_	tsan_interceptors.cc	/^  atexit_t stack_[kMaxAtExit];$/;"	m	class:AtExitContext	file:
+stacks	tsan_report.h	/^  Vector<ReportStack*> stacks;$/;"	m	class:__tsan::ReportDesc
+stat	tsan_rtl.h	/^  u64 stat[StatCnt];$/;"	m	struct:__tsan::Context
+stat	tsan_rtl.h	/^  u64 stat[StatCnt];$/;"	m	struct:__tsan::ThreadState
+stat_type_	tsan_mutex.h	/^  StatType stat_type_;$/;"	m	class:__tsan::Mutex
+state_	tsan_mutex.h	/^  atomic_uintptr_t state_;$/;"	m	class:__tsan::Mutex
+status	tsan_rtl.h	/^  ThreadStatus status;$/;"	m	struct:__tsan::ThreadContext
+std	tsan_interceptors.cc	/^namespace std {$/;"	n	file:
+stk_addr	tsan_rtl.h	/^  const uptr stk_addr;$/;"	m	struct:__tsan::ThreadState
+stk_size	tsan_rtl.h	/^  const uptr stk_size;$/;"	m	struct:__tsan::ThreadState
+stop_on_start	tsan_flags.h	/^  bool stop_on_start;$/;"	m	struct:__tsan::Flags
+strip_path_prefix	tsan_flags.h	/^  const char *strip_path_prefix;$/;"	m	struct:__tsan::Flags
+suppress_equal_addresses	tsan_flags.h	/^  bool suppress_equal_addresses;$/;"	m	struct:__tsan::Flags
+suppress_equal_stacks	tsan_flags.h	/^  bool suppress_equal_stacks;$/;"	m	struct:__tsan::Flags
+suppressions	tsan_flags.h	/^  const char *suppressions;$/;"	m	struct:__tsan::Flags
+sync	tsan_rtl.h	/^  SyncClock sync;$/;"	m	struct:__tsan::ThreadContext
+synctab	tsan_rtl.h	/^  SyncTab synctab;$/;"	m	struct:__tsan::Context
+tab_	tsan_sync.h	/^  Part tab_[kPartCount];$/;"	m	class:__tsan::SyncTab
+templ	tsan_suppressions.h	/^  char *templ;$/;"	m	struct:__tsan::Suppression
+thr	tsan_rtl.h	/^  ThreadState *thr;$/;"	m	struct:__tsan::ThreadContext
+thr_	tsan_interceptors.h	/^  ThreadState *const thr_;$/;"	m	class:__tsan::ScopedInterceptor
+thr_	tsan_interface_ann.cc	/^  ThreadState *const thr_;$/;"	m	class:__tsan::ScopedAnnotation	file:
+thr_	tsan_interface_atomic.cc	/^  ThreadState *thr_;$/;"	m	class:ScopedAtomic	file:
+thr_	tsan_rtl.h	/^  ThreadState*thr_;$/;"	m	class:__tsan::ScopedInRtl
+thread_finalize	tsan_interceptors.cc	/^static void thread_finalize(void *v) {$/;"	f	file:
+thread_mtx	tsan_rtl.h	/^  Mutex thread_mtx;$/;"	m	struct:__tsan::Context
+thread_seq	tsan_rtl.h	/^  unsigned thread_seq;$/;"	m	struct:__tsan::Context
+threads	tsan_report.h	/^  Vector<ReportThread*> threads;$/;"	m	class:__tsan::ReportDesc
+threads	tsan_rtl.h	/^  ThreadContext *threads[kMaxTid];$/;"	m	struct:__tsan::Context
+tick	tsan_clock.h	/^  void tick(unsigned tid) {$/;"	f	struct:__tsan::ThreadClock
+tid	tsan_interceptors.cc	/^  atomic_uintptr_t tid;$/;"	m	struct:ThreadParam	file:
+tid	tsan_report.h	/^  int tid;$/;"	m	struct:__tsan::ReportLocation
+tid	tsan_report.h	/^  int tid;$/;"	m	struct:__tsan::ReportMop
+tid	tsan_rtl.h	/^  const int tid;$/;"	m	struct:__tsan::ThreadContext
+tid	tsan_rtl.h	/^  const int tid;$/;"	m	struct:__tsan::ThreadState
+tid	tsan_rtl.h	/^  u64 tid() const {$/;"	f	class:__tsan::FastState
+tls_addr	tsan_rtl.h	/^  const uptr tls_addr;$/;"	m	struct:__tsan::ThreadState
+tls_size	tsan_rtl.h	/^  const uptr tls_size;$/;"	m	struct:__tsan::ThreadState
+trace	tsan_rtl.h	/^  Trace trace;$/;"	m	struct:__tsan::ThreadDeadInfo
+trace	tsan_rtl.h	/^  Trace trace;$/;"	m	struct:__tsan::ThreadState
+typ	tsan_report.h	/^  ReportType typ;$/;"	m	class:__tsan::ReportDesc
+typ_	tsan_vector.h	/^  const MBlockType typ_;$/;"	m	class:__tsan::Vector
+type	tsan_report.h	/^  ReportLocationType type;$/;"	m	struct:__tsan::ReportLocation
+type	tsan_rtl.h	/^  ReportType type;$/;"	m	struct:__tsan::FiredSuppression
+type	tsan_suppressions.h	/^  SuppressionType type;$/;"	m	struct:__tsan::Suppression
+type_	tsan_mutex.h	/^  MutexType type_;$/;"	m	class:__tsan::Mutex
+ucontext_t	tsan_interceptors.cc	/^struct ucontext_t {$/;"	s	file:
+ulong_t	tsan_md5.cc	/^typedef unsigned long ulong_t;  \/\/ NOLINT$/;"	t	namespace:__tsan	file:
+unique_id	tsan_rtl.h	/^  const int unique_id;$/;"	m	struct:__tsan::ThreadState
+unique_id	tsan_rtl.h	/^  int unique_id;  \/\/ Non-rolling thread id.$/;"	m	struct:__tsan::ThreadContext
+unique_thread_seq	tsan_rtl.h	/^  unsigned unique_thread_seq;$/;"	m	struct:__tsan::Context
+user_alloc	tsan_mman.cc	/^void *user_alloc(ThreadState *thr, uptr pc, uptr sz, uptr align) {$/;"	f	namespace:__tsan
+user_free	tsan_mman.cc	/^void user_free(ThreadState *thr, uptr pc, void *p) {$/;"	f	namespace:__tsan
+user_id	tsan_rtl.h	/^  uptr user_id;  \/\/ Some opaque user thread id (e.g. pthread_t).$/;"	m	struct:__tsan::ThreadContext
+user_mblock	tsan_mman.cc	/^MBlock *user_mblock(ThreadState *thr, void *p) {$/;"	f	namespace:__tsan
+user_realloc	tsan_mman.cc	/^void *user_realloc(ThreadState *thr, uptr pc, void *p, uptr sz) {$/;"	f	namespace:__tsan
+val	tsan_interceptors.cc	/^  u64 val[1024 \/ 8 \/ sizeof(u64)];$/;"	m	struct:sigset_t	file:
+val	tsan_sync.h	/^    SyncVar *val;$/;"	m	struct:__tsan::SyncTab::Part
+verbosity	tsan_flags.h	/^  int verbosity;$/;"	m	struct:__tsan::Flags
+write	tsan_report.h	/^  bool write;$/;"	m	struct:__tsan::ReportMop
+x_	tsan_rtl.h	/^  u64 x_;$/;"	m	class:__tsan::FastState
+~Mutex	tsan_mutex.cc	/^Mutex::~Mutex() {$/;"	f	class:__tsan::Mutex
+~ReportDesc	tsan_report.cc	/^ReportDesc::~ReportDesc() {$/;"	f	class:__tsan::ReportDesc
+~ScopedAnnotation	tsan_interface_ann.cc	/^  ~ScopedAnnotation() {$/;"	f	class:__tsan::ScopedAnnotation
+~ScopedAtomic	tsan_interface_atomic.cc	/^  ~ScopedAtomic() {$/;"	f	class:ScopedAtomic
+~ScopedInRtl	tsan_platform_linux.cc	/^ScopedInRtl::~ScopedInRtl() {$/;"	f	class:__tsan::ScopedInRtl
+~ScopedInRtl	tsan_platform_mac.cc	/^ScopedInRtl::~ScopedInRtl() {$/;"	f	class:__tsan::ScopedInRtl
+~ScopedInterceptor	tsan_interceptors.cc	/^ScopedInterceptor::~ScopedInterceptor() {$/;"	f	class:ScopedInterceptor
+~ScopedReport	tsan_rtl_report.cc	/^ScopedReport::~ScopedReport() {$/;"	f	class:__tsan::ScopedReport
+~StackTrace	tsan_sync.cc	/^StackTrace::~StackTrace() {$/;"	f	class:__tsan::StackTrace
+~SyncTab	tsan_sync.cc	/^SyncTab::~SyncTab() {$/;"	f	class:__tsan::SyncTab
+~Vector	tsan_vector.h	/^  ~Vector() {$/;"	f	class:__tsan::Vector

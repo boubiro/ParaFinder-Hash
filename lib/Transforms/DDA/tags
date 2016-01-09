@@ -1,0 +1,156 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AddNewProfilingBufferFunction	LDDProfiling.cpp	/^      Function *AddNewProfilingBufferFunction;$/;"	m	class:__anon1::LDDProfiling	file:
+Addr	LDDProfilingCommon.h	/^  void* Addr;$/;"	m	struct:RWTraceInformation
+AddrLen	LDDProfilingCommon.h	/^  unsigned AddrLen;$/;"	m	struct:RWAddressID
+AddrLen	LDDProfilingCommon.h	/^  unsigned AddrLen;$/;"	m	struct:RWMemoryTrace
+AddrPos	LDDProfilingCommon.h	/^  std::string AddrPos; $/;"	m	struct:RWAddressID
+AddrPos	LDDProfilingCommon.h	/^  std::string AddrPos;$/;"	m	struct:RWMemoryTrace
+AntiDep	LDDProfilingCommon.h	/^  std::vector<LCDep> AntiDep;$/;"	m	struct:LCDependenceInformation
+AntiDep	LDDProfilingCommon.h	/^  std::vector<LIDep> AntiDep;$/;"	m	struct:LIDependenceInformation
+AntiDep	LDDProfilingCommon.h	/^ std::vector<RWAddrID>::iterator AntiDep;$/;"	m	struct:DependenceType
+Builder	LDDProfiling.cpp	/^      IRBuilder<> *Builder;$/;"	m	class:__anon1::LDDProfiling	file:
+Builder	TimerProfiling.cpp	/^      IRBuilder<> *Builder;$/;"	m	class:__anon2::TimerProfiling	file:
+Context	LDDProfiling.cpp	/^      LLVMContext *Context;$/;"	m	class:__anon1::LDDProfiling	file:
+Context	TimerProfiling.cpp	/^      LLVMContext *Context;$/;"	m	class:__anon2::TimerProfiling	file:
+CurModule	LDDProfiling.cpp	/^      Module *CurModule;$/;"	m	class:__anon1::LDDProfiling	file:
+CurModule	TimerProfiling.cpp	/^      Module *CurModule;$/;"	m	class:__anon2::TimerProfiling	file:
+DEBUG_TYPE	LDDProfiling.cpp	14;"	d	file:
+DEBUG_TYPE	TimerProfiling.cpp	20;"	d	file:
+DepDist	LDDProfilingCommon.h	/^ std::vector<unsigned> DepDist;  \/\/ Dependence distance.$/;"	m	struct:LCDependence
+DepInfo	LDDProfilingCommon.h	/^}DepInfo;$/;"	t	typeref:struct:DependenceInformation
+DepType	LDDProfilingCommon.h	/^}DepType;$/;"	t	typeref:struct:DependenceType
+DependenceInformation	LDDProfilingCommon.h	/^typedef struct DependenceInformation{$/;"	s
+DependenceType	LDDProfilingCommon.h	/^typedef struct DependenceType{$/;"	s
+EXPORTED_SYMBOL_FILE	Makefile	/^EXPORTED_SYMBOL_FILE = $(PROJ_SRC_DIR)\/Hello.exports$/;"	m
+FBegin	TimerProfiling.cpp	/^    AllocaInst * FBegin, *FEnd;$/;"	m	class:__anon2::TimerProfiling	file:
+FEnd	TimerProfiling.cpp	/^    AllocaInst * FBegin, *FEnd;$/;"	m	class:__anon2::TimerProfiling	file:
+FileName	LDDProfilingCommon.h	/^  std::string FileName;$/;"	m	struct:Position
+ID	LDDProfiling.cpp	/^      static char ID;$/;"	m	class:__anon1::LDDProfiling	file:
+ID	LDDProfiling.cpp	/^char LDDProfiling::ID = 0;$/;"	m	class:LDDProfiling	file:
+ID	TimerProfiling.cpp	/^      static char ID;$/;"	m	class:__anon2::TimerProfiling	file:
+ID	TimerProfiling.cpp	/^char TimerProfiling::ID = 0;$/;"	m	class:TimerProfiling	file:
+IndexToDepInfo	LDDProfilingCommon.h	/^  unsigned IndexToDepInfo;$/;"	m	struct:RWTraceInformation
+InitProfilingFunction	LDDProfiling.cpp	/^      Function *InitProfilingFunction;$/;"	m	class:__anon1::LDDProfiling	file:
+InitProfilingFunction	TimerProfiling.cpp	/^      Function *InitProfilingFunction;$/;"	m	class:__anon2::TimerProfiling	file:
+IterID	LDDProfilingCommon.h	/^  unsigned IterID; $/;"	m	struct:RWAddressID
+IterNo	LDDProfilingCommon.h	/^  unsigned IterNo;$/;"	m	struct:RWMemoryTrace
+LCDDep	LDDProfilingCommon.h	/^  LCDepInfo LCDDep;$/;"	m	struct:DependenceInformation
+LCDep	LDDProfilingCommon.h	/^}LCDep;$/;"	t	typeref:struct:LCDependence
+LCDepInfo	LDDProfilingCommon.h	/^}LCDepInfo;$/;"	t	typeref:struct:LCDependenceInformation
+LCDependence	LDDProfilingCommon.h	/^typedef struct LCDependence{$/;"	s
+LCDependenceInformation	LDDProfilingCommon.h	/^typedef struct LCDependenceInformation{$/;"	s
+LDDProfiling	LDDProfiling.cpp	/^      LDDProfiling(): ModulePass(ID){ $/;"	f	class:__anon1::LDDProfiling
+LDDProfiling	LDDProfiling.cpp	/^  class LDDProfiling: public ModulePass,$/;"	c	namespace:__anon1	file:
+LDD_PROFILING_PASSES_H	LDDProfilingPasses.h	16;"	d
+LDD_PROFILING_PASSES_H	TimerProfilingPasses.h	16;"	d
+LEVEL	Makefile	/^LEVEL = ..\/..\/..$/;"	m
+LI	LDDProfiling.cpp	/^      LoopInfo *LI;$/;"	m	class:__anon1::LDDProfiling	file:
+LI	TimerProfiling.cpp	/^      LoopInfo *LI;$/;"	m	class:__anon2::TimerProfiling	file:
+LIBRARYNAME	Makefile	/^LIBRARYNAME = LLVMDDProfiling$/;"	m
+LIDDep	LDDProfilingCommon.h	/^  LIDepInfo LIDDep;$/;"	m	struct:DependenceInformation
+LIDep	LDDProfilingCommon.h	/^}LIDep;$/;"	t	typeref:struct:LIDependence
+LIDepInfo	LDDProfilingCommon.h	/^}LIDepInfo;$/;"	t	typeref:struct:LIDependenceInformation
+LIDependence	LDDProfilingCommon.h	/^typedef struct LIDependence{$/;"	s
+LIDependenceInformation	LDDProfilingCommon.h	/^typedef struct LIDependenceInformation{$/;"	s
+LOADABLE_MODULE	Makefile	/^LOADABLE_MODULE = 1$/;"	m
+LineNo	LDDProfilingCommon.h	/^  unsigned int LineNo;$/;"	m	struct:Position
+LoadCheckFunction	LDDProfiling.cpp	/^      Function *LoadCheckFunction;;$/;"	m	class:__anon1::LDDProfiling	file:
+LoadCheckStackVarFunction	LDDProfiling.cpp	/^      Function *LoadCheckStackVarFunction;;$/;"	m	class:__anon1::LDDProfiling	file:
+LocalSharedVars	LDDProfiling.cpp	/^      std::vector<std::string> LocalSharedVars;$/;"	m	class:__anon1::LDDProfiling	file:
+LoopScope	LDDProfiling.cpp	/^      std::map<int, int> LoopScope;  \/\/[FirstLine, LastLine)$/;"	m	class:__anon1::LDDProfiling	file:
+Name	LDDProfiling.cpp	/^      map<string, GlobalVariable*> Name;$/;"	m	class:__anon1::LDDProfiling	file:
+Name	TimerProfiling.cpp	/^      map<string, GlobalVariable*> Name;$/;"	m	class:__anon2::TimerProfiling	file:
+Next	LDDProfilingCommon.h	/^  struct RWTraceInformation *Next;  \/\/ Hash confiliction buckets.$/;"	m	struct:RWTraceInformation	typeref:struct:RWTraceInformation::RWTraceInformation
+NoTargetLoops	LDDProfiling.cpp	/^      int NoTargetLoops; \/\/ init = 0. if NoTargetLoops = 1, not profiling all stack variables.$/;"	m	class:__anon1::LDDProfiling	file:
+NumLoops	LDDProfiling.cpp	/^      unsigned NumLoops; \/\/ ID of Profiled loops.$/;"	m	class:__anon1::LDDProfiling	file:
+NumLoops	TimerProfiling.cpp	/^      unsigned NumLoops; \/\/ ID of Profiled loops.$/;"	m	class:__anon2::TimerProfiling	file:
+OutDep	LDDProfilingCommon.h	/^  std::vector<LCDep> OutDep;$/;"	m	struct:LCDependenceInformation
+OutDep	LDDProfilingCommon.h	/^  std::vector<LIDep> OutDep;$/;"	m	struct:LIDependenceInformation
+OutDep	LDDProfilingCommon.h	/^ std::vector<RWAddrID>::iterator OutDep;$/;"	m	struct:DependenceType
+OutputDependenceFunction	LDDProfiling.cpp	/^      Function *OutputDependenceFunction;$/;"	m	class:__anon1::LDDProfiling	file:
+OutputID2NameFunction	TimerProfiling.cpp	/^      Function *OutputID2NameFunction;$/;"	m	class:__anon2::TimerProfiling	file:
+OutputResultsFunction	TimerProfiling.cpp	/^      Function *OutputResultsFunction;$/;"	m	class:__anon2::TimerProfiling	file:
+PRINT_MODULE	LDDProfiling.cpp	515;"	d	file:
+PRINT_MODULE	TimerProfiling.cpp	433;"	d	file:
+Pos	LDDProfiling.cpp	/^      map<string, GlobalVariable*> Pos;$/;"	m	class:__anon1::LDDProfiling	file:
+Pos	LDDProfilingCommon.h	/^}Pos;$/;"	t	typeref:struct:Position
+Pos	TimerProfiling.cpp	/^      map<string, GlobalVariable*> Pos;$/;"	m	class:__anon2::TimerProfiling	file:
+Position	LDDProfilingCommon.h	/^typedef struct Position{$/;"	s
+RDTSCFunction	TimerProfiling.cpp	/^      Function *RDTSCFunction;$/;"	m	class:__anon2::TimerProfiling	file:
+RTrace	LDDProfilingCommon.h	/^  std::vector<RWAddrID> RTrace;$/;"	m	struct:RWTraceInformation
+RWAddrID	LDDProfilingCommon.h	/^}RWAddrID;$/;"	t	typeref:struct:RWAddressID
+RWAddressID	LDDProfilingCommon.h	/^typedef struct RWAddressID{$/;"	s
+RWMemoryTrace	LDDProfilingCommon.h	/^typedef struct RWMemoryTrace{$/;"	s
+RWRtrace	LDDProfilingCommon.h	/^}RWRtrace;$/;"	t	typeref:struct:RWMemoryTrace
+RWTraceInfo	LDDProfilingCommon.h	/^}RWTraceInfo;$/;"	t	typeref:struct:RWTraceInformation
+RWTraceInformation	LDDProfilingCommon.h	/^typedef struct RWTraceInformation{$/;"	s
+RecordID2NameFunction	TimerProfiling.cpp	/^      Function *RecordID2NameFunction;$/;"	m	class:__anon2::TimerProfiling	file:
+RecordResultsFunction	TimerProfiling.cpp	/^      Function *RecordResultsFunction;$/;"	m	class:__anon2::TimerProfiling	file:
+SinkAddrPos	LDDProfilingCommon.h	/^ std::string SinkAddrPos;   $/;"	m	struct:LCDependence
+SinkAddrPos	LDDProfilingCommon.h	/^ std::string SinkAddrPos;   $/;"	m	struct:LIDependence
+SizeInt32Ty	LDDProfiling.cpp	/^      IntegerType *SizeInt32Ty;$/;"	m	class:__anon1::LDDProfiling	file:
+SizeTy	LDDProfiling.cpp	/^      IntegerType *SizeTy;$/;"	m	class:__anon1::LDDProfiling	file:
+SizeTy	TimerProfiling.cpp	/^      IntegerType *SizeTy;$/;"	m	class:__anon2::TimerProfiling	file:
+SizeTy32	TimerProfiling.cpp	/^      IntegerType *SizeTy32;$/;"	m	class:__anon2::TimerProfiling	file:
+SrcAddrPos	LDDProfilingCommon.h	/^ std::string SrcAddrPos;   $/;"	m	struct:LCDependence
+SrcAddrPos	LDDProfilingCommon.h	/^ std::string SrcAddrPos;   $/;"	m	struct:LIDependence
+StoreCheckFunction	LDDProfiling.cpp	/^      Function *StoreCheckFunction;$/;"	m	class:__anon1::LDDProfiling	file:
+StoreCheckStackVarFunction	LDDProfiling.cpp	/^      Function *StoreCheckStackVarFunction;$/;"	m	class:__anon1::LDDProfiling	file:
+StringPtrTy	LDDProfiling.cpp	/^      PointerType *StringPtrTy;$/;"	m	class:__anon1::LDDProfiling	file:
+StringPtrTy	TimerProfiling.cpp	/^      PointerType *StringPtrTy;$/;"	m	class:__anon2::TimerProfiling	file:
+TD	LDDProfiling.cpp	/^      const DataLayout *TD;$/;"	m	class:__anon1::LDDProfiling	file:
+TD	TimerProfiling.cpp	/^      const DataLayout *TD;$/;"	m	class:__anon2::TimerProfiling	file:
+TimerProfiling	TimerProfiling.cpp	/^      TimerProfiling(): ModulePass(ID){ NumLoops = 0; }$/;"	f	class:__anon2::TimerProfiling
+TimerProfiling	TimerProfiling.cpp	/^  class TimerProfiling: public ModulePass,$/;"	c	namespace:__anon2	file:
+TrueDep	LDDProfilingCommon.h	/^  std::vector<LCDep> TrueDep;$/;"	m	struct:LCDependenceInformation
+TrueDep	LDDProfilingCommon.h	/^  std::vector<LIDep> TrueDep;$/;"	m	struct:LIDependenceInformation
+TrueDep	LDDProfilingCommon.h	/^ std::vector<RWAddrID>::iterator TrueDep;$/;"	m	struct:DependenceType
+USEDLIBS	Makefile	/^USEDLIBS =$/;"	m
+VarName	LDDProfilingCommon.h	/^  std::string VarName;$/;"	m	struct:RWAddressID
+VoidPtrTy	LDDProfiling.cpp	/^      PointerType *VoidPtrTy;$/;"	m	class:__anon1::LDDProfiling	file:
+VoidPtrTy	TimerProfiling.cpp	/^      PointerType *VoidPtrTy;$/;"	m	class:__anon2::TimerProfiling	file:
+WTrace	LDDProfilingCommon.h	/^  std::vector<RWAddrID> WTrace;$/;"	m	struct:RWTraceInformation
+__LDDPROFILINGCOMMON_H	LDDProfilingCommon.h	18;"	d
+currentFunctionNumber	LDDProfiling.cpp	/^      unsigned currentFunctionNumber;$/;"	m	class:__anon1::LDDProfiling	file:
+currentFunctionNumber	TimerProfiling.cpp	/^      unsigned currentFunctionNumber;$/;"	m	class:__anon2::TimerProfiling	file:
+dbgKind	LDDProfiling.cpp	/^      unsigned dbgKind;$/;"	m	class:__anon1::LDDProfiling	file:
+dbgKind	TimerProfiling.cpp	/^      unsigned dbgKind;$/;"	m	class:__anon2::TimerProfiling	file:
+doInitialization	LDDProfiling.cpp	/^bool LDDProfiling::doInitialization(Module &M){$/;"	f	class:LDDProfiling
+doInitialization	TimerProfiling.cpp	/^bool TimerProfiling::doInitialization(Module &M){$/;"	f	class:TimerProfiling
+getAnalysisUsage	LDDProfiling.cpp	/^      virtual void getAnalysisUsage(AnalysisUsage &AU) const{$/;"	f	class:__anon1::LDDProfiling
+getAnalysisUsage	TimerProfiling.cpp	/^      virtual void getAnalysisUsage(AnalysisUsage &AU) const{$/;"	f	class:__anon2::TimerProfiling
+getInstFileName	LDDProfiling.cpp	/^LDDProfiling::getInstFileName(Instruction*I)$/;"	f	class:LDDProfiling
+getInstFilename	TimerProfiling.cpp	/^TimerProfiling::getInstFilename(Instruction*I)$/;"	f	class:TimerProfiling
+getInstFuncName	LDDProfiling.cpp	/^LDDProfiling::getInstFuncName(Instruction*I)$/;"	f	class:LDDProfiling
+getInstFuncname	TimerProfiling.cpp	/^TimerProfiling::getInstFuncname(Instruction*I)$/;"	f	class:TimerProfiling
+getInstLineNumber	LDDProfiling.cpp	/^unsigned int LDDProfiling::getInstLineNumber(Instruction*I)$/;"	f	class:LDDProfiling
+getInstLineNumber	TimerProfiling.cpp	/^unsigned int TimerProfiling::getInstLineNumber(Instruction*I)$/;"	f	class:TimerProfiling
+getPassName	LDDProfiling.cpp	/^      virtual const char *getPassName() const {$/;"	f	class:__anon1::LDDProfiling
+getPassName	TimerProfiling.cpp	/^      virtual const char *getPassName() const {$/;"	f	class:__anon2::TimerProfiling
+instrument	LDDProfiling.cpp	/^LDDProfiling::instrument(Value *Pointer, Value *AccessSize, Value* AddrPos, Value* VarName, Function *Check, Instruction &I){$/;"	f	class:LDDProfiling
+instrument	TimerProfiling.cpp	/^TimerProfiling::instrument(Value *Pointer, Value *AccessSize, Value* AddrPos, Value* VarName, Function *Check, Instruction &I){$/;"	f	class:TimerProfiling
+instrumentInit	LDDProfiling.cpp	/^LDDProfiling::instrumentInit(  Function *Check, Instruction &I)$/;"	f	class:LDDProfiling
+instrumentInit	TimerProfiling.cpp	/^TimerProfiling::instrumentInit(  Function *Check, Instruction &I)$/;"	f	class:TimerProfiling
+instrumentstackvar	LDDProfiling.cpp	/^LDDProfiling::instrumentstackvar(Value *Pointer, Value *AccessSize, Value* AddrPos, Value* VarName, Value* CurFunc, Function *Check, Instruction &I){$/;"	f	class:LDDProfiling
+llvm	LDDProfilingPasses.h	/^namespace llvm{$/;"	n
+llvm	TimerProfilingPasses.h	/^namespace llvm{$/;"	n
+runOnFunction	LDDProfiling.cpp	/^bool LDDProfiling::runOnFunction(Function &F){$/;"	f	class:LDDProfiling
+runOnFunction	LDDProfiling.cpp	/^bool LDDProfiling::runOnFunction(Function &F, int flag){$/;"	f	class:LDDProfiling
+runOnFunction	TimerProfiling.cpp	/^bool TimerProfiling::runOnFunction(Function &F){$/;"	f	class:TimerProfiling
+runOnFunction	TimerProfiling.cpp	/^bool TimerProfiling::runOnFunction(Function &F, int flag){$/;"	f	class:TimerProfiling
+runOnModule	LDDProfiling.cpp	/^bool LDDProfiling::runOnModule(Module &M){$/;"	f	class:LDDProfiling
+runOnModule	TimerProfiling.cpp	/^bool TimerProfiling::runOnModule(Module &M){$/;"	f	class:TimerProfiling
+visitAtomicCmpXchgInst	LDDProfiling.cpp	/^void LDDProfiling::visitAtomicCmpXchgInst(AtomicCmpXchgInst &I){$/;"	f	class:LDDProfiling
+visitAtomicRMWInst	LDDProfiling.cpp	/^void LDDProfiling::visitAtomicRMWInst(AtomicRMWInst &I){$/;"	f	class:LDDProfiling
+visitCallInst	LDDProfiling.cpp	/^void LDDProfiling::visitCallInst(CallInst &CI){$/;"	f	class:LDDProfiling
+visitLoadInst	LDDProfiling.cpp	/^void LDDProfiling::visitLoadInst(LoadInst &LI){$/;"	f	class:LDDProfiling
+visitMemIntrinsic	LDDProfiling.cpp	/^void LDDProfiling::visitMemIntrinsic(MemIntrinsic &MI){$/;"	f	class:LDDProfiling
+visitReturnInst	LDDProfiling.cpp	/^void LDDProfiling::visitReturnInst(ReturnInst &I){$/;"	f	class:LDDProfiling
+visitReturnInst	TimerProfiling.cpp	/^void TimerProfiling::visitReturnInst(ReturnInst &LI){$/;"	f	class:TimerProfiling
+visitStoreInst	LDDProfiling.cpp	/^void LDDProfiling::visitStoreInst(StoreInst &SI){$/;"	f	class:LDDProfiling
+~LDDProfiling	LDDProfiling.cpp	/^      ~LDDProfiling(){$/;"	f	class:__anon1::LDDProfiling
