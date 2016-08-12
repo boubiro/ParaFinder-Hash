@@ -1,0 +1,2 @@
+cmake -DCMAKE_BUILD_TYPE="Debug" -DCMAKE_CXX_COMPILER=/home/lxj/software/gcc492/bin/g++ -DCMAKE_C_COMPILER=/home/lxj/software/gcc492/bin/gcc -DCMAKE_EXE_LINKER_FLAGS="-Wl,-rpath,/home/lxj/software/gcc492/lib64 -L/home/lxj/software/gcc492/lib64" -DCMAKE_EXE_LINKER_FLAGS_DEBUG="-Wl,-rpath,/home/lxj/software/gcc492/lib64 -L/home/lxj/software/gcc492/lib64"  -DCMAKE_INSTALL_PREFIX=/home/lxj/software/ddahash -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /home/lxj/software/ParaFinder-Hash 
+#-DLLVM_BINUTILS_INCDIR=/home/lxj/software/binutils-2.24/include
