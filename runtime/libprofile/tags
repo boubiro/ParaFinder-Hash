@@ -1,0 +1,80 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ARBITRARY_HASH_BIN_COUNT	PathProfiling.c	31;"	d	file:
+ArrayCursor	BasicBlockTracing.c	/^static unsigned *ArrayStart, *ArrayEnd, *ArrayCursor;$/;"	v	file:
+ArrayEnd	BasicBlockTracing.c	/^static unsigned *ArrayStart, *ArrayEnd, *ArrayCursor;$/;"	v	file:
+ArrayStart	BasicBlockTracing.c	/^static unsigned *ArrayStart, *ArrayEnd, *ArrayCursor;$/;"	v	file:
+ArrayStart	EdgeProfiling.c	/^static unsigned *ArrayStart;$/;"	v	file:
+ArrayStart	OptimalEdgeProfiling.c	/^static unsigned *ArrayStart;$/;"	v	file:
+BBTraceAtExitHandler	BasicBlockTracing.c	/^static void BBTraceAtExitHandler(void) {$/;"	f	file:
+BUILD_ARCHIVE	Makefile	/^BUILD_ARCHIVE = 1$/;"	m
+BYTECODE_LIBRARY	Makefile	/^BYTECODE_LIBRARY = 1$/;"	m
+DARWIN_VERS	Makefile	/^    DARWIN_VERS := $(shell echo $(TARGET_TRIPLE) | sed 's\/.*darwin\\([0-9]*\\).*\/\\1\/')$/;"	m
+EXPORTED_SYMBOL_FILE	Makefile	/^EXPORTED_SYMBOL_FILE = $(PROJ_SRC_DIR)\/libprofile.exports$/;"	m
+EXTRA_DIST	Makefile	/^EXTRA_DIST = libprofile.exports$/;"	m
+EdgeProfAtExitHandler	EdgeProfiling.c	/^static void EdgeProfAtExitHandler(void) {$/;"	f	file:
+LEVEL	Makefile	/^LEVEL = ..\/..$/;"	m
+LIBRARYNAME	Makefile	/^LIBRARYNAME = profile_rt$/;"	m
+LINK_LIBS_IN_SHARED	Makefile	/^LINK_LIBS_IN_SHARED = 1$/;"	m
+LLVMLibsOptions	Makefile	/^        LLVMLibsOptions := $(LLVMLibsOptions) -Wl,-current_version \\$/;"	m
+LLVMLibsOptions	Makefile	/^       LLVMLibsOptions    := $(LLVMLibsOptions) \\$/;"	m
+LLVMLibsOptions	Makefile	/^    LLVMLibsOptions    := $(LLVMLibsOptions)  \\$/;"	m
+NumElements	EdgeProfiling.c	/^static unsigned NumElements;$/;"	v	file:
+NumElements	OptimalEdgeProfiling.c	/^static unsigned NumElements;$/;"	v	file:
+O_INSTALL_ARCHIVES	Makefile	/^override NO_INSTALL_ARCHIVES =$/;"	m
+OptEdgeProfAtExitHandler	OptimalEdgeProfiling.c	/^static void OptEdgeProfAtExitHandler(void) {$/;"	f	file:
+OutputFilename	CommonProfiling.c	/^static const char *OutputFilename = "llvmprof.out";$/;"	v	file:
+PROFILE_RT_LIBRARY_VERSION	Makefile	/^    PROFILE_RT_LIBRARY_VERSION := $(LLVM_SUBMIT_VERSION)$/;"	m
+PROFILING_H	Profiling.h	16;"	d
+SHARED_LIBRARY	Makefile	/^SHARED_LIBRARY = 1$/;"	m
+SavedArgs	CommonProfiling.c	/^static char *SavedArgs = 0;$/;"	v	file:
+SavedArgsLength	CommonProfiling.c	/^static unsigned SavedArgsLength = 0;$/;"	v	file:
+TempFile	Makefile	/^       TempFile           := $(shell mkdir -p ${OBJROOT}\/dSYMs ; mktemp ${OBJROOT}\/dSYMs\/profile_rt-lto.XXXXXX)$/;"	m
+WriteAndFlushBBTraceData	BasicBlockTracing.c	/^static void WriteAndFlushBBTraceData () {$/;"	f	file:
+array	PathProfiling.c	/^  void* array;$/;"	m	struct:__anon1	file:
+ft	PathProfiling.c	/^ftEntry_t* ft;$/;"	v
+ftEntry_t	PathProfiling.c	/^} ftEntry_t;$/;"	t	typeref:struct:__anon1	file:
+ftSize	PathProfiling.c	/^uint32_t ftSize;$/;"	v
+getOutFile	CommonProfiling.c	/^int getOutFile() {$/;"	f
+getPathCounter	PathProfiling.c	/^static uint32_t* getPathCounter(uint32_t functionNumber,$/;"	f	file:
+hash	PathProfiling.c	/^static uint32_t hash (uint32_t key) {$/;"	f	file:
+hashBins	PathProfiling.c	/^  pathHashEntry_t* hashBins[ARBITRARY_HASH_BIN_COUNT];$/;"	m	struct:pathHashTable_s	file:
+length_of_string	GCDAProfiling.c	/^static uint32_t length_of_string(const char *s) {$/;"	f	file:
+llvm_decrement_path_count	PathProfiling.c	/^void llvm_decrement_path_count (uint32_t functionNumber, uint32_t pathNumber) {$/;"	f
+llvm_gcda_emit_arcs	GCDAProfiling.c	/^void llvm_gcda_emit_arcs(uint32_t num_counters, uint64_t *counters) {$/;"	f
+llvm_gcda_emit_function	GCDAProfiling.c	/^void llvm_gcda_emit_function(uint32_t ident, const char *function_name) {$/;"	f
+llvm_gcda_end_file	GCDAProfiling.c	/^void llvm_gcda_end_file() {$/;"	f
+llvm_gcda_increment_indirect_counter	GCDAProfiling.c	/^void llvm_gcda_increment_indirect_counter(uint32_t *predecessor,$/;"	f
+llvm_gcda_start_file	GCDAProfiling.c	/^void llvm_gcda_start_file(const char *orig_filename) {$/;"	f
+llvm_increment_path_count	PathProfiling.c	/^void llvm_increment_path_count (uint32_t functionNumber, uint32_t pathNumber) {$/;"	f
+llvm_start_basic_block_tracing	BasicBlockTracing.c	/^int llvm_start_basic_block_tracing(int argc, const char **argv,$/;"	f
+llvm_start_edge_profiling	EdgeProfiling.c	/^int llvm_start_edge_profiling(int argc, const char **argv,$/;"	f
+llvm_start_opt_edge_profiling	OptimalEdgeProfiling.c	/^int llvm_start_opt_edge_profiling(int argc, const char **argv,$/;"	f
+llvm_start_path_profiling	PathProfiling.c	/^int llvm_start_path_profiling(int argc, const char** argv,$/;"	f
+llvm_trace_basic_block	BasicBlockTracing.c	/^void llvm_trace_basic_block (unsigned BBNum) {$/;"	f
+mangle_filename	GCDAProfiling.c	/^static char *mangle_filename(const char *orig_filename) {$/;"	f	file:
+next	PathProfiling.c	/^  struct pathHashEntry_s* next;$/;"	m	struct:pathHashEntry_s	typeref:struct:pathHashEntry_s::pathHashEntry_s	file:
+output_file	GCDAProfiling.c	/^static FILE *output_file = NULL;$/;"	v	file:
+pathCount	PathProfiling.c	/^  uint32_t pathCount;$/;"	m	struct:pathHashEntry_s	file:
+pathCounts	PathProfiling.c	/^  uint32_t pathCounts;$/;"	m	struct:pathHashTable_s	file:
+pathHashEntry_s	PathProfiling.c	/^typedef struct pathHashEntry_s {$/;"	s	file:
+pathHashEntry_t	PathProfiling.c	/^} pathHashEntry_t;$/;"	t	typeref:struct:pathHashEntry_s	file:
+pathHashTable_s	PathProfiling.c	/^typedef struct pathHashTable_s {$/;"	s	file:
+pathHashTable_t	PathProfiling.c	/^} pathHashTable_t;$/;"	t	typeref:struct:pathHashTable_s	file:
+pathNumber	PathProfiling.c	/^  uint32_t pathNumber;$/;"	m	struct:pathHashEntry_s	file:
+pathProfAtExitHandler	PathProfiling.c	/^static void pathProfAtExitHandler(void) {$/;"	f	file:
+recursive_mkdir	GCDAProfiling.c	/^static void recursive_mkdir(const char *filename) {$/;"	f	file:
+save_arguments	CommonProfiling.c	/^int save_arguments(int argc, const char **argv) {$/;"	f
+size	PathProfiling.c	/^  uint32_t size;$/;"	m	struct:__anon1	file:
+test	DDProfiling.c	/^int test()$/;"	f
+type	PathProfiling.c	/^  enum ProfilingStorageType type;$/;"	m	struct:__anon1	typeref:enum:__anon1::ProfilingStorageType	file:
+writeArrayTable	PathProfiling.c	/^void writeArrayTable(uint32_t fNumber, ftEntry_t* ft, uint32_t* funcCount) {$/;"	f
+writeHashTable	PathProfiling.c	/^void writeHashTable(uint32_t functionNumber, pathHashTable_t* hashTable) {$/;"	f
+write_int32	GCDAProfiling.c	/^static void write_int32(uint32_t i) {$/;"	f	file:
+write_int64	GCDAProfiling.c	/^static void write_int64(uint64_t i) {$/;"	f	file:
+write_profiling_data	CommonProfiling.c	/^void write_profiling_data(enum ProfilingType PT, unsigned *Start,$/;"	f
+write_string	GCDAProfiling.c	/^static void write_string(const char *s) {$/;"	f	file:

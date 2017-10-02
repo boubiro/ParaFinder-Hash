@@ -1,0 +1,130 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AddOptimizationPasses	opt.cpp	/^static void AddOptimizationPasses(PassManagerBase &MPM,FunctionPassManager &FPM,$/;"	f	file:
+AddStandardCompilePasses	opt.cpp	/^static void AddStandardCompilePasses(PassManagerBase &PM) {$/;"	f	file:
+AddStandardLinkPasses	opt.cpp	/^static void AddStandardLinkPasses(PassManagerBase &PM) {$/;"	f	file:
+BasicBlockPassPrinter	opt.cpp	/^  BasicBlockPassPrinter(const PassInfo *PI, raw_ostream &out)$/;"	f	struct:__anon5::BasicBlockPassPrinter
+BasicBlockPassPrinter	opt.cpp	/^struct BasicBlockPassPrinter : public BasicBlockPass {$/;"	s	namespace:__anon5	file:
+BreakpointPrinter	opt.cpp	/^  BreakpointPrinter(raw_ostream &out)$/;"	f	struct:__anon5::BreakpointPrinter
+BreakpointPrinter	opt.cpp	/^struct BreakpointPrinter : public ModulePass {$/;"	s	namespace:__anon5	file:
+CFGSCC	PrintSCC.cpp	/^    CFGSCC() : FunctionPass(ID) {}$/;"	f	struct:__anon6::CFGSCC
+CFGSCC	PrintSCC.cpp	/^  struct CFGSCC : public FunctionPass {$/;"	s	namespace:__anon6	file:
+CallGraphPrinter	AnalysisWrappers.cpp	/^    CallGraphPrinter() : ModulePass(ID) {}$/;"	f	struct:__anon2::CallGraphPrinter
+CallGraphPrinter	AnalysisWrappers.cpp	/^  struct CallGraphPrinter : public ModulePass {$/;"	s	namespace:__anon2	file:
+CallGraphPrinter	GraphPrinters.cpp	/^    CallGraphPrinter() : ModulePass(ID) {}$/;"	f	struct:__anon3::CallGraphPrinter
+CallGraphPrinter	GraphPrinters.cpp	/^  struct CallGraphPrinter : public ModulePass {$/;"	s	namespace:__anon3	file:
+CallGraphSCC	PrintSCC.cpp	/^    CallGraphSCC() : ModulePass(ID) {}$/;"	f	struct:__anon6::CallGraphSCC
+CallGraphSCC	PrintSCC.cpp	/^  struct CallGraphSCC : public ModulePass {$/;"	s	namespace:__anon6	file:
+CallGraphSCCPassPrinter	opt.cpp	/^  CallGraphSCCPassPrinter(const PassInfo *PI, raw_ostream &out) :$/;"	f	struct:__anon5::CallGraphSCCPassPrinter
+CallGraphSCCPassPrinter	opt.cpp	/^struct CallGraphSCCPassPrinter : public CallGraphSCCPass {$/;"	s	namespace:__anon5	file:
+DOTGraphTraits	GraphPrinters.cpp	/^  DOTGraphTraits (bool isSimple=false) : DefaultDOTGraphTraits(isSimple) {}$/;"	f	struct:llvm::DOTGraphTraits
+DOTGraphTraits	GraphPrinters.cpp	/^  struct DOTGraphTraits<CallGraph*> : public DefaultDOTGraphTraits {$/;"	s	namespace:llvm	file:
+DomInfoPrinter	GraphPrinters.cpp	/^    DomInfoPrinter() : FunctionPass(ID) {}$/;"	f	class:__anon4::DomInfoPrinter
+DomInfoPrinter	GraphPrinters.cpp	/^  class DomInfoPrinter : public FunctionPass {$/;"	c	namespace:__anon4	file:
+ExternalFunctionsPassedConstants	AnalysisWrappers.cpp	/^    ExternalFunctionsPassedConstants() : ModulePass(ID) {}$/;"	f	struct:__anon1::ExternalFunctionsPassedConstants
+ExternalFunctionsPassedConstants	AnalysisWrappers.cpp	/^  struct ExternalFunctionsPassedConstants : public ModulePass {$/;"	s	namespace:__anon1	file:
+FunctionPassPrinter	opt.cpp	/^  FunctionPassPrinter(const PassInfo *PI, raw_ostream &out)$/;"	f	struct:__anon5::FunctionPassPrinter
+FunctionPassPrinter	opt.cpp	/^struct FunctionPassPrinter : public FunctionPass {$/;"	s	namespace:__anon5	file:
+GetCodeGenOptLevel	opt.cpp	/^CodeGenOpt::Level GetCodeGenOptLevel() {$/;"	f
+GetTargetMachine	opt.cpp	/^static TargetMachine* GetTargetMachine(std::string TripleStr) {$/;"	f	file:
+GetTargetOptions	opt.cpp	/^static TargetOptions GetTargetOptions() {$/;"	f	file:
+ID	AnalysisWrappers.cpp	/^    static char ID; \/\/ Pass ID, replacement for typeid$/;"	m	struct:__anon1::ExternalFunctionsPassedConstants	file:
+ID	AnalysisWrappers.cpp	/^    static char ID; \/\/ Pass ID, replacement for typeid$/;"	m	struct:__anon2::CallGraphPrinter	file:
+ID	AnalysisWrappers.cpp	/^char CallGraphPrinter::ID = 0;$/;"	m	class:CallGraphPrinter	file:
+ID	AnalysisWrappers.cpp	/^char ExternalFunctionsPassedConstants::ID = 0;$/;"	m	class:ExternalFunctionsPassedConstants	file:
+ID	GraphPrinters.cpp	/^    static char ID; \/\/ Pass ID, replacement for typeid$/;"	m	struct:__anon3::CallGraphPrinter	file:
+ID	GraphPrinters.cpp	/^    static char ID; \/\/ Pass identification, replacement for typeid$/;"	m	class:__anon4::DomInfoPrinter	file:
+ID	GraphPrinters.cpp	/^char CallGraphPrinter::ID = 0;$/;"	m	class:CallGraphPrinter	file:
+ID	GraphPrinters.cpp	/^char DomInfoPrinter::ID = 0;$/;"	m	class:DomInfoPrinter	file:
+ID	PrintSCC.cpp	/^    static char ID;  \/\/ Pass identification, replacement for typeid$/;"	m	struct:__anon6::CFGSCC	file:
+ID	PrintSCC.cpp	/^    static char ID;  \/\/ Pass identification, replacement for typeid$/;"	m	struct:__anon6::CallGraphSCC	file:
+ID	PrintSCC.cpp	/^char CFGSCC::ID = 0;$/;"	m	class:CFGSCC	file:
+ID	PrintSCC.cpp	/^char CallGraphSCC::ID = 0;$/;"	m	class:CallGraphSCC	file:
+ID	opt.cpp	/^  static char ID;$/;"	m	struct:__anon5::BasicBlockPassPrinter	file:
+ID	opt.cpp	/^  static char ID;$/;"	m	struct:__anon5::BreakpointPrinter	file:
+ID	opt.cpp	/^  static char ID;$/;"	m	struct:__anon5::CallGraphSCCPassPrinter	file:
+ID	opt.cpp	/^  static char ID;$/;"	m	struct:__anon5::FunctionPassPrinter	file:
+ID	opt.cpp	/^  static char ID;$/;"	m	struct:__anon5::LoopPassPrinter	file:
+ID	opt.cpp	/^  static char ID;$/;"	m	struct:__anon5::ModulePassPrinter	file:
+ID	opt.cpp	/^  static char ID;$/;"	m	struct:__anon5::RegionPassPrinter	file:
+ID	opt.cpp	/^char BasicBlockPassPrinter::ID = 0;$/;"	m	class:__anon5::BasicBlockPassPrinter	file:
+ID	opt.cpp	/^char BreakpointPrinter::ID = 0;$/;"	m	class:BreakpointPrinter	file:
+ID	opt.cpp	/^char CallGraphSCCPassPrinter::ID = 0;$/;"	m	class:__anon5::CallGraphSCCPassPrinter	file:
+ID	opt.cpp	/^char FunctionPassPrinter::ID = 0;$/;"	m	class:__anon5::FunctionPassPrinter	file:
+ID	opt.cpp	/^char LoopPassPrinter::ID = 0;$/;"	m	class:__anon5::LoopPassPrinter	file:
+ID	opt.cpp	/^char ModulePassPrinter::ID = 0;$/;"	m	class:__anon5::ModulePassPrinter	file:
+ID	opt.cpp	/^char RegionPassPrinter::ID = 0;$/;"	m	class:__anon5::RegionPassPrinter	file:
+LEVEL	Makefile	/^LEVEL := ..\/..$/;"	m
+LINK_COMPONENTS	Makefile	/^LINK_COMPONENTS := bitreader bitwriter asmparser instrumentation scalaropts ipo vectorize all-targets$/;"	m
+LoopPassPrinter	opt.cpp	/^  LoopPassPrinter(const PassInfo *PI, raw_ostream &out) :$/;"	f	struct:__anon5::LoopPassPrinter
+LoopPassPrinter	opt.cpp	/^struct LoopPassPrinter : public LoopPass {$/;"	s	namespace:__anon5	file:
+ModulePassPrinter	opt.cpp	/^  ModulePassPrinter(const PassInfo *PI, raw_ostream &out)$/;"	f	struct:__anon5::ModulePassPrinter
+ModulePassPrinter	opt.cpp	/^struct ModulePassPrinter : public ModulePass {$/;"	s	namespace:__anon5	file:
+Out	opt.cpp	/^  raw_ostream &Out;$/;"	m	struct:__anon5::BasicBlockPassPrinter	file:
+Out	opt.cpp	/^  raw_ostream &Out;$/;"	m	struct:__anon5::BreakpointPrinter	file:
+Out	opt.cpp	/^  raw_ostream &Out;$/;"	m	struct:__anon5::CallGraphSCCPassPrinter	file:
+Out	opt.cpp	/^  raw_ostream &Out;$/;"	m	struct:__anon5::FunctionPassPrinter	file:
+Out	opt.cpp	/^  raw_ostream &Out;$/;"	m	struct:__anon5::LoopPassPrinter	file:
+Out	opt.cpp	/^  raw_ostream &Out;$/;"	m	struct:__anon5::ModulePassPrinter	file:
+Out	opt.cpp	/^  raw_ostream &Out;$/;"	m	struct:__anon5::RegionPassPrinter	file:
+PassName	opt.cpp	/^  std::string PassName;$/;"	m	struct:__anon5::BasicBlockPassPrinter	file:
+PassName	opt.cpp	/^  std::string PassName;$/;"	m	struct:__anon5::CallGraphSCCPassPrinter	file:
+PassName	opt.cpp	/^  std::string PassName;$/;"	m	struct:__anon5::FunctionPassPrinter	file:
+PassName	opt.cpp	/^  std::string PassName;$/;"	m	struct:__anon5::LoopPassPrinter	file:
+PassName	opt.cpp	/^  std::string PassName;$/;"	m	struct:__anon5::ModulePassPrinter	file:
+PassName	opt.cpp	/^  std::string PassName;$/;"	m	struct:__anon5::RegionPassPrinter	file:
+PassToPrint	opt.cpp	/^  const PassInfo *PassToPrint;$/;"	m	struct:__anon5::BasicBlockPassPrinter	file:
+PassToPrint	opt.cpp	/^  const PassInfo *PassToPrint;$/;"	m	struct:__anon5::CallGraphSCCPassPrinter	file:
+PassToPrint	opt.cpp	/^  const PassInfo *PassToPrint;$/;"	m	struct:__anon5::FunctionPassPrinter	file:
+PassToPrint	opt.cpp	/^  const PassInfo *PassToPrint;$/;"	m	struct:__anon5::LoopPassPrinter	file:
+PassToPrint	opt.cpp	/^  const PassInfo *PassToPrint;$/;"	m	struct:__anon5::ModulePassPrinter	file:
+PassToPrint	opt.cpp	/^  const PassInfo *PassToPrint;$/;"	m	struct:__anon5::RegionPassPrinter	file:
+RegionPassPrinter	opt.cpp	/^  RegionPassPrinter(const PassInfo *PI, raw_ostream &out) : RegionPass(ID),$/;"	f	struct:__anon5::RegionPassPrinter
+RegionPassPrinter	opt.cpp	/^struct RegionPassPrinter : public RegionPass {$/;"	s	namespace:__anon5	file:
+TOOLNAME	Makefile	/^TOOLNAME := opt$/;"	m
+WriteGraphToFile	GraphPrinters.cpp	/^static void WriteGraphToFile(raw_ostream &O, const std::string &GraphName,$/;"	f	file:
+addPass	opt.cpp	/^static inline void addPass(PassManagerBase &PM, Pass *P) {$/;"	f	file:
+getAnalysisUsage	AnalysisWrappers.cpp	/^    virtual void getAnalysisUsage(AnalysisUsage &AU) const {$/;"	f	struct:__anon1::ExternalFunctionsPassedConstants
+getAnalysisUsage	AnalysisWrappers.cpp	/^    virtual void getAnalysisUsage(AnalysisUsage &AU) const {$/;"	f	struct:__anon2::CallGraphPrinter
+getAnalysisUsage	GraphPrinters.cpp	/^    virtual void getAnalysisUsage(AnalysisUsage &AU) const {$/;"	f	class:__anon4::DomInfoPrinter
+getAnalysisUsage	GraphPrinters.cpp	/^    virtual void getAnalysisUsage(AnalysisUsage &AU) const {$/;"	f	struct:__anon3::CallGraphPrinter
+getAnalysisUsage	PrintSCC.cpp	/^    virtual void getAnalysisUsage(AnalysisUsage &AU) const {$/;"	f	struct:__anon6::CFGSCC
+getAnalysisUsage	PrintSCC.cpp	/^    virtual void getAnalysisUsage(AnalysisUsage &AU) const {$/;"	f	struct:__anon6::CallGraphSCC
+getAnalysisUsage	opt.cpp	/^  virtual void getAnalysisUsage(AnalysisUsage &AU) const {$/;"	f	struct:__anon5::BasicBlockPassPrinter
+getAnalysisUsage	opt.cpp	/^  virtual void getAnalysisUsage(AnalysisUsage &AU) const {$/;"	f	struct:__anon5::BreakpointPrinter
+getAnalysisUsage	opt.cpp	/^  virtual void getAnalysisUsage(AnalysisUsage &AU) const {$/;"	f	struct:__anon5::CallGraphSCCPassPrinter
+getAnalysisUsage	opt.cpp	/^  virtual void getAnalysisUsage(AnalysisUsage &AU) const {$/;"	f	struct:__anon5::FunctionPassPrinter
+getAnalysisUsage	opt.cpp	/^  virtual void getAnalysisUsage(AnalysisUsage &AU) const {$/;"	f	struct:__anon5::LoopPassPrinter
+getAnalysisUsage	opt.cpp	/^  virtual void getAnalysisUsage(AnalysisUsage &AU) const {$/;"	f	struct:__anon5::ModulePassPrinter
+getAnalysisUsage	opt.cpp	/^  virtual void getAnalysisUsage(AnalysisUsage &AU) const {$/;"	f	struct:__anon5::RegionPassPrinter
+getContextName	opt.cpp	/^  void getContextName(DIDescriptor Context, std::string &N) {$/;"	f	struct:__anon5::BreakpointPrinter
+getGraphName	GraphPrinters.cpp	/^    static std::string getGraphName(CallGraph *F) {$/;"	f	struct:llvm::DOTGraphTraits
+getNodeLabel	GraphPrinters.cpp	/^    static std::string getNodeLabel(CallGraphNode *Node, CallGraph *Graph) {$/;"	f	struct:llvm::DOTGraphTraits
+getPassName	opt.cpp	/^  virtual const char *getPassName() const { return PassName.c_str(); }$/;"	f	struct:__anon5::BasicBlockPassPrinter
+getPassName	opt.cpp	/^  virtual const char *getPassName() const { return PassName.c_str(); }$/;"	f	struct:__anon5::CallGraphSCCPassPrinter
+getPassName	opt.cpp	/^  virtual const char *getPassName() const { return PassName.c_str(); }$/;"	f	struct:__anon5::FunctionPassPrinter
+getPassName	opt.cpp	/^  virtual const char *getPassName() const { return PassName.c_str(); }$/;"	f	struct:__anon5::LoopPassPrinter
+getPassName	opt.cpp	/^  virtual const char *getPassName() const { return PassName.c_str(); }$/;"	f	struct:__anon5::ModulePassPrinter
+getPassName	opt.cpp	/^  virtual const char *getPassName() const { return PassName.c_str(); }$/;"	f	struct:__anon5::RegionPassPrinter
+llvm	GraphPrinters.cpp	/^namespace llvm {$/;"	n	file:
+main	opt.cpp	/^int main(int argc, char **argv) {$/;"	f
+print	GraphPrinters.cpp	/^    void print(raw_ostream &OS, const llvm::Module*) const {}$/;"	f	struct:__anon3::CallGraphPrinter
+print	PrintSCC.cpp	/^    void print(raw_ostream &O, const Module* = 0) const { }$/;"	f	struct:__anon6::CFGSCC
+print	PrintSCC.cpp	/^    void print(raw_ostream &O, const Module* = 0) const { }$/;"	f	struct:__anon6::CallGraphSCC
+runOnBasicBlock	opt.cpp	/^  virtual bool runOnBasicBlock(BasicBlock &BB) {$/;"	f	struct:__anon5::BasicBlockPassPrinter
+runOnFunction	GraphPrinters.cpp	/^    virtual bool runOnFunction(Function &F) {$/;"	f	class:__anon4::DomInfoPrinter
+runOnFunction	PrintSCC.cpp	/^bool CFGSCC::runOnFunction(Function &F) {$/;"	f	class:CFGSCC
+runOnFunction	opt.cpp	/^  virtual bool runOnFunction(Function &F) {$/;"	f	struct:__anon5::FunctionPassPrinter
+runOnLoop	opt.cpp	/^  virtual bool runOnLoop(Loop *L, LPPassManager &LPM) {$/;"	f	struct:__anon5::LoopPassPrinter
+runOnModule	AnalysisWrappers.cpp	/^    virtual bool runOnModule(Module &M) {$/;"	f	struct:__anon1::ExternalFunctionsPassedConstants
+runOnModule	AnalysisWrappers.cpp	/^    virtual bool runOnModule(Module &M) {$/;"	f	struct:__anon2::CallGraphPrinter
+runOnModule	GraphPrinters.cpp	/^    virtual bool runOnModule(Module &M) {$/;"	f	struct:__anon3::CallGraphPrinter
+runOnModule	PrintSCC.cpp	/^bool CallGraphSCC::runOnModule(Module &M) {$/;"	f	class:CallGraphSCC
+runOnModule	opt.cpp	/^  virtual bool runOnModule(Module &M) {$/;"	f	struct:__anon5::BreakpointPrinter
+runOnModule	opt.cpp	/^  virtual bool runOnModule(Module &M) {$/;"	f	struct:__anon5::ModulePassPrinter
+runOnRegion	opt.cpp	/^  virtual bool runOnRegion(Region *R, RGPassManager &RGM) {$/;"	f	struct:__anon5::RegionPassPrinter
+runOnSCC	opt.cpp	/^  virtual bool runOnSCC(CallGraphSCC &SCC) {$/;"	f	struct:__anon5::CallGraphSCCPassPrinter

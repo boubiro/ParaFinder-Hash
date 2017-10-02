@@ -1,0 +1,76 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ANTIN	LDDProfilingRuntime.cpp	31;"	d	file:
+Addr	LDDProfilingRuntime.h	/^  void* Addr;$/;"	m	struct:__RWTraceInfo
+AddrLen	LDDProfilingRuntime.h	/^  unsigned AddrLen;$/;"	m	struct:__RWAddrID
+AddrPos	LDDProfilingRuntime.h	/^  std::string AddrPos; $/;"	m	struct:__RWAddrID
+AntiDep	LDDProfilingRuntime.h	/^  std::map<Dep, std::set<int> > AntiDep;$/;"	m	struct:__LCDepInfo
+AntiDep	LDDProfilingRuntime.h	/^  std::set<Dep> AntiDep;$/;"	m	struct:__LIDepInfo
+DDAProfilingFlag	LDDProfilingRuntime.cpp	/^int DDAProfilingFlag = 0; \/\/ Labeled entering the profiling scope and current ProfilingLoopID$/;"	v
+Dep	LDDProfilingRuntime.h	/^}Dep;$/;"	t	typeref:struct:Dependence
+DepDist	LDDProfilingRuntime.h	/^std::set<unsigned> DepDist;  \/\/ Dependence distance.$/;"	v
+DepInfo	LDDProfilingRuntime.h	/^}DepInfo;$/;"	t	typeref:struct:__DepInfo
+Dependence	LDDProfilingRuntime.h	/^typedef struct Dependence{$/;"	s
+FuncName	LDDProfilingRuntime.h	/^  std::string FuncName; \/\/ The Function that contains the loop.$/;"	m	struct:__DepInfo
+HashRWTrace	LDDProfilingRuntime.cpp	/^std::map<int, RWTraceInfo*> HashRWTrace;$/;"	v
+IndexToDepInfo	LDDProfilingRuntime.h	/^  unsigned IndexToDepInfo;$/;"	m	struct:__RWTraceInfo
+LCDDep	LDDProfilingRuntime.h	/^  LCDepInfo LCDDep;$/;"	m	struct:__DepInfo
+LCDepInfo	LDDProfilingRuntime.h	/^}LCDepInfo;$/;"	t	typeref:struct:__LCDepInfo
+LDDepInfo	LDDProfilingRuntime.h	/^typedef std::map<int, DepInfo> LDDepInfo;$/;"	t
+LDDepResult	LDDProfilingRuntime.cpp	/^LDDepInfo LDDepResult;$/;"	v
+LIDDep	LDDProfilingRuntime.h	/^  LIDepInfo LIDDep;$/;"	m	struct:__DepInfo
+LIDepInfo	LDDProfilingRuntime.h	/^}LIDepInfo;$/;"	t	typeref:struct:__LIDepInfo
+LoopID2Name	TimerProfilingRuntime.cpp	/^std::map<long, std::string > LoopID2Name; $/;"	v
+LoopPos	LDDProfilingRuntime.h	/^  std::string LoopPos;  \/\/ FileName_LineNo$/;"	m	struct:__DepInfo
+MaxProfilingLoopID	LDDProfilingRuntime.cpp	/^std::map<int, int> MaxProfilingLoopID; \/\/ Record current max Profiled Loop ID.$/;"	v
+N	LDDProfilingRuntime.cpp	29;"	d	file:
+Next	LDDProfilingRuntime.h	/^  struct __RWTraceInfo *Next;  \/\/ Hash confiliction buckets.$/;"	m	struct:__RWTraceInfo	typeref:struct:__RWTraceInfo::__RWTraceInfo
+OUTPUTN	LDDProfilingRuntime.cpp	32;"	d	file:
+OutDep	LDDProfilingRuntime.h	/^  std::map<Dep, std::set<int> > OutDep;$/;"	m	struct:__LCDepInfo
+OutDep	LDDProfilingRuntime.h	/^  std::set<Dep> OutDep;$/;"	m	struct:__LIDepInfo
+ProfilingLoopIterID	LDDProfilingRuntime.cpp	/^int ProfilingLoopIterID = 0;$/;"	v
+RTrace	LDDProfilingRuntime.h	/^  std::vector<RWAddrID> RTrace;$/;"	m	struct:__RWTraceInfo
+RWAddrID	LDDProfilingRuntime.h	/^}RWAddrID;$/;"	t	typeref:struct:__RWAddrID
+RWIterNo	LDDProfilingRuntime.h	/^  std::vector<int> RWIterNo; \/\/(10);  \/\/ RWIterNo[0]: current, [1]: history$/;"	m	struct:__RWAddrID
+RWTraceInfo	LDDProfilingRuntime.h	/^}RWTraceInfo;$/;"	t	typeref:struct:__RWTraceInfo
+SinkAddrPos	LDDProfilingRuntime.h	/^ std::string SinkAddrPos;   $/;"	m	struct:Dependence
+SinkVarName	LDDProfilingRuntime.h	/^ std::string SinkVarName;   $/;"	m	struct:Dependence
+SortedResults	TimerProfilingRuntime.cpp	/^std::multimap<unsigned long long, long> SortedResults;$/;"	v
+SrcAddrPos	LDDProfilingRuntime.h	/^ std::string SrcAddrPos;   $/;"	m	struct:Dependence
+SrcVarName	LDDProfilingRuntime.h	/^ std::string SrcVarName;   $/;"	m	struct:Dependence
+TRUEN	LDDProfilingRuntime.cpp	30;"	d	file:
+TimerResults	TimerProfilingRuntime.cpp	/^std::map<long , unsigned long long > TimerResults; $/;"	v
+TrueDep	LDDProfilingRuntime.h	/^  std::map<Dep, std::set<int> > TrueDep;$/;"	m	struct:__LCDepInfo
+TrueDep	LDDProfilingRuntime.h	/^  std::set<Dep> TrueDep;$/;"	m	struct:__LIDepInfo
+VarName	LDDProfilingRuntime.h	/^  std::string VarName;$/;"	m	struct:__RWAddrID
+WTrace	LDDProfilingRuntime.h	/^  std::vector<RWAddrID> WTrace;$/;"	m	struct:__RWTraceInfo
+__DepInfo	LDDProfilingRuntime.h	/^typedef struct __DepInfo{$/;"	s
+__LCDepInfo	LDDProfilingRuntime.h	/^typedef struct __LCDepInfo{$/;"	s
+__LDDPROFILINGCOMMON_H	LDDProfilingRuntime.h	18;"	d
+__LIDepInfo	LDDProfilingRuntime.h	/^typedef struct __LIDepInfo{$/;"	s
+__RWAddrID	LDDProfilingRuntime.h	/^typedef struct __RWAddrID{$/;"	s
+__RWTraceInfo	LDDProfilingRuntime.h	/^typedef struct __RWTraceInfo{$/;"	s
+__TIMERPROFILINGCOMMON_H	TimerProfilingRuntime.h	18;"	d
+__addnewprofilingbuffer	LDDProfilingRuntime.cpp	/^void __addnewprofilingbuffer(char* FuncName, char* LoopPos)$/;"	f
+__initprofiling	LDDProfilingRuntime.cpp	/^void __initprofiling()$/;"	f
+__loadcheck	LDDProfilingRuntime.cpp	/^void __loadcheck(int *ptr, long AddrLen, char *Pos, char* Name)$/;"	f
+__loadcheckstackvar	LDDProfilingRuntime.cpp	/^void __loadcheckstackvar( int *ptr, long AddrLen, char *Pos, char* Name,  int TargetLoopFunc){$/;"	f
+__outputLoopID2Name	TimerProfilingRuntime.cpp	/^__outputLoopID2Name()$/;"	f
+__outputTimerResults	TimerProfilingRuntime.cpp	/^__outputTimerResults()$/;"	f
+__outputdependence	LDDProfilingRuntime.cpp	/^void __outputdependence()$/;"	f
+__rdtsc	TimerProfilingRuntime.cpp	/^__rdtsc()$/;"	f
+__recordLoopID2Name	TimerProfilingRuntime.cpp	/^__recordLoopID2Name( char *Name, long LoopID)$/;"	f
+__recordTimerResults	TimerProfilingRuntime.cpp	/^__recordTimerResults(long LoopID, unsigned long long Time)$/;"	f
+__storecheck	LDDProfilingRuntime.cpp	/^void __storecheck(int *ptr, long AddrLen, char* Pos, char* Name)$/;"	f
+__storecheckstackvar	LDDProfilingRuntime.cpp	/^void __storecheckstackvar( int *ptr, long AddrLen, char *Pos, char* Name, int TargetLoopFunc){$/;"	f
+addReadtoHashTraceInfo	LDDProfilingRuntime.cpp	/^unsigned  addReadtoHashTraceInfo( void *Addr, long AddrLen, RWTraceInfo *CurRWAddrNode , std::string AddrPos, std::string VarName)$/;"	f
+addWritetoHashTraceInfo	LDDProfilingRuntime.cpp	/^unsigned  addWritetoHashTraceInfo( void *Addr, long AddrLen, RWTraceInfo *CurRWAddrNode , std::string AddrPos, std::string VarName)$/;"	f
+analyzeReadAddrDepSet	LDDProfilingRuntime.cpp	/^void analyzeReadAddrDepSet(RWTraceInfo *CurRWAddrNode,std::string AddrPos,std::string VarName)$/;"	f
+analyzeWriteAddrDepSet	LDDProfilingRuntime.cpp	/^void analyzeWriteAddrDepSet(RWTraceInfo *CurRWAddrNode,std::string AddrPos,std::string VarName)$/;"	f
+findRWAddrIDIndex	LDDProfilingRuntime.cpp	/^unsigned findRWAddrIDIndex(std::vector<RWAddrID> &RWTrace, std::string AddrPos, std::string VarName)$/;"	f
+lookupRWTraceInfo	LDDProfilingRuntime.cpp	/^RWTraceInfo * lookupRWTraceInfo(size_t key, int *Addr)$/;"	f
+operator <	LDDProfilingRuntime.cpp	/^bool operator< ( Dep LI1, Dep LI2)$/;"	f
