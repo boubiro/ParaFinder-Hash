@@ -1,0 +1,140 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AA	BBVectorize.cpp	/^    AliasAnalysis *AA;$/;"	m	struct:__anon1::BBVectorize	file:
+AddReductionVar	LoopVectorize.cpp	/^bool LoopVectorizationLegality::AddReductionVar(PHINode *Phi,$/;"	f	class:__anon2::LoopVectorizationLegality
+AllowedExit	LoopVectorize.cpp	/^  SmallPtrSet<Value*, 4> AllowedExit;$/;"	m	class:__anon2::LoopVectorizationLegality	file:
+BBV_NAME	BBVectorize.cpp	17;"	d	file:
+BBVectorize	BBVectorize.cpp	/^    BBVectorize(Pass *P, const VectorizeConfig &C)$/;"	f	struct:__anon1::BBVectorize
+BBVectorize	BBVectorize.cpp	/^    BBVectorize(const VectorizeConfig &C = VectorizeConfig())$/;"	f	struct:__anon1::BBVectorize
+BBVectorize	BBVectorize.cpp	/^  struct BBVectorize : public BasicBlockPass {$/;"	s	namespace:__anon1	file:
+BUILD_ARCHIVE	Makefile	/^BUILD_ARCHIVE = 1$/;"	m
+Builder	LoopVectorize.cpp	/^  IRBuilder<> Builder;$/;"	m	class:__anon2::SingleBlockLoopVectorizer	file:
+Config	BBVectorize.cpp	/^    const VectorizeConfig Config;$/;"	m	struct:__anon1::BBVectorize	file:
+DEBUG_TYPE	BBVectorize.cpp	18;"	d	file:
+DEBUG_TYPE	LoopVectorize.cpp	38;"	d	file:
+DL	LoopVectorize.cpp	/^  DataLayout *DL;$/;"	m	class:__anon2::LoopVectorizationLegality	file:
+DL	LoopVectorize.cpp	/^  DataLayout *DL;$/;"	m	struct:__anon2::LoopVectorize	file:
+ID	BBVectorize.cpp	/^    static char ID; \/\/ Pass identification, replacement for typeid$/;"	m	struct:__anon1::BBVectorize	file:
+ID	BBVectorize.cpp	/^char BBVectorize::ID = 0;$/;"	m	class:BBVectorize	file:
+ID	LoopVectorize.cpp	/^  static char ID; \/\/ Pass identification, replacement for typeid$/;"	m	struct:__anon2::LoopVectorize	file:
+ID	LoopVectorize.cpp	/^char LoopVectorize::ID = 0;$/;"	m	class:LoopVectorize	file:
+Induction	LoopVectorize.cpp	/^  PHINode *Induction;$/;"	m	class:__anon2::LoopVectorizationLegality	file:
+Induction	LoopVectorize.cpp	/^  PHINode *Induction;$/;"	m	class:__anon2::SingleBlockLoopVectorizer	file:
+IntegerAdd	LoopVectorize.cpp	/^    IntegerAdd  = 0,  \/\/\/ Sum of numbers.$/;"	e	enum:__anon2::LoopVectorizationLegality::ReductionKind	file:
+IntegerMult	LoopVectorize.cpp	/^    IntegerMult = 1  \/\/\/ Product of numbers.$/;"	e	enum:__anon2::LoopVectorizationLegality::ReductionKind	file:
+Kind	LoopVectorize.cpp	/^    ReductionKind Kind;$/;"	m	struct:__anon2::LoopVectorizationLegality::ReductionDescriptor	file:
+LEVEL	Makefile	/^LEVEL = ..\/..\/..$/;"	m
+LI	LoopVectorize.cpp	/^  LoopInfo *LI;$/;"	m	class:__anon2::SingleBlockLoopVectorizer	file:
+LI	LoopVectorize.cpp	/^  LoopInfo *LI;$/;"	m	struct:__anon2::LoopVectorize	file:
+LIBRARYNAME	Makefile	/^LIBRARYNAME = LLVMVectorize$/;"	m
+LLVMAddBBVectorizePass	Vectorize.cpp	/^void LLVMAddBBVectorizePass(LLVMPassManagerRef PM) {$/;"	f
+LLVMAddLoopVectorizePass	Vectorize.cpp	/^void LLVMAddLoopVectorizePass(LLVMPassManagerRef PM) {$/;"	f
+LLVMInitializeVectorization	Vectorize.cpp	/^void LLVMInitializeVectorization(LLVMPassRegistryRef R) {$/;"	f
+LPM	LoopVectorize.cpp	/^  LPPassManager *LPM;$/;"	m	class:__anon2::SingleBlockLoopVectorizer	file:
+LV_NAME	LoopVectorize.cpp	37;"	d	file:
+LoopBypassBlock	LoopVectorize.cpp	/^  BasicBlock *LoopBypassBlock;$/;"	m	class:__anon2::SingleBlockLoopVectorizer	file:
+LoopExitBlock	LoopVectorize.cpp	/^  BasicBlock *LoopExitBlock;$/;"	m	class:__anon2::SingleBlockLoopVectorizer	file:
+LoopExitInstr	LoopVectorize.cpp	/^    Instruction *LoopExitInstr;$/;"	m	struct:__anon2::LoopVectorizationLegality::ReductionDescriptor	file:
+LoopMiddleBlock	LoopVectorize.cpp	/^  BasicBlock *LoopMiddleBlock;$/;"	m	class:__anon2::SingleBlockLoopVectorizer	file:
+LoopScalarBody	LoopVectorize.cpp	/^  BasicBlock *LoopScalarBody;$/;"	m	class:__anon2::SingleBlockLoopVectorizer	file:
+LoopVectorBody	LoopVectorize.cpp	/^  BasicBlock *LoopVectorBody;$/;"	m	class:__anon2::SingleBlockLoopVectorizer	file:
+LoopVectorizationLegality	LoopVectorize.cpp	/^  LoopVectorizationLegality(Loop *Lp, ScalarEvolution *Se, DataLayout *Dl):$/;"	f	class:__anon2::LoopVectorizationLegality
+LoopVectorizationLegality	LoopVectorize.cpp	/^class LoopVectorizationLegality {$/;"	c	namespace:__anon2	file:
+LoopVectorize	LoopVectorize.cpp	/^  LoopVectorize() : LoopPass(ID) {$/;"	f	struct:__anon2::LoopVectorize
+LoopVectorize	LoopVectorize.cpp	/^struct LoopVectorize : public LoopPass {$/;"	s	namespace:__anon2	file:
+NoReduction	LoopVectorize.cpp	/^    NoReduction = -1, \/\/\/ Not a reduction.$/;"	e	enum:__anon2::LoopVectorizationLegality::ReductionKind	file:
+OldInduction	LoopVectorize.cpp	/^  PHINode *OldInduction;$/;"	m	class:__anon2::SingleBlockLoopVectorizer	file:
+OrigLoop	LoopVectorize.cpp	/^  Loop *OrigLoop;$/;"	m	class:__anon2::SingleBlockLoopVectorizer	file:
+ReductionDescriptor	LoopVectorize.cpp	/^    ReductionDescriptor():$/;"	f	struct:__anon2::LoopVectorizationLegality::ReductionDescriptor
+ReductionDescriptor	LoopVectorize.cpp	/^    ReductionDescriptor(Value *Start, Instruction *Exit, ReductionKind K):$/;"	f	struct:__anon2::LoopVectorizationLegality::ReductionDescriptor
+ReductionDescriptor	LoopVectorize.cpp	/^  struct ReductionDescriptor {$/;"	s	class:__anon2::LoopVectorizationLegality	file:
+ReductionKind	LoopVectorize.cpp	/^  enum ReductionKind {$/;"	g	class:__anon2::LoopVectorizationLegality	file:
+ReductionList	LoopVectorize.cpp	/^  typedef DenseMap<PHINode*, ReductionDescriptor> ReductionList;$/;"	t	class:__anon2::LoopVectorizationLegality	file:
+Reductions	LoopVectorize.cpp	/^  ReductionList Reductions;$/;"	m	class:__anon2::LoopVectorizationLegality	file:
+SE	BBVectorize.cpp	/^    ScalarEvolution *SE;$/;"	m	struct:__anon1::BBVectorize	file:
+SE	LoopVectorize.cpp	/^  ScalarEvolution *SE;$/;"	m	class:__anon2::LoopVectorizationLegality	file:
+SE	LoopVectorize.cpp	/^  ScalarEvolution *SE;$/;"	m	class:__anon2::SingleBlockLoopVectorizer	file:
+SE	LoopVectorize.cpp	/^  ScalarEvolution *SE;$/;"	m	struct:__anon2::LoopVectorize	file:
+SingleBlockLoopVectorizer	LoopVectorize.cpp	/^  SingleBlockLoopVectorizer(Loop *Orig, ScalarEvolution *Se, LoopInfo *Li,$/;"	f	class:__anon2::SingleBlockLoopVectorizer
+SingleBlockLoopVectorizer	LoopVectorize.cpp	/^class SingleBlockLoopVectorizer {$/;"	c	namespace:__anon2	file:
+StartValue	LoopVectorize.cpp	/^    Value *StartValue;$/;"	m	struct:__anon2::LoopVectorizationLegality::ReductionDescriptor	file:
+TD	BBVectorize.cpp	/^    DataLayout *TD;$/;"	m	struct:__anon1::BBVectorize	file:
+TheLoop	LoopVectorize.cpp	/^  Loop *TheLoop;$/;"	m	class:__anon2::LoopVectorizationLegality	file:
+VF	LoopVectorize.cpp	/^  unsigned VF;$/;"	m	class:__anon2::SingleBlockLoopVectorizer	file:
+VPIteratorPair	BBVectorize.cpp	/^              std::multimap<Value *, Value *>::iterator> VPIteratorPair;$/;"	t	struct:__anon1::BBVectorize	file:
+VPPIteratorPair	BBVectorize.cpp	/^                VPPIteratorPair;$/;"	t	struct:__anon1::BBVectorize	file:
+VPPair	BBVectorize.cpp	/^    typedef std::pair<ValuePair, ValuePair> VPPair; \/\/ A ValuePair pair$/;"	t	struct:__anon1::BBVectorize	file:
+ValueMap	LoopVectorize.cpp	/^  typedef DenseMap<Value*, Value*> ValueMap;$/;"	t	class:__anon2::SingleBlockLoopVectorizer	file:
+ValuePair	BBVectorize.cpp	/^    typedef std::pair<Value *, Value *> ValuePair;$/;"	t	struct:__anon1::BBVectorize	file:
+ValuePairWithDepth	BBVectorize.cpp	/^    typedef std::pair<ValuePair, size_t> ValuePairWithDepth;$/;"	t	struct:__anon1::BBVectorize	file:
+VectorizeConfig	BBVectorize.cpp	/^VectorizeConfig::VectorizeConfig() {$/;"	f	class:VectorizeConfig
+WidenMap	LoopVectorize.cpp	/^  ValueMap WidenMap;$/;"	m	class:__anon2::SingleBlockLoopVectorizer	file:
+areInstsCompatible	BBVectorize.cpp	/^  bool BBVectorize::areInstsCompatible(Instruction *I, Instruction *J,$/;"	f	class:__anon1::BBVectorize
+bb_vectorize_name	BBVectorize.cpp	/^static const char bb_vectorize_name[] = "Basic-Block Vectorization";$/;"	v	file:
+buildDepMap	BBVectorize.cpp	/^  void BBVectorize::buildDepMap($/;"	f	class:__anon1::BBVectorize
+buildInitialTreeFor	BBVectorize.cpp	/^  void BBVectorize::buildInitialTreeFor($/;"	f	class:__anon1::BBVectorize
+canMoveUsesOfIAfterJ	BBVectorize.cpp	/^  bool BBVectorize::canMoveUsesOfIAfterJ(BasicBlock &BB,$/;"	f	class:__anon1::BBVectorize
+canVectorizeBlock	LoopVectorize.cpp	/^bool LoopVectorizationLegality::canVectorizeBlock(BasicBlock &BB) {$/;"	f	class:__anon2::LoopVectorizationLegality
+canVectorizeMemory	LoopVectorize.cpp	/^bool LoopVectorizationLegality::canVectorizeMemory(BasicBlock &BB) {$/;"	f	class:__anon2::LoopVectorizationLegality
+choosePairs	BBVectorize.cpp	/^  void BBVectorize::choosePairs($/;"	f	class:__anon1::BBVectorize
+cleanup	LoopVectorize.cpp	/^void SingleBlockLoopVectorizer::cleanup() {$/;"	f	class:__anon2::SingleBlockLoopVectorizer
+collectLoadMoveSet	BBVectorize.cpp	/^  void BBVectorize::collectLoadMoveSet(BasicBlock &BB,$/;"	f	class:__anon1::BBVectorize
+collectPairLoadMoveSet	BBVectorize.cpp	/^  void BBVectorize::collectPairLoadMoveSet(BasicBlock &BB,$/;"	f	class:__anon1::BBVectorize
+collectPtrInfo	BBVectorize.cpp	/^  void BBVectorize::collectPtrInfo(std::vector<Value *> &PairableInsts,$/;"	f	class:__anon1::BBVectorize
+combineMetadata	BBVectorize.cpp	/^  void BBVectorize::combineMetadata(Instruction *K, const Instruction *J) {$/;"	f	class:__anon1::BBVectorize
+computeConnectedPairs	BBVectorize.cpp	/^  void BBVectorize::computeConnectedPairs($/;"	f	class:__anon1::BBVectorize
+computePairsConnectedTo	BBVectorize.cpp	/^  void BBVectorize::computePairsConnectedTo($/;"	f	class:__anon1::BBVectorize
+createBBVectorizePass	BBVectorize.cpp	/^BasicBlockPass *llvm::createBBVectorizePass(const VectorizeConfig &C) {$/;"	f	class:llvm
+createEmptyLoop	LoopVectorize.cpp	/^void SingleBlockLoopVectorizer::createEmptyLoop(LoopVectorizationLegality *Legal) {$/;"	f	class:__anon2::SingleBlockLoopVectorizer
+createLoopVectorizePass	LoopVectorize.cpp	/^  Pass *createLoopVectorizePass() {$/;"	f	namespace:llvm
+expandIEChain	BBVectorize.cpp	/^  bool BBVectorize::expandIEChain(LLVMContext& Context, Instruction *I,$/;"	f	class:__anon1::BBVectorize
+fillNewShuffleMask	BBVectorize.cpp	/^  void BBVectorize::fillNewShuffleMask(LLVMContext& Context, Instruction *J,$/;"	f	class:__anon1::BBVectorize
+findBestTreeFor	BBVectorize.cpp	/^  void BBVectorize::findBestTreeFor($/;"	f	class:__anon1::BBVectorize
+fuseChosenPairs	BBVectorize.cpp	/^  void BBVectorize::fuseChosenPairs(BasicBlock &BB,$/;"	f	class:__anon1::BBVectorize
+getAnalysisUsage	BBVectorize.cpp	/^    virtual void getAnalysisUsage(AnalysisUsage &AU) const {$/;"	f	struct:__anon1::BBVectorize
+getAnalysisUsage	LoopVectorize.cpp	/^  virtual void getAnalysisUsage(AnalysisUsage &AU) const {$/;"	f	struct:__anon2::LoopVectorize
+getBroadcastInstrs	LoopVectorize.cpp	/^Value *SingleBlockLoopVectorizer::getBroadcastInstrs(Value *V) {$/;"	f	class:__anon2::SingleBlockLoopVectorizer
+getCandidatePairs	BBVectorize.cpp	/^  bool BBVectorize::getCandidatePairs(BasicBlock &BB,$/;"	f	class:__anon1::BBVectorize
+getConsecutiveVector	LoopVectorize.cpp	/^Value *SingleBlockLoopVectorizer::getConsecutiveVector(Value* Val) {$/;"	f	class:__anon2::SingleBlockLoopVectorizer
+getDepthFactor	BBVectorize.cpp	/^    inline size_t getDepthFactor(Value *V) {$/;"	f	struct:__anon1::BBVectorize
+getInduction	LoopVectorize.cpp	/^  PHINode *getInduction() {return Induction;}$/;"	f	class:__anon2::LoopVectorizationLegality
+getInstructionTypes	BBVectorize.cpp	/^    static inline void getInstructionTypes(Instruction *I,$/;"	f	struct:__anon1::BBVectorize
+getLoopMaxVF	LoopVectorize.cpp	/^unsigned LoopVectorizationLegality::getLoopMaxVF() {$/;"	f	class:__anon2::LoopVectorizationLegality
+getPairPtrInfo	BBVectorize.cpp	/^    bool getPairPtrInfo(Instruction *I, Instruction *J,$/;"	f	struct:__anon1::BBVectorize
+getReductionVars	LoopVectorize.cpp	/^  ReductionList *getReductionVars() { return &Reductions; }$/;"	f	class:__anon2::LoopVectorizationLegality
+getReplacementInput	BBVectorize.cpp	/^  Value *BBVectorize::getReplacementInput(LLVMContext& Context, Instruction *I,$/;"	f	class:__anon1::BBVectorize
+getReplacementInputsForPair	BBVectorize.cpp	/^  void BBVectorize::getReplacementInputsForPair(LLVMContext& Context,$/;"	f	class:__anon1::BBVectorize
+getReplacementName	BBVectorize.cpp	/^  std::string getReplacementName(Instruction *I, bool IsInput, unsigned o,$/;"	f	namespace:__anon1
+getReplacementPointerInput	BBVectorize.cpp	/^  Value *BBVectorize::getReplacementPointerInput(LLVMContext& Context,$/;"	f	class:__anon1::BBVectorize
+getReplacementShuffleMask	BBVectorize.cpp	/^  Value *BBVectorize::getReplacementShuffleMask(LLVMContext& Context,$/;"	f	class:__anon1::BBVectorize
+getUniformVector	LoopVectorize.cpp	/^SingleBlockLoopVectorizer::getUniformVector(unsigned Val, Type* ScalarTy) {$/;"	f	class:__anon2::SingleBlockLoopVectorizer
+getVecTypeForPair	BBVectorize.cpp	/^    static inline VectorType *getVecTypeForPair(Type *ElemTy, Type *Elem2Ty) {$/;"	f	struct:__anon1::BBVectorize
+getVectorValue	LoopVectorize.cpp	/^Value *SingleBlockLoopVectorizer::getVectorValue(Value *V) {$/;"	f	class:__anon2::SingleBlockLoopVectorizer
+initializeVectorization	Vectorize.cpp	/^void llvm::initializeVectorization(PassRegistry &Registry) {$/;"	f	class:llvm
+isConsecutiveGep	LoopVectorize.cpp	/^bool LoopVectorizationLegality::isConsecutiveGep(Value *Ptr) {$/;"	f	class:__anon2::LoopVectorizationLegality
+isIdentifiedSafeObject	LoopVectorize.cpp	/^bool LoopVectorizationLegality::isIdentifiedSafeObject(Value* Val) {$/;"	f	class:__anon2::LoopVectorizationLegality
+isInductionVariable	LoopVectorize.cpp	/^bool LoopVectorizationLegality::isInductionVariable(PHINode *Phi) {$/;"	f	class:__anon2::LoopVectorizationLegality
+isInstVectorizable	BBVectorize.cpp	/^  bool BBVectorize::isInstVectorizable(Instruction *I,$/;"	f	class:__anon1::BBVectorize
+isReductionInstr	LoopVectorize.cpp	/^LoopVectorizationLegality::isReductionInstr(Instruction *I,$/;"	f	class:__anon2::LoopVectorizationLegality
+isSecondInIteratorPair	BBVectorize.cpp	/^    bool isSecondInIteratorPair(V J, std::pair<$/;"	f	struct:__anon1::BBVectorize
+isVectorizableIntrinsic	BBVectorize.cpp	/^    bool isVectorizableIntrinsic(CallInst* I) {$/;"	f	struct:__anon1::BBVectorize
+llvm	LoopVectorize.cpp	/^namespace llvm {$/;"	n	file:
+lv_name	LoopVectorize.cpp	/^static const char lv_name[] = "Loop Vectorization";$/;"	v	file:
+moveUsesOfIAfterJ	BBVectorize.cpp	/^  void BBVectorize::moveUsesOfIAfterJ(BasicBlock &BB,$/;"	f	class:__anon1::BBVectorize
+pairWillFormCycle	BBVectorize.cpp	/^  bool BBVectorize::pairWillFormCycle(ValuePair P,$/;"	f	class:__anon1::BBVectorize
+pairsConflict	BBVectorize.cpp	/^  bool BBVectorize::pairsConflict(ValuePair P, ValuePair Q,$/;"	f	class:__anon1::BBVectorize
+pruneTreeFor	BBVectorize.cpp	/^  void BBVectorize::pruneTreeFor($/;"	f	class:__anon1::BBVectorize
+replaceOutputsOfPair	BBVectorize.cpp	/^  void BBVectorize::replaceOutputsOfPair(LLVMContext& Context, Instruction *I,$/;"	f	class:__anon1::BBVectorize
+runOnBasicBlock	BBVectorize.cpp	/^    virtual bool runOnBasicBlock(BasicBlock &BB) {$/;"	f	struct:__anon1::BBVectorize
+runOnLoop	LoopVectorize.cpp	/^  virtual bool runOnLoop(Loop *L, LPPassManager &LPM) {$/;"	f	struct:__anon2::LoopVectorize
+scalarizeInstruction	LoopVectorize.cpp	/^void SingleBlockLoopVectorizer::scalarizeInstruction(Instruction *Instr) {$/;"	f	class:__anon2::SingleBlockLoopVectorizer
+trackUsesOfI	BBVectorize.cpp	/^  bool BBVectorize::trackUsesOfI(DenseSet<Value *> &Users,$/;"	f	class:__anon1::BBVectorize
+vectorize	LoopVectorize.cpp	/^  void vectorize(LoopVectorizationLegality *Legal) {$/;"	f	class:__anon2::SingleBlockLoopVectorizer
+vectorizeBB	BBVectorize.cpp	/^    bool vectorizeBB(BasicBlock &BB) {$/;"	f	struct:__anon1::BBVectorize
+vectorizeBasicBlock	BBVectorize.cpp	/^llvm::vectorizeBasicBlock(Pass *P, BasicBlock &BB, const VectorizeConfig &C) {$/;"	f	class:llvm
+vectorizeLoop	LoopVectorize.cpp	/^SingleBlockLoopVectorizer::vectorizeLoop(LoopVectorizationLegality *Legal) {$/;"	f	class:__anon2::SingleBlockLoopVectorizer
+vectorizePairs	BBVectorize.cpp	/^  bool BBVectorize::vectorizePairs(BasicBlock &BB, bool NonPow2Len) {$/;"	f	class:__anon1::BBVectorize
